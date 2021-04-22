@@ -356,7 +356,7 @@
                     </ul>
                     <a href="{{route ('login')}}"><button class="btn btn-default btn-no-fill-header-4-2">Log
                             In</button></a>
-                    <button class="btn btn-fill-header-4-2">Sign Up/button>
+                    <button class="btn btn-fill-header-4-2">Sign Up </button>
                 </div>
             </nav>
 
