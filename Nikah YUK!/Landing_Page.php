@@ -731,7 +731,7 @@
         <div>
             <div class="row">
                 <div class="col-12" text>
-                    <h3 align="center">Testimoni</h3>
+                    <h3 align="center"><b>Testimoni</b></h3>
                 </div>
             </div>
 
