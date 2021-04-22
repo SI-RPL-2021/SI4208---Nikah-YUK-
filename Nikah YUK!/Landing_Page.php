@@ -650,6 +650,14 @@
                     </div>
 
                     <hr class="featurette-divider">
+
+        <!-- Testimoni -->
+        <br><br>
+        <div>
+            <div class="row">
+                <div class="col-12" text>
+                    <h3 align="center"><b>Testimoni</b></h3>
+
                 </div>
 
                 <!-- /END THE FEATURETTES -->
