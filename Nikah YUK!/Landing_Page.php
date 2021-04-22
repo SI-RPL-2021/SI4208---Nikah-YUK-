@@ -354,25 +354,25 @@
                             <a class="nav-link" href="#">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="https://www.youtube.com/">FAQ</a>
+                            <a class="nav-link" href="#">FAQ</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="https://www.youtube.com/">Tutorial</a>
+                            <a class="nav-link" href="#">Tutorial</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="https://www.youtube.com/">Blog</a>
+                            <a class="nav-link" href="#">Blog</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="https://www.youtube.com/">Loker</a>
+                            <a class="nav-link" href="#">Loker</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="https://www.youtube.com/">Consultation</a>
+                            <a class="nav-link" href="#">Consultation</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="https://www.youtube.com/">Testimoni</a>
+                            <a class="nav-link" href="testimoni.php">Testimoni</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="https://www.youtube.com/">Services</a>
+                            <a class="nav-link" href="#">Services</a>
                         </li>
                     </ul>
                     <a href="{{route ('login')}}"><button class="btn btn-default btn-no-fill-header-4-2">Log
@@ -565,84 +565,37 @@
             </style>
 
             <!-- Card Promo -->
-
-                <div class="container py-5" id="custom-cards">
-
-                    <div class="row row-cols-3 align-items-stretch py-5">
-                        <div class="col">
-                        <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: url('img/promo11.png');">
-                            <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-                            <ul class="d-flex list-unstyled mt-auto">
-                                <li class="me-auto">
-                                <img src="https://github.com/twbs.png" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white">
-                                </li>
-                                <li class="d-flex align-items-center me-3">
-                                <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"/></svg>
-                                <small>Earth</small>
-                                </li>
-                                <li class="d-flex align-items-center">
-                                <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"/></svg>
-                                <small>3d</small>
-                                </li>
-                            </ul>
-                            </div>
-                        </div>
-                        </div>
-
-                        <div class="col">
-                        <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: url('unsplash-photo-2.jpg');">
-                            <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-                            <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Much longer title that wraps to multiple lines</h2>
-                            <ul class="d-flex list-unstyled mt-auto">
-                                <li class="me-auto">
-                                <img src="https://github.com/twbs.png" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white">
-                                </li>
-                                <li class="d-flex align-items-center me-3">
-                                <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"/></svg>
-                                <small>Pakistan</small>
-                                </li>
-                                <li class="d-flex align-items-center">
-                                <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"/></svg>
-                                <small>4d</small>
-                                </li>
-                            </ul>
-                            </div>
-                        </div>
-                        </div>
-
-                        <div class="col">
-                        <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: url('unsplash-photo-3.jpg');">
-                            <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
-                            <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Another longer title belongs here</h2>
-                            <ul class="d-flex list-unstyled mt-auto">
-                                <li class="me-auto">
-                                <img src="https://github.com/twbs.png" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white">
-                                </li>
-                                <li class="d-flex align-items-center me-3">
-                                <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"/></svg>
-                                <small>California</small>
-                                </li>
-                                <li class="d-flex align-items-center">
-                                <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"/></svg>
-                                <small>5d</small>
-                                </li>
-                            </ul>
-                            </div>
-                        </div>
-                        </div>
+                    <div class="container"> 
+                                <div class="row row-cols-1 row-cols-md-3 g-4 ">
+                                        <div class="col  ">
+                                            <div class="card h-100 border-white">
+                                            <img src="img/promo11.png" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                                
+                                            </div>
+                                           
+                                            </div>
+                                        </div>
+                                        <div class="col  ">
+                                            <div class="card h-100 border-white">
+                                            <img src="img/promo12.png" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                                
+                                            </div>
+                                           
+                                            </div>
+                                        </div>
+                                        <div class="col  ">
+                                            <div class="card h-100 border-white">
+                                            <img src="img/promo13.png" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                                
+                                            </div>
+                                           
+                                            </div>
+                                        </div>
+                                </div>
                     </div>
-                    </div>
-
-
-                    <style>
-                        .rounded-5 { border-radius: 1rem; }
-                        .card-cover {
-                                background-repeat: no-repeat;
-                                background-position: center center;
-                                background-size: cover;
-                            }
-
-                    </style>
 
                     <!-- End Card Promo -->
         
@@ -652,7 +605,7 @@
             <div>
                 <div class="row">
                     <div class="col-12" text>
-                        <h3 align="center">Testimoni</h3>
+                        <h3 align="center"><b>Testimoni</b></h3>
                     </div>
                 </div>
 
@@ -662,10 +615,8 @@
 
                     <div class="row featurette">
                         <div class="col-md-7">
-                            <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It’ll blow
-                                    your
-                                    mind.</span></h2>
-                            <p class="lead">Some great placeholder content for the first featurette here. Imagine some exciting prose here.</p>
+                            <h2 class="featurette-heading">Andi & Salma. </h2><br>
+                            <p class="lead">Terimakasih banyak buat Nikah-Yuk! yang sudah nyediain Photographer yang sabar dan ngarahin fotonya juga bagus jadi ngga terlalu banyak ngulang juga, selain itu banyak memberi ide buat kita tanpa harus bingung lagi.</p>
                         </div>
                         <div class="col-md-5">
                             <img src="img/nikah1.png" alt=""> 
@@ -676,9 +627,8 @@
 
                     <div class="row featurette">
                         <div class="col-md-7 order-md-2">
-                            <h2 class="featurette-heading">Oh yeah, it’s that good. <span class="text-muted">See for
-                                    yourself.</span></h2>
-                            <p class="lead">Another featurette? Of course. More placeholder content here to give you an idea of how this layout would work with some actual real-world content in place.</p>
+                            <h2 class="featurette-heading">Ihksan & Meimei. </h2>
+                            <p class="lead">Awalnya sempet ragu takut ga sesuai gaunnya sama jasnya tapi ternyata desaignernya bagus banget bikinnya. semuanya serba detail dan mau di ulang lagi kalo ada yang ga pas makasih Nikah-yuk !! sudah mewujudkan pernikahan kami</p>
                         </div>
                         <div class="col-md-5 order-md-1">
                             <img src="img/nikah2.png" alt=""> 
@@ -690,8 +640,8 @@
 
                     <div class="row featurette">
                         <div class="col-md-7">
-                            <h2 class="featurette-heading">And lastly, this one. <span class="text-muted">Checkmate.</span></h2>
-                            <p class="lead">And yes, this is the last block of representative placeholder content. Again, not really intended to be actually read, simply here to give you a better view of what this would look like with some actual content. Your content.</p>
+                            <h2 class="featurette-heading">Dino & Dini. </h2>
+                            <p class="lead">keren sih buat photographer sama muanya takut banget kalo makeupnya jadi luntur karena foto outdor tapi ternyata engga sama sekali dan photographer yang cepet fotonya ga ribet bisa dapet lansung pose yang bagus</p>
                         </div>
                         <div class="col-md-5">
                             <img src="img/nikah3.png" alt=""> 
@@ -1148,7 +1098,7 @@
                                 <div class="card-outline-content-3-7 d-flex flex-column position-relative overflow-hidden h-100">
                                     <h2 class="price-title-content-3-7">Silver</h2>
                                     <h2 class="price-value-content-3-7 d-flex align-items-center">
-                                        <span>$200</span>
+                                        <span>$10000</span>
                                         <span class="price-duration-content-3-7">/Package</span>
                                     </h2>
                                     <p class="price-caption-content-3-7">Suitable for those of you<br> who want a minimum<br> budget</p>
@@ -1202,7 +1152,7 @@
                                 <div class="card-outline-content-3-7 d-flex flex-column position-relative overflow-hidden h-100">
                                     <h2 class="price-title-content-3-7">Gold</h2>
                                     <h2 class="price-value-content-3-7 d-flex align-items-center">
-                                        <span>$450</span>
+                                        <span>$18000</span>
                                         <span class="price-duration-content-3-7">/package</span>
                                     </h2>
                                     <p class="price-caption-content-3-7">Suitable for those of you<br> who want an unic concept</p>
@@ -1257,7 +1207,7 @@
                                 <div class="card-outline-content-3-7 d-flex flex-column position-relative overflow-hidden h-100" style="background-color: #2E3A53;">
                                     <h2 class="price-title-content-3-7" style="color: #FFFFFF;">Platinum</h2>
                                     <h2 class="price-value-content-3-7 d-flex align-items-center" style="color: #FFFFFF;">
-                                        <span>$700</span>
+                                        <span>$35000</span>
                                         <span class="price-duration-content-3-7" style="color: #8997B5;">/package</span>
                                     </h2>
                                     <p class="price-caption-content-3-7" style="color: #7987A6;">Suitable for those of you

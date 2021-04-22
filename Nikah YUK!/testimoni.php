@@ -326,29 +326,29 @@
                 </div>
                 <div class="collapse navbar-collapse" id="navbarTogglerDemo-header-4-2">
                     <ul class="navbar-nav me-auto mt-2 mt-lg-0">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#">Home</a>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="Landing_Page.php">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="https://www.youtube.com/">FAQ</a>
+                            <a class="nav-link" href="#">FAQ</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="https://www.youtube.com/">Tutorial</a>
+                            <a class="nav-link" href="#">Tutorial</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="https://www.youtube.com/">Blog</a>
+                            <a class="nav-link" href="#">Blog</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="https://www.youtube.com/">Loker</a>
+                            <a class="nav-link" href="#">Loker</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="https://www.youtube.com/">Consultation</a>
+                            <a class="nav-link" href="#">Consultation</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="testimoni.php">Testimoni</a>
+                            <a class="nav-link active" href="testimoni.php">Testimoni</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="https://www.youtube.com/">Services</a>
+                            <a class="nav-link" href="#">Services</a>
                         </li>
                     </ul>
                     <a href="{{route ('login')}}"><button class="btn btn-default btn-no-fill-header-4-2">Log
