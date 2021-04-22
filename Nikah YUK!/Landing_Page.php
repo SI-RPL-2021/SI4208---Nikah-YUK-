@@ -659,10 +659,8 @@
                     <h3 align="center"><b>Testimoni</b></h3>
 
                 </div>
-
-                <!-- /END THE FEATURETTES -->
             </div>
-
+            
             <!-- Keunggulan website -->
             <div class="keunggulan website">
                 <style>
@@ -1398,6 +1396,7 @@
                         }
                     }
                 </style>
+                
                 <br><br><br><br>
                 <div style="font-family: 'Poppins', sans-serif;">
                     <div class="list-footer-footer-2-2 bg-light">
