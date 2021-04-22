@@ -354,25 +354,25 @@
                             <a class="nav-link" href="#">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="https://www.youtube.com/">FAQ</a>
+                            <a class="nav-link" href="#">FAQ</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="https://www.youtube.com/">Tutorial</a>
+                            <a class="nav-link" href="#">Tutorial</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="https://www.youtube.com/">Blog</a>
+                            <a class="nav-link" href="#">Blog</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="https://www.youtube.com/">Loker</a>
+                            <a class="nav-link" href="#">Loker</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="https://www.youtube.com/">Consultation</a>
+                            <a class="nav-link" href="#">Consultation</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="https://www.youtube.com/">Testimoni</a>
+                            <a class="nav-link" href="testimoni.php">Testimoni</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="https://www.youtube.com/">Services</a>
+                            <a class="nav-link" href="#">Services</a>
                         </li>
                     </ul>
                     <a href="{{route ('login')}}"><button class="btn btn-default btn-no-fill-header-4-2">Log
@@ -501,11 +501,7 @@
                         </svg>
 
                         <div class="container">
-                            <div class="carousel-caption text-start">
-                                <h1>Example headline.</h1>
-                                <p>Some representative placeholder content for the first slide of the carousel.</p>
-                                <p><a class="btn btn-lg btn-primary" href="#">Sign up today</a></p>
-                            </div>
+                            
                         </div>
                     </div>
                     <div class="carousel-item">
@@ -514,13 +510,7 @@
                             <img src="img/wedding3.jpg" alt="">
                         </svg>
 
-                        <div class="container">
-                            <div class="carousel-caption">
-                                <h1>Another example headline.</h1>
-                                <p>Some representative placeholder content for the second slide of the carousel.</p>
-                                <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
-                            </div>
-                        </div>
+                        
                     </div>
                     <div class="carousel-item">
                         <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
@@ -528,13 +518,6 @@
                             <img src="img/wedding4.jpg" alt="">
                         </svg>
 
-                        <div class="container">
-                            <div class="carousel-caption text-end">
-                                <h1>One more for good measure.</h1>
-                                <p>Some representative placeholder content for the third slide of this carousel.</p>
-                                <p><a class="btn btn-lg btn-primary" href="#">Browse gallery</a></p>
-                            </div>
-                        </div>
                     </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
@@ -553,59 +536,15 @@
             <!-- Marketing messaging and featurettes
   ================================================== -->
             <!-- Wrap the rest of the page in another container to center all the content. -->
-            <br><br>
-            <div class="container marketing">
-
-                <!-- Three columns of text below the carousel -->
-                <div class="row">
-                    <div class="col-lg-4">
-                        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false">
-                            <title>Placeholder</title>
-                            <rect width="100%" height="100%" fill="#777" /><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text>
-                        </svg>
-
-                        <h2>Heading</h2>
-                        <p>Some representative placeholder content for the three columns of text below the carousel. This is the first column.</p>
-                        <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
-                    </div>
-                    <!-- /.col-lg-4 -->
-                    <div class="col-lg-4">
-                        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false">
-                            <title>Placeholder</title>
-                            <rect width="100%" height="100%" fill="#777" /><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text>
-                        </svg>
-
-                        <h2>Heading</h2>
-                        <p>Another exciting bit of representative placeholder content. This time, we've moved on to the second column.
-                        </p>
-                        <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
-                    </div>
-                    <!-- /.col-lg-4 -->
-                    <div class="col-lg-4">
-                        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false">
-                            <title>Placeholder</title>
-                            <rect width="100%" height="100%" fill="#777" /><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text>
-                        </svg>
-
-                        <h2>Heading</h2>
-                        <p>And lastly this, the third column of representative placeholder content.</p>
-                        <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
-                    </div>
-                    <!-- /.col-lg-4 -->
-                </div>
-                <!-- /.row -->
-
-            </div>
-            <!-- End Heading -->
 
             <!-- Promo -->
-            <br><br><br><br><br>
+            <br><br><br>
             <div class="row">
                 <div class="col-12"></div>
             </div>
             <div class="row">
                 <div class="col-12" text>
-                    <h3 align="center">Promo</h3>
+                    <h3 align="center"><b> Promo</b> </h3> 
                 </div>
             </div>
 
@@ -625,119 +564,48 @@
                 }
             </style>
 
-            <div class="album py-5 ">
-                <div class="container">
-
-                    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-                        <div class="col">
-                            <div class="card shadow-sm">
-                                <img src="img/promo1.png" alt="">
-                                <div class="card-body">
-                                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                    <div class="d-flex justify-content-between align-items-center">
-                                        <div class="btn-group">
-                                            <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                                            <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+            <!-- Card Promo -->
+                    <div class="container"> 
+                                <div class="row row-cols-1 row-cols-md-3 g-4 ">
+                                        <div class="col  ">
+                                            <div class="card h-100 border-white">
+                                            <img src="img/promo11.png" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                                
+                                            </div>
+                                           
+                                            </div>
                                         </div>
-                                        <small class="text-muted">9 mins</small>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card shadow-sm">
-                                <img src="img/promo1.png" alt="">
-
-                                <div class="card-body">
-                                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                    <div class="d-flex justify-content-between align-items-center">
-                                        <div class="btn-group">
-                                            <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                                            <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                                        <div class="col  ">
+                                            <div class="card h-100 border-white">
+                                            <img src="img/promo12.png" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                                
+                                            </div>
+                                           
+                                            </div>
                                         </div>
-                                        <small class="text-muted">9 mins</small>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card shadow-sm">
-                                <img src="img/promo1.png" alt="">
-
-                                <div class="card-body">
-                                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                    <div class="d-flex justify-content-between align-items-center">
-                                        <div class="btn-group">
-                                            <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                                            <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                                        <div class="col  ">
+                                            <div class="card h-100 border-white">
+                                            <img src="img/promo13.png" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                                
+                                            </div>
+                                           
+                                            </div>
                                         </div>
-                                        <small class="text-muted">9 mins</small>
-                                    </div>
                                 </div>
-                            </div>
-                        </div>
-
-                        <div class="col">
-                            <div class="card shadow-sm">
-                                <img src="img/promo1.png" alt="">
-
-                                <div class="card-body">
-                                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                    <div class="d-flex justify-content-between align-items-center">
-                                        <div class="btn-group">
-                                            <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                                            <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                                        </div>
-                                        <small class="text-muted">9 mins</small>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card shadow-sm">
-                                <img src="img/promo1.png" alt="">
-
-                                <div class="card-body">
-                                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                    <div class="d-flex justify-content-between align-items-center">
-                                        <div class="btn-group">
-                                            <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                                            <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                                        </div>
-                                        <small class="text-muted">9 mins</small>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card shadow-sm">
-                                <img src="img/promo1.png" alt="">
-
-                                <div class="card-body">
-                                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                    <div class="d-flex justify-content-between align-items-center">
-                                        <div class="btn-group">
-                                            <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                                            <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                                        </div>
-                                        <small class="text-muted">9 mins</small>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-
-
                     </div>
-                </div>
-            </div>
+
+                    <!-- End Card Promo -->
+        
 
             <!-- Testimoni -->
             <br><br>
             <div>
                 <div class="row">
                     <div class="col-12" text>
-                        <h3 align="center">Testimoni</h3>
+                        <h3 align="center"><b>Testimoni</b></h3>
                     </div>
                 </div>
 
@@ -747,10 +615,8 @@
 
                     <div class="row featurette">
                         <div class="col-md-7">
-                            <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It’ll blow
-                                    your
-                                    mind.</span></h2>
-                            <p class="lead">Some great placeholder content for the first featurette here. Imagine some exciting prose here.</p>
+                            <h2 class="featurette-heading">Andi & Salma. </h2><br>
+                            <p class="lead">Terimakasih banyak buat Nikah-Yuk! yang sudah nyediain Photographer yang sabar dan ngarahin fotonya juga bagus jadi ngga terlalu banyak ngulang juga, selain itu banyak memberi ide buat kita tanpa harus bingung lagi.</p>
                         </div>
                         <div class="col-md-5">
                             <img src="img/nikah1.png" alt=""> 
@@ -761,9 +627,8 @@
 
                     <div class="row featurette">
                         <div class="col-md-7 order-md-2">
-                            <h2 class="featurette-heading">Oh yeah, it’s that good. <span class="text-muted">See for
-                                    yourself.</span></h2>
-                            <p class="lead">Another featurette? Of course. More placeholder content here to give you an idea of how this layout would work with some actual real-world content in place.</p>
+                            <h2 class="featurette-heading">Ihksan & Meimei. </h2>
+                            <p class="lead">Awalnya sempet ragu takut ga sesuai gaunnya sama jasnya tapi ternyata desaignernya bagus banget bikinnya. semuanya serba detail dan mau di ulang lagi kalo ada yang ga pas makasih Nikah-yuk !! sudah mewujudkan pernikahan kami</p>
                         </div>
                         <div class="col-md-5 order-md-1">
                             <img src="img/nikah2.png" alt=""> 
@@ -775,8 +640,8 @@
 
                     <div class="row featurette">
                         <div class="col-md-7">
-                            <h2 class="featurette-heading">And lastly, this one. <span class="text-muted">Checkmate.</span></h2>
-                            <p class="lead">And yes, this is the last block of representative placeholder content. Again, not really intended to be actually read, simply here to give you a better view of what this would look like with some actual content. Your content.</p>
+                            <h2 class="featurette-heading">Dino & Dini. </h2>
+                            <p class="lead">keren sih buat photographer sama muanya takut banget kalo makeupnya jadi luntur karena foto outdor tapi ternyata engga sama sekali dan photographer yang cepet fotonya ga ribet bisa dapet lansung pose yang bagus</p>
                         </div>
                         <div class="col-md-5">
                             <img src="img/nikah3.png" alt=""> 
@@ -786,10 +651,8 @@
 
                     <hr class="featurette-divider">
                 </div>
-
-                <!-- /END THE FEATURETTES -->
             </div>
-
+            
             <!-- Keunggulan website -->
             <div class="keunggulan website">
                 <style>
@@ -1012,7 +875,7 @@
                                     <img src="http://api.elements.buildwithangga.com/storage/files/2/assets/Content/Content2/Content-2-7.png" alt="">
                                 </div>
                                 <h3 class="icon-content-2-2-title">Consultation</h3>
-                                <p class="icon-content-2-2-caption">This can help you to understand<br> for make wedding party</p>
+                                <p class="icon-content-2-2-caption">This can help you to understand<br> for making wedding party</p>
                             </div>
                         </div>
                     </div>
@@ -1233,7 +1096,7 @@
                                 <div class="card-outline-content-3-7 d-flex flex-column position-relative overflow-hidden h-100">
                                     <h2 class="price-title-content-3-7">Silver</h2>
                                     <h2 class="price-value-content-3-7 d-flex align-items-center">
-                                        <span>$200</span>
+                                        <span>$10000</span>
                                         <span class="price-duration-content-3-7">/Package</span>
                                     </h2>
                                     <p class="price-caption-content-3-7">Suitable for those of you<br> who want a minimum<br> budget</p>
@@ -1287,7 +1150,7 @@
                                 <div class="card-outline-content-3-7 d-flex flex-column position-relative overflow-hidden h-100">
                                     <h2 class="price-title-content-3-7">Gold</h2>
                                     <h2 class="price-value-content-3-7 d-flex align-items-center">
-                                        <span>$450</span>
+                                        <span>$18000</span>
                                         <span class="price-duration-content-3-7">/package</span>
                                     </h2>
                                     <p class="price-caption-content-3-7">Suitable for those of you<br> who want an unic concept</p>
@@ -1342,7 +1205,7 @@
                                 <div class="card-outline-content-3-7 d-flex flex-column position-relative overflow-hidden h-100" style="background-color: #2E3A53;">
                                     <h2 class="price-title-content-3-7" style="color: #FFFFFF;">Platinum</h2>
                                     <h2 class="price-value-content-3-7 d-flex align-items-center" style="color: #FFFFFF;">
-                                        <span>$700</span>
+                                        <span>$35000</span>
                                         <span class="price-duration-content-3-7" style="color: #8997B5;">/package</span>
                                     </h2>
                                     <p class="price-caption-content-3-7" style="color: #7987A6;">Suitable for those of you
@@ -1525,6 +1388,7 @@
                         }
                     }
                 </style>
+                
                 <br><br><br><br>
                 <div style="font-family: 'Poppins', sans-serif;">
                     <div class="list-footer-footer-2-2 bg-light">
