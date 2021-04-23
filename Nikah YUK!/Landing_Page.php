@@ -533,10 +533,6 @@
 
 
             <!-- Start Heading -->
-            <!-- Marketing messaging and featurettes
-  ================================================== -->
-            <!-- Wrap the rest of the page in another container to center all the content. -->
-
             <!-- Promo -->
             <br><br><br>
             <div class="row">
