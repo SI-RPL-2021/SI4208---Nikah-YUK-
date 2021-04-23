@@ -44,7 +44,7 @@
                 <div class="collapse navbar-collapse" id="navbarTogglerDemo-header-2-2">
                     <ul class="navbar-nav me-auto mt-1 mt-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Home</a>
+                            <a class="nav-link" href="Landing_Page.php">Home</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">FAQ</a>
@@ -62,7 +62,7 @@
                             <a class="nav-link" href="#">Consultation</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Testimoni</a>
+                            <a class="nav-link" href="testimoni.php">Testimoni</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Services</a>
@@ -158,6 +158,93 @@
                 </div>
             </div>
         </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-12"></div>
+            </div>
+            <div class="row">
+                <div class="col-12" text>
+                    <h2 align="center"><b> Halaman Blog</b> </h2>
+                </div>
+            </div>
+            <br><br><br>
+
+
+            <!-- <h1 style="text-align:center"> Halaman Blog </h1> -->
+
+
+            <!---------------------------------------------------------------------------------------------- Blog ----------------------------------------------------------------------------------------->
+
+
+            <div class="card mb-2">
+                <div class="row">
+                    <div class="col-md-6">
+                        <img src="img/Fotopernikahan.png" class="card-img" alt="gambar" height="100%">
+                    </div>
+                    <div class="col-md-6" style="text-align:center">
+                        <div class="card-body">
+                            <h5 class="card-title">Wedding Preparation</h5>
+                            <p class="card-text">Bagaimana NIKAH-YUK ! bisa membantu bisnis pernikahan Anda? Simak cerita langsung dari para vendor pernikahan ini.</p>
+                            <p>karna saya menyadari diri ini teramat pelupa dan tidak runut jadi pelan-pelan berusaha merunutkan. dan ini memudahkan juga apasih yang pertama kali harus kalian kerjakan kalau udah ada si calon? ide ini didapat dari salah seorang teman SD dimana kakaknya pernah buat juga RAB dkknya jadilah saya memfollownya.
+                                hehehe kalau ada yang butuh file excelnya bisa kok kirim surel ke sosmed ataupun gmail saya. haha PD kali kau peh! nah isi dari RAB sendiri bisa diisi mulai dari perkiraan budget yg akan kalian gunakan pada acara pernikahan kalian, mungkin dr mulai lamaran, pembelian seserahan, pembelian mas kawi, pembayaran paket wedding, cetak undangan, pembelian sovenir, ketring ataupun pembelian bahan masakan sendiri kalau kalian memberdayakan buibu yang biasa masak di pernikahan yang ada di sekitar rumah.
+                                pokoknya all about Budgeting harus banget kalian buat.</p>
+                            <p>....................</p>
+                            <br><br><br>
+                            <a href="#" class="btn btn-dark">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <br><br><br>
+
+            <div class="card mb-3">
+                <div class="row no-gutters">
+                    <div class="col-md-6 text-white bg-secondary" style="text-align:center">
+                        <div class="card-body">
+                            <h5 class="card-title">Wedding Preparation</h5>
+                            <p class="card-text">NIKAH-YUK ! telah berinovasi dengan banyak fitur digital yang membantu vendor pernikahan memasarkan bisnis mereka. Simak kesan dan pesannya.</p>
+                            <p>Ketika si dia sudah melamar dan acara pertunangan sudah dilakukan, artinya kamu sudah harus segera siap-siap to the next preparation! Mungkin kamu bingung harus mulai dari mana, apa dulu yang dikerjakan, hingga gimana cara mewujudkan seluruh impian pernikahan kalian. Sangking bingungnya akhirnya kamu malah panik. Tapi tenang, Sputnik bisa jadi wedding guide kalian dalam menemukan inspirasi pernikahan, hingga step-step apa saja yang perlu dilakukan.
+
+
+                                Mewujudkan hari pernikahan memang rasanya campur aduk, ya kan! Mulai dari exciting sendiri, bingung, jadi gampang sensi karena terlalu banyak worry, ditambah drama dadakan yang tiba-tiba muncul. Untuk menghindari hal-hal yang ketinggalan dalam proses persiapan pernikahan maka berikut ini punya contekan persiapan pernikahan untuk kalian bride-to-be, so check this out</p>
+                            <p>....................</p>
+                            <br><br><br>
+                            <a href="#" class="btn btn-dark">Read More</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <img src="img/Vendor.jpg" class="card-img" alt="gambar" height="100%">
+                    </div>
+                </div>
+            </div>
+
+            <br><br><br>
+
+            <div class="card mb-6">
+                <div class="row no-gutters">
+                    <div class="col-lg-6">
+                        <img src="img/Vendorprofil.jpg" class="card-img" alt="gambar" height="100%">
+                    </div>
+                    <div class="col-md-6" style="text-align:center">
+                        <div class="card-body">
+                            <h5 class="card-title">Vendor Profile</h5>
+                            <p class="card-text">New Trend! Exclusive Gift Set by Fine Souvenir</p>
+                            <p>Pernikahan adalah sebuah momen yang digelar sekali dalam seumur hidup. Oleh karenanya, mempersiapkan pernikahan adalah merupakan hal baru bagi kebanyakan pasangan calon pengantin. Bingung bagaimana menyusun daftar vendor yang akan membantu mempersiapkan pernikahan Anda tentu merupakan sebuah hal yang wajar.
+
+                                Karena Anda belum memiliki pengalaman dalam mempersiapkan sebuah pernikahan, maka yang harus Anda lakukan pertama kali adalah bertanya kepada mereka yang telah memiliki pengalaman. Anda bisa bertanya kepada orangtua, kakak, atau teman yang sudah menikah, minta mereka menceritakan pengalaman mereka mempersiapkan pernikahan. Akan tetapi, untuk memberikan gambaran kepada Anda, berikut beberapa vendor pernikahan yang sebaiknya ada dalam list Anda.</p>
+                            <p>....................</p>
+                            <br><br><br>
+                            <a href="#" class="btn btn-dark">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
 
 
         <!------------------------------------------------------------------------------------------- Footer  ----------------------------------------------------------------------------------------------------------------------->

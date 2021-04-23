@@ -11,37 +11,60 @@
 </head>
 <body>
     <section style="height:100%; width: 100%; box-sizing: border-box; background-color: #FFFFFF">
+
         <style>
             @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
             .modal-header-4-2.modal {
                 top: 2rem;
             }
             
+
+   
+            @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+            .modal-header-4-2.modal {
+                top: 2rem;
+            }
+
+
             .header-4-2 .navbar,
             .hero-header-4-2 {
                 padding: 3rem 2rem;
             }
+
             
+
+
+
             .header-4-2 .navbar-light .navbar-nav .nav-link {
                 font-size: 18px;
                 color: #1d1e3c;
                 font-weight: 300;
                 line-height: 1.5rem;
             }
+
             
+
+
+
             .header-4-2 .navbar-light .navbar-nav .nav-link:hover {
                 font-size: 18px;
                 color: #1d1e3c;
                 font-weight: 600;
                 line-height: 1.5rem;
             }
+
             
+
+
+
             .header-4-2 .navbar-light .navbar-nav .active>.nav-link,
             .header-4-2 .navbar-light .navbar-nav .nav-link.active,
             .header-4-2 .navbar-light .navbar-nav .nav-link.show,
             .header-4-2 .navbar-light .navbar-nav .show>.nav-link {
                 font-weight: 600;
             }
+
             
             .header-4-2 .navbar-light .navbar-toggler-icon {
                 background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(0, 0, 0, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
@@ -51,16 +74,35 @@
                 border: none;
             }
             
+
+
+            .header-4-2 .navbar-light .navbar-toggler-icon {
+                background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(0, 0, 0, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+            }
+
+            .header-4-2 .navbar-light .navbar-toggler {
+                border: none;
+            }
+
+
             .modal-content-header-4-2 .modal-header,
             .modal-content-header-4-2 .modal-footer {
                 border: none;
             }
+
             
+
+
+
             .btn:focus,
             .btn:active {
                 outline: none !important;
             }
+
             
+
+
+
             .btn-fill-header-4-2 {
                 background-color: #27C499;
                 border-radius: 12px;
@@ -69,13 +111,21 @@
                 padding: 12px 32px 12px 32px;
                 font-size: 18px;
             }
+
             
+
+
+
             .btn-fill-header-4-2:hover {
                 color: #ffffff;
                 --tw-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
                 box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
             }
+
             
+
+
+
             .btn-no-fill-header-4-2 {
                 color: #1D1E3C;
                 font-weight: 300;
@@ -83,17 +133,29 @@
                 padding: 12px 32px 12px 32px;
                 font-size: 18px;
             }
+
             
+
+
+
             .modal-header-4-2 .modal-dialog .modal-content {
                 border-radius: 8px;
                 background-color: #FFFFFF;
                 border: none;
             }
+
             
             .responsive-header-4-2 li a {
                 padding: 1rem 1rem;
             }
             
+
+
+            .responsive-header-4-2 li a {
+                padding: 1rem 1rem;
+            }
+
+
             .text-caption-header-4-2 {
                 margin-bottom: 2rem;
                 line-height: 1.625;
@@ -102,16 +164,28 @@
                 font-weight: 600;
                 color: #27C499;
             }
+
             
+
+
+
             .left-column-header-4-2 {
                 margin-bottom: 0.75rem;
                 width: 100%;
             }
+
             
             .right-column-header-4-2 {
                 width: 100%;
             }
             
+
+
+            .right-column-header-4-2 {
+                width: 100%;
+            }
+
+
             .title-text-big-header-4-2 {
                 font-weight: 600;
                 margin-bottom: 2rem;
@@ -119,7 +193,11 @@
                 line-height: 2.5rem;
                 color: #272E35;
             }
+
             
+
+
+
             .title-text-small-header-4-2 {
                 font-weight: 600;
                 margin-bottom: 2rem;
@@ -129,12 +207,20 @@
                 padding-left: 0;
                 padding-right: 0;
             }
+
             
+
+
+
             .div-button-header-4-2 {
                 margin-left: 0;
                 margin-right: 0;
             }
+
             
+
+
+
             .btn-try-header-4-2 {
                 font-weight: 600;
                 color: #FFFFFF;
@@ -146,13 +232,21 @@
                 margin-bottom: 1rem;
                 margin-right: 0;
             }
+
             
+
+
+
             .btn-try-header-4-2:hover {
                 color: #FFFFFF;
                 --tw-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
                 box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
             }
+
             
+
+
+
             .btn-outline-header-4-2 {
                 font-weight: 400;
                 border: 1px solid #555B61;
@@ -164,121 +258,237 @@
                 background-color: transparent;
                 margin-bottom: 1rem;
             }
+
             
+
+
+
             .btn-outline-header-4-2:hover {
                 border: 1px solid #27C499;
                 color: #27C499;
             }
+
             
             .btn-outline-header-4-2:hover div path {
                 fill: #27C499;
             }
             
+
+
+            .btn-outline-header-4-2:hover div path {
+                fill: #27C499;
+            }
+
+
             @media (min-width: 576px) {
                 .modal-header-4-2 .modal-dialog {
                     max-width: 95%;
                     border-radius: 12px;
                 }
+
                 .header-4-2 .navbar {
                     padding: 3rem 2rem;
                 }
                 .hero-header-4-2 {
                     padding: 3rem 2rem 5rem 2rem;
                 }
+
+
+                .header-4-2 .navbar {
+                    padding: 3rem 2rem;
+                }
+
+                .hero-header-4-2 {
+                    padding: 3rem 2rem 5rem 2rem;
+                }
+
+
                 .title-text-big-header-4-2 {
                     font-size: 3rem;
                     line-height: 1.2;
                 }
+
+
+
+
                 .title-text-small-header-4-2 {
                     font-size: 3rem;
                     line-height: 1.2;
                     padding-left: 1.5rem;
                     padding-right: 1.5rem;
                 }
+
+
+
+
                 .div-button-header-4-2 {
                     margin-left: 0;
                     margin-right: 0.75rem;
                 }
+
+
+
+
                 .btn-try-header-4-2 {
                     margin-bottom: 0;
                     margin-right: 0.75rem;
                 }
+
+
+
+
                 .btn-outline-header-4-2 {
                     margin-bottom: 0;
                 }
             }
+
             
+
+
+
             @media (min-width: 768px) {
                 .header-4-2 .navbar {
                     padding: 3rem 4rem;
                 }
+
                 .hero-header-4-2 {
                     padding: 3rem 4rem 5rem 4rem;
                 }
                 .left-column-header-4-2 {
                     margin-bottom: 3rem;
                 }
+
+
+                .hero-header-4-2 {
+                    padding: 3rem 4rem 5rem 4rem;
+                }
+
+                .left-column-header-4-2 {
+                    margin-bottom: 3rem;
+                }
+
+
                 .title-text-small-header-4-2 {
                     padding-left: 1.5rem;
                     padding-right: 1.5rem;
                 }
+
+
+
+
                 .div-button-header-4-2 {
                     margin-left: 0;
                     margin-right: 0.5rem;
                 }
+
+
+
+
                 .btn-try-header-4-2 {
                     margin-right: 0.5rem;
                 }
             }
+
             
+
+
+
             @media (min-width: 992px) {
                 .header-4-2 .navbar-expand-lg .navbar-nav .nav-link {
                     padding-right: 1.25rem;
                     padding-left: 1.25rem;
                 }
+
                 .header-4-2 .navbar {
                     padding: 0rem 6rem;
                 }
                 .hero-header-4-2 {
                     padding: 3rem 6rem 5rem 6rem;
                 }
+
+
+                .header-4-2 .navbar {
+                    padding: 0rem 6rem;
+                }
+
+                .hero-header-4-2 {
+                    padding: 3rem 6rem 5rem 6rem;
+                }
+
+
                 .left-column-header-4-2 {
                     width: 50%;
                     margin-bottom: 0;
                 }
+
                 .right-column-header-4-2 {
                     width: 50%;
                 }
+
+
+                .right-column-header-4-2 {
+                    width: 50%;
+                }
+
+
                 .title-text-big-header-4-2 {
                     font-size: 3.75rem;
                     line-height: 1.2;
                 }
+
+
+
+
                 .title-text-small-header-4-2 {
                     font-size: 3.75rem;
                     line-height: 1.2;
                 }
+
+
+
+
                 .div-button-header-4-2 {
                     margin-left: 0;
                     margin-right: 2rem;
                 }
+
+
+
+
                 .btn-try-header-4-2 {
                     margin-right: 2rem;
                 }
             }
+
             
+
+
+
             .row .c {
                 height: 50px;
             }
         </style>
+
+
+
+
         <!-- Start Code -->
         <div class="header-4-2" style="font-family: 'Poppins', sans-serif;">
             <nav class="navbar navbar-expand-lg navbar-light">
                 <a href="#">
+
                     <img style="margin-right:0.75rem" src="img/nikahyuklogo.png" alt="">
+
+                    <img style="margin-right:0.75rem" src="img/logo1.png" alt="">
+
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="modal" data-bs-target="#targetModal-header-4-2">
                     <span class="navbar-toggler-icon"></span>
                 </button>
+
+
+
+
                 <div class="modal-header-4-2 modal fade" id="targetModal-header-4-2" tabindex="-1" role="dialog" aria-labelledby="targetModalLabel-header-4-2" aria-hidden="true">
                     <div class="modal-dialog" role="document">
                         <div class="modal-content modal-content-header-4-2">
@@ -291,7 +501,11 @@
                             </div>
                             <div class="modal-body" style="padding:	2rem; padding-top: 0; padding-bottom: 0;">
                                 <ul class="navbar-nav responsive-header-4-2 me-auto mt-2 mt-lg-0">
+
                                     <li class="nav-item active">
+
+                                    <li class="nav-item ">
+
                                         <a class="nav-link" href="#">Home</a>
                                     </li>
                                     <li class="nav-item">
@@ -309,7 +523,11 @@
                                     <li class="nav-item">
                                         <a class="nav-link" href="#">Consultation</a>
                                     </li>
+
                                     <li class="nav-item">
+
+                                    <li class="nav-item active">
+
                                         <a class="nav-link" href="#">Testimoni</a>
                                     </li>
                                     <li class="nav-item">
@@ -324,6 +542,10 @@
                         </div>
                     </div>
                 </div>
+
+
+
+
                 <div class="collapse navbar-collapse" id="navbarTogglerDemo-header-4-2">
                     <ul class="navbar-nav me-auto mt-2 mt-lg-0">
                         <li class="nav-item ">
@@ -336,7 +558,11 @@
                             <a class="nav-link" href="#">Tutorial</a>
                         </li>
                         <li class="nav-item">
+
                             <a class="nav-link" href="#">Blog</a>
+
+                            <a class="nav-link" href="Blog.php">Blog</a>
+
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Loker</a>
@@ -344,8 +570,13 @@
                         <li class="nav-item">
                             <a class="nav-link" href="#">Consultation</a>
                         </li>
+
                         <li class="nav-item">
                             <a class="nav-link active" href="testimoni.php">Testimoni</a>
+
+                        <li class="nav-item active">
+                            <a class="nav-link" href="testimoni.php">Testimoni</a>
+
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Services</a>
@@ -353,10 +584,19 @@
                     </ul>
                     <a href="{{route ('login')}}"><button class="btn btn-default btn-no-fill-header-4-2">Log
                             In</button></a>
+
                   
                   <b>  <button class="btn btn-fill-header-4-2">Sign Up </button> <b>
                 </div>
             </nav>
+
+                    <button class="btn btn-fill-header-4-2">Sign Up</button>
+                </div>
+            </nav>
+
+
+            <br><br><br>
+
            
            
             <div class="testimonials">
@@ -469,6 +709,7 @@
                         </p>
                       </div>
                     </div>
+
 
                     <div class="row">
          
@@ -596,6 +837,132 @@
                 }
             </style>
             <br><br><br><br>
+
+                   
+                </div>
+        </div>
+
+            <div class="footer">
+                <style>
+                    @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+                    .list-space-footer-2-2 {
+                        margin-bottom: 1.25rem;
+                    }
+                    
+                    .list-space-footer-2-2-title {
+                        margin-bottom: 1.5rem;
+                    }
+                    
+                    .footer-text-title-footer-2-2 {
+                        font-size: 1.5rem;
+                        font-weight: 600;
+                        color: #000000;
+                    }
+                    
+                    .list-menu-footer-2-2 {
+                        color: #c7c7c7;
+                        text-decoration: none !important;
+                        cursor: pointer;
+                    }
+                    
+                    .list-menu-footer-2-2:hover {
+                        color: #555252;
+                    }
+                    
+                    hr.hr-footer-2-2 {
+                        margin: 0;
+                        border: 0;
+                        border-top: 1px solid rgba(0, 0, 0, 0.1);
+                    }
+                    
+                    .border-color-footer-2-2 {
+                        color: #c7c7c7;
+                    }
+                    
+                    .footer-link-footer-2-2 {
+                        margin-right: 1.25rem;
+                        color: #c7c7c7;
+                    }
+                    
+                    .footer-link-footer-2-2:hover {
+                        color: #555252;
+                        cursor: pointer;
+                    }
+                    
+                    .social-media-c-footer-2-2:hover circle,
+                    .social-media-p-footer-2-2:hover path {
+                        fill: #555252;
+                        cursor: pointer;
+                    }
+                    
+                    .footer-info-space-footer-2-2 {
+                        padding-top: 3rem;
+                    }
+                    
+                    .social-media-left-footer-2-2 {
+                        margin-right: 1.25rem;
+                    }
+                    
+                    .social-media-center-1-footer-2-2 {
+                        margin-right: 1.25rem;
+                    }
+                    
+                    .social-media-center-2-footer-2-2 {
+                        margin-right: 1.25rem;
+                    }
+                    
+                    .list-footer-footer-2-2 {
+                        padding: 5rem 1rem 6rem 1rem;
+                    }
+                    
+                    .info-footer-footer-2-2 {
+                        padding-left: 1rem;
+                        padding-right: 1rem;
+                        padding-bottom: 3rem;
+                    }
+                    
+                    @media (max-width: 980px) {
+                        .footer-responsive-space-footer-2-2 {
+                            margin-bottom: 1.25rem;
+                            margin-top: 1.25rem;
+                        }
+                    }
+                    
+                    @media (min-width: 576px) {
+                        .list-footer-footer-2-2 {
+                            padding: 5rem 2rem 6rem 2rem;
+                        }
+                        .info-footer-footer-2-2 {
+                            padding-left: 2rem;
+                            padding-right: 2rem;
+                            padding-bottom: 3rem;
+                        }
+                    }
+                    
+                    @media (min-width: 768px) {
+                        .list-footer-footer-2-2 {
+                            padding: 5rem 4rem 6rem 4rem;
+                        }
+                        .info-footer-footer-2-2 {
+                            padding-left: 4rem;
+                            padding-right: 4rem;
+                            padding-bottom: 3rem;
+                        }
+                    }
+                    
+                    @media (min-width: 992px) {
+                        .list-footer-footer-2-2 {
+                            padding: 5rem 6rem 6rem 6rem;
+                        }
+                        .info-footer-footer-2-2 {
+                            padding-left: 6rem;
+                            padding-right: 6rem;
+                            padding-bottom: 3rem;
+                        }
+                    }
+                </style>
+           
+
             <div style="font-family: 'Poppins', sans-serif;">
                 <div class="list-footer-footer-2-2 bg-light">
                     <div class="row">
@@ -768,7 +1135,11 @@
         </div>
     </section>
     <!-- Optional JavaScript; choose one of the two! -->
+
     <!-- Option 1: Bootstrap Bundle with Popper -->-->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
     <!-- Option 2: Separate Popper and Bootstrap JS -->
 
