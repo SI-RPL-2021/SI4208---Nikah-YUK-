@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Blog</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="home.css">
+    <link rel="stylesheet" type="text/css" href="../style/blog_page.css">
 
 <body>
     <section style="height:100%; width: 100%; box-sizing: border-box; background-color: #FFFFFF">
@@ -77,88 +77,6 @@
 
 
         <br><br><br>
-        <div class="row">
-            <div class="col-12"></div>
-        </div>
-        <div class="row">
-            <div class="col-12" text>
-                <h2 align="center"><b> Halaman Blog</b> </h2>
-            </div>
-        </div>
-        <br><br><br>
-
-
-        <!-- <h1 style="text-align:center"> Halaman Blog </h1> -->
-
-
-        <!---------------------------------------------------------------------------------------------- Blog ----------------------------------------------------------------------------------------->
-
-
-        <div class="card mb-2">
-            <div class="row">
-                <div class="col-md-4">
-                    <img src="img/Fotopernikahan.png" class="card-img" alt="gambar" height="100%">
-                </div>
-                <div class="col-md-8" style="text-align:center">
-                    <div class="card-body">
-                        <h5 class="card-title">Wedding Preparation</h5>
-                        <p class="card-text">Bagaimana NIKAH-YUK ! bisa membantu bisnis pernikahan Anda? Simak cerita langsung dari para vendor pernikahan ini.</p>
-                        <p>karna saya menyadari diri ini teramat pelupa dan tidak runut jadi pelan-pelan berusaha merunutkan. dan ini memudahkan juga apasih yang pertama kali harus kalian kerjakan kalau udah ada si calon? ide ini didapat dari salah seorang teman SD dimana kakaknya pernah buat juga RAB dkknya jadilah saya memfollownya.
-                            hehehe kalau ada yang butuh file excelnya bisa kok kirim surel ke sosmed ataupun gmail saya. haha PD kali kau peh! nah isi dari RAB sendiri bisa diisi mulai dari perkiraan budget yg akan kalian gunakan pada acara pernikahan kalian, mungkin dr mulai lamaran, pembelian seserahan, pembelian mas kawi, pembayaran paket wedding, cetak undangan, pembelian sovenir, ketring ataupun pembelian bahan masakan sendiri kalau kalian memberdayakan buibu yang biasa masak di pernikahan yang ada di sekitar rumah.
-                            pokoknya all about Budgeting harus banget kalian buat.</p>
-                        <p>....................</p>
-                        <br><br><br>
-                        <a href="#" class="btn btn-dark">Read More</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <br><br><br>
-
-        <div class="card mb-3">
-            <div class="row no-gutters">
-                <div class="col-md-8 text-white bg-secondary" style="text-align:center">
-                    <div class="card-body">
-                        <h5 class="card-title">Wedding Preparation</h5>
-                        <p class="card-text">NIKAH-YUK ! telah berinovasi dengan banyak fitur digital yang membantu vendor pernikahan memasarkan bisnis mereka. Simak kesan dan pesannya.</p>
-                        <p>Ketika si dia sudah melamar dan acara pertunangan sudah dilakukan, artinya kamu sudah harus segera siap-siap to the next preparation! Mungkin kamu bingung harus mulai dari mana, apa dulu yang dikerjakan, hingga gimana cara mewujudkan seluruh impian pernikahan kalian. Sangking bingungnya akhirnya kamu malah panik. Tapi tenang, Sputnik bisa jadi wedding guide kalian dalam menemukan inspirasi pernikahan, hingga step-step apa saja yang perlu dilakukan.
-
-
-                            Mewujudkan hari pernikahan memang rasanya campur aduk, ya kan! Mulai dari exciting sendiri, bingung, jadi gampang sensi karena terlalu banyak worry, ditambah drama dadakan yang tiba-tiba muncul. Untuk menghindari hal-hal yang ketinggalan dalam proses persiapan pernikahan maka berikut ini punya contekan persiapan pernikahan untuk kalian bride-to-be, so check this out</p>
-                        <p>....................</p>
-                        <br><br><br>
-                        <a href="#" class="btn btn-dark">Read More</a>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <img src="img/Vendor.jpg" class="card-img" alt="gambar" height="100%">
-                </div>
-            </div>
-        </div>
-
-        <br><br><br>
-
-        <div class="card mb-4">
-            <div class="row no-gutters">
-                <div class="col-lg-4">
-                    <img src="img/Vendorprofil.jpg" class="card-img" alt="gambar" height="100%">
-                </div>
-                <div class="col-md-8" style="text-align:center">
-                    <div class="card-body">
-                        <h5 class="card-title">Vendor Profile</h5>
-                        <p class="card-text">New Trend! Exclusive Gift Set by Fine Souvenir</p>
-                        <p>Pernikahan adalah sebuah momen yang digelar sekali dalam seumur hidup. Oleh karenanya, mempersiapkan pernikahan adalah merupakan hal baru bagi kebanyakan pasangan calon pengantin. Bingung bagaimana menyusun daftar vendor yang akan membantu mempersiapkan pernikahan Anda tentu merupakan sebuah hal yang wajar.
-
-                            Karena Anda belum memiliki pengalaman dalam mempersiapkan sebuah pernikahan, maka yang harus Anda lakukan pertama kali adalah bertanya kepada mereka yang telah memiliki pengalaman. Anda bisa bertanya kepada orangtua, kakak, atau teman yang sudah menikah, minta mereka menceritakan pengalaman mereka mempersiapkan pernikahan. Akan tetapi, untuk memberikan gambaran kepada Anda, berikut beberapa vendor pernikahan yang sebaiknya ada dalam list Anda.</p>
-                        <p>....................</p>
-                        <br><br><br>
-                        <a href="#" class="btn btn-dark">Read More</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
         <div class="container">
             <div class="row">
                 <div class="col-12"></div>
@@ -245,141 +163,17 @@
 
 
 
-
-
         <!------------------------------------------------------------------------------------------- Footer  ----------------------------------------------------------------------------------------------------------------------->
 
 
         <div class="footer">
-            <style>
-                @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
-                .list-space-footer-2-2 {
-                    margin-bottom: 1.25rem;
-                }
-
-                .list-space-footer-2-2-title {
-                    margin-bottom: 1.5rem;
-                }
-
-                .footer-text-title-footer-2-2 {
-                    font-size: 1.5rem;
-                    font-weight: 600;
-                    color: #000000;
-                }
-
-                .list-menu-footer-2-2 {
-                    color: #c7c7c7;
-                    text-decoration: none !important;
-                    cursor: pointer;
-                }
-
-                .list-menu-footer-2-2:hover {
-                    color: #555252;
-                }
-
-                hr.hr-footer-2-2 {
-                    margin: 0;
-                    border: 0;
-                    border-top: 1px solid rgba(0, 0, 0, 0.1);
-                }
-
-                .border-color-footer-2-2 {
-                    color: #c7c7c7;
-                }
-
-                .footer-link-footer-2-2 {
-                    margin-right: 1.25rem;
-                    color: #c7c7c7;
-                }
-
-                .footer-link-footer-2-2:hover {
-                    color: #555252;
-                    cursor: pointer;
-                }
-
-                .social-media-c-footer-2-2:hover circle,
-                .social-media-p-footer-2-2:hover path {
-                    fill: #555252;
-                    cursor: pointer;
-                }
-
-                .footer-info-space-footer-2-2 {
-                    padding-top: 3rem;
-                }
-
-                .social-media-left-footer-2-2 {
-                    margin-right: 1.25rem;
-                }
-
-                .social-media-center-1-footer-2-2 {
-                    margin-right: 1.25rem;
-                }
-
-                .social-media-center-2-footer-2-2 {
-                    margin-right: 1.25rem;
-                }
-
-                .list-footer-footer-2-2 {
-                    padding: 5rem 1rem 6rem 1rem;
-                }
-
-                .info-footer-footer-2-2 {
-                    padding-left: 1rem;
-                    padding-right: 1rem;
-                    padding-bottom: 3rem;
-                }
-
-                @media (max-width: 980px) {
-                    .footer-responsive-space-footer-2-2 {
-                        margin-bottom: 1.25rem;
-                        margin-top: 1.25rem;
-                    }
-                }
-
-                @media (min-width: 576px) {
-                    .list-footer-footer-2-2 {
-                        padding: 5rem 2rem 6rem 2rem;
-                    }
-
-                    .info-footer-footer-2-2 {
-                        padding-left: 2rem;
-                        padding-right: 2rem;
-                        padding-bottom: 3rem;
-                    }
-                }
-
-                @media (min-width: 768px) {
-                    .list-footer-footer-2-2 {
-                        padding: 5rem 4rem 6rem 4rem;
-                    }
-
-                    .info-footer-footer-2-2 {
-                        padding-left: 4rem;
-                        padding-right: 4rem;
-                        padding-bottom: 3rem;
-                    }
-                }
-
-                @media (min-width: 992px) {
-                    .list-footer-footer-2-2 {
-                        padding: 5rem 6rem 6rem 6rem;
-                    }
-
-                    .info-footer-footer-2-2 {
-                        padding-left: 6rem;
-                        padding-right: 6rem;
-                        padding-bottom: 3rem;
-                    }
-                }
-            </style>
             <br><br><br><br>
             <div style="font-family: 'Poppins', sans-serif;">
                 <div class="list-footer-footer-2-2 bg-light">
                     <div class="row">
                         <div class="col-lg-4 col-md-6">
                             <div class="">
-                                <div class="list-space-footer-2-2">
+                                <div class="list-space-footer-2-2-2">
                                     <img src="img/logo1.png" alt="">
                                 </div>
                             </div>

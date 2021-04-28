@@ -6,291 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Landing Page</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="home.css">
+    <link rel="stylesheet" type="text/css" href="../style/landing_page.css">
 </head>
 
 <body>
     <section style="height:100%; width: 100%; box-sizing: border-box; background-color: #FFFFFF">
-        <style>
-            @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
-            .modal-header-4-2.modal {
-                top: 2rem;
-            }
-
-            .header-4-2 .navbar,
-            .hero-header-4-2 {
-                padding: 3rem 2rem;
-            }
-
-            .header-4-2 .navbar-light .navbar-nav .nav-link {
-                font-size: 18px;
-                color: #1d1e3c;
-                font-weight: 300;
-                line-height: 1.5rem;
-            }
-
-            .header-4-2 .navbar-light .navbar-nav .nav-link:hover {
-                font-size: 18px;
-                color: #1d1e3c;
-                font-weight: 600;
-                line-height: 1.5rem;
-            }
-
-            .header-4-2 .navbar-light .navbar-nav .active>.nav-link,
-            .header-4-2 .navbar-light .navbar-nav .nav-link.active,
-            .header-4-2 .navbar-light .navbar-nav .nav-link.show,
-            .header-4-2 .navbar-light .navbar-nav .show>.nav-link {
-                font-weight: 600;
-            }
-
-            .header-4-2 .navbar-light .navbar-toggler-icon {
-                background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(0, 0, 0, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
-            }
-
-            .header-4-2 .navbar-light .navbar-toggler {
-                border: none;
-            }
-
-            .modal-content-header-4-2 .modal-header,
-            .modal-content-header-4-2 .modal-footer {
-                border: none;
-            }
-
-            .btn:focus,
-            .btn:active {
-                outline: none !important;
-            }
-
-            .btn-fill-header-4-2 {
-                background-color: #27C499;
-                border-radius: 12px;
-                color: #ffffff;
-                font-weight: 600;
-                padding: 12px 32px 12px 32px;
-                font-size: 18px;
-            }
-
-            .btn-fill-header-4-2:hover {
-                color: #ffffff;
-                --tw-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
-                box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-            }
-
-            .btn-no-fill-header-4-2 {
-                color: #1D1E3C;
-                font-weight: 300;
-                line-height: 1.75rem;
-                padding: 12px 32px 12px 32px;
-                font-size: 18px;
-            }
-
-            .modal-header-4-2 .modal-dialog .modal-content {
-                border-radius: 8px;
-                background-color: #FFFFFF;
-                border: none;
-            }
-
-            .responsive-header-4-2 li a {
-                padding: 1rem 1rem;
-            }
-
-            .text-caption-header-4-2 {
-                margin-bottom: 2rem;
-                line-height: 1.625;
-                font-size: 0.875rem;
-                line-height: 1.25rem;
-                font-weight: 600;
-                color: #27C499;
-            }
-
-            .left-column-header-4-2 {
-                margin-bottom: 0.75rem;
-                width: 100%;
-            }
-
-            .right-column-header-4-2 {
-                width: 100%;
-            }
-
-            .title-text-big-header-4-2 {
-                font-weight: 600;
-                margin-bottom: 2rem;
-                font-size: 2.25rem;
-                line-height: 2.5rem;
-                color: #272E35;
-            }
-
-            .title-text-small-header-4-2 {
-                font-weight: 600;
-                margin-bottom: 2rem;
-                font-size: 2.25rem;
-                line-height: 2.5rem;
-                color: #272E35;
-                padding-left: 0;
-                padding-right: 0;
-            }
-
-            .div-button-header-4-2 {
-                margin-left: 0;
-                margin-right: 0;
-            }
-
-            .btn-try-header-4-2 {
-                font-weight: 600;
-                color: #FFFFFF;
-                padding: 1rem 1.5rem 1rem 1.5rem;
-                font-size: 1rem;
-                line-height: 1.5rem;
-                border-radius: 0.75rem;
-                background-color: #27C499;
-                margin-bottom: 1rem;
-                margin-right: 0;
-            }
-
-            .btn-try-header-4-2:hover {
-                color: #FFFFFF;
-                --tw-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
-                box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-            }
-
-            .btn-outline-header-4-2 {
-                font-weight: 400;
-                border: 1px solid #555B61;
-                color: #555B61;
-                padding: 1rem 1.5rem 1rem 1.5rem;
-                font-size: 1rem;
-                line-height: 1.5rem;
-                border-radius: 0.75rem;
-                background-color: transparent;
-                margin-bottom: 1rem;
-            }
-
-            .btn-outline-header-4-2:hover {
-                border: 1px solid #27C499;
-                color: #27C499;
-            }
-
-            .btn-outline-header-4-2:hover div path {
-                fill: #27C499;
-            }
-
-            @media (min-width: 576px) {
-                .modal-header-4-2 .modal-dialog {
-                    max-width: 95%;
-                    border-radius: 12px;
-                }
-
-                .header-4-2 .navbar {
-                    padding: 3rem 2rem;
-                }
-
-                .hero-header-4-2 {
-                    padding: 3rem 2rem 5rem 2rem;
-                }
-
-                .title-text-big-header-4-2 {
-                    font-size: 3rem;
-                    line-height: 1.2;
-                }
-
-                .title-text-small-header-4-2 {
-                    font-size: 3rem;
-                    line-height: 1.2;
-                    padding-left: 1.5rem;
-                    padding-right: 1.5rem;
-                }
-
-                .div-button-header-4-2 {
-                    margin-left: 0;
-                    margin-right: 0.75rem;
-                }
-
-                .btn-try-header-4-2 {
-                    margin-bottom: 0;
-                    margin-right: 0.75rem;
-                }
-
-                .btn-outline-header-4-2 {
-                    margin-bottom: 0;
-                }
-            }
-
-            @media (min-width: 768px) {
-                .header-4-2 .navbar {
-                    padding: 3rem 4rem;
-                }
-
-                .hero-header-4-2 {
-                    padding: 3rem 4rem 5rem 4rem;
-                }
-
-                .left-column-header-4-2 {
-                    margin-bottom: 3rem;
-                }
-
-                .title-text-small-header-4-2 {
-                    padding-left: 1.5rem;
-                    padding-right: 1.5rem;
-                }
-
-                .div-button-header-4-2 {
-                    margin-left: 0;
-                    margin-right: 0.5rem;
-                }
-
-                .btn-try-header-4-2 {
-                    margin-right: 0.5rem;
-                }
-            }
-
-            @media (min-width: 992px) {
-                .header-4-2 .navbar-expand-lg .navbar-nav .nav-link {
-                    padding-right: 1.25rem;
-                    padding-left: 1.25rem;
-                }
-
-                .header-4-2 .navbar {
-                    padding: 0rem 6rem;
-                }
-
-                .hero-header-4-2 {
-                    padding: 3rem 6rem 5rem 6rem;
-                }
-
-                .left-column-header-4-2 {
-                    width: 50%;
-                    margin-bottom: 0;
-                }
-
-                .right-column-header-4-2 {
-                    width: 50%;
-                }
-
-                .title-text-big-header-4-2 {
-                    font-size: 3.75rem;
-                    line-height: 1.2;
-                }
-
-                .title-text-small-header-4-2 {
-                    font-size: 3.75rem;
-                    line-height: 1.2;
-                }
-
-                .div-button-header-4-2 {
-                    margin-left: 0;
-                    margin-right: 2rem;
-                }
-
-                .btn-try-header-4-2 {
-                    margin-right: 2rem;
-                }
-            }
-
-            .row .c {
-                height: 50px;
-            }
-        </style>
 
         <!-- Start Code -->
         <div class="header-4-2" style="font-family: 'Poppins', sans-serif;">
@@ -375,9 +95,9 @@
                             <a class="nav-link" href="#">Services</a>
                         </li>
                     </ul>
-                    <a href="{{route ('login')}}"><button class="btn btn-default btn-no-fill-header-4-2">Log
+                    <a href="Login.php"><button class="btn btn-default btn-no-fill-header-4-2">Log
                             In</button></a>
-                    <button class="btn btn-fill-header-4-2">Sign Up</button>
+                    <a href="SignUp.php"><button class="btn btn-fill-header-4-2">Sign Up</button></a>
                 </div>
             </nav>
 
@@ -385,108 +105,6 @@
             <br><br><br>
 
             <!-- Carousel -->
-            <style>
-                /* GLOBAL STYLES
-    -------------------------------------------------- */
-                /* Padding below the footer and lighter body text */
-
-                body {
-                    padding-top: 3rem;
-                    padding-bottom: 3rem;
-                    color: #5a5a5a;
-                }
-
-                /* CUSTOMIZE THE CAROUSEL
-    -------------------------------------------------- */
-                /* Carousel base class */
-
-                .carousel {
-                    margin-bottom: 4rem;
-                }
-
-                /* Since positioning the image, we need to help out the caption */
-
-                .carousel-caption {
-                    bottom: 5rem;
-                    z-index: 10;
-                }
-
-                /* Declare heights because of positioning of img element */
-
-                .carousel-item {
-                    height: 32rem;
-                }
-
-                .carousel-item>img {
-                    position: absolute;
-                    top: 0;
-                    left: 0;
-                    min-width: 100%;
-                    height: 32rem;
-                }
-
-                /* MARKETING CONTENT
-    -------------------------------------------------- */
-                /* Center align the text within the three columns below the carousel */
-
-                .marketing .col-lg-4 {
-                    margin-bottom: 1.5rem;
-                    text-align: center;
-                }
-
-                .marketing h2 {
-                    font-weight: 400;
-                }
-
-                /* rtl:begin:ignore */
-
-                .marketing .col-lg-4 p {
-                    margin-right: .75rem;
-                    margin-left: .75rem;
-                }
-
-                /* rtl:end:ignore */
-                /* Featurettes
-    ------------------------- */
-
-                .featurette-divider {
-                    margin: 5rem 0;
-                    /* Space out the Bootstrap <hr> more */
-                }
-
-                /* Thin out the marketing headings */
-
-                .featurette-heading {
-                    font-weight: 300;
-                    line-height: 1;
-                    /* rtl:remove */
-                    letter-spacing: -.05rem;
-                }
-
-                /* RESPONSIVE CSS
-    -------------------------------------------------- */
-
-                @media (min-width: 40em) {
-
-                    /* Bump up size of carousel content */
-                    .carousel-caption p {
-                        margin-bottom: 1.25rem;
-                        font-size: 1.25rem;
-                        line-height: 1.4;
-                    }
-
-                    .featurette-heading {
-                        font-size: 50px;
-                    }
-                }
-
-                @media (min-width: 62em) {
-                    .featurette-heading {
-                        margin-top: 7rem;
-                    }
-                }
-            </style>
-
             <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-indicators">
                     <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -497,11 +115,11 @@
                     <div class="carousel-item active">
                         <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
                             <rect width="100%" height="100%" fill="#777" />
-                            <img src="img/wedding1.jpg" alt="">
+                            <img src="../img/wedding1.jpg" alt="">
                         </svg>
 
                         <div class="container">
-                            
+
                         </div>
                     </div>
                     <div class="carousel-item">
@@ -510,7 +128,7 @@
                             <img src="img/wedding3.jpg" alt="">
                         </svg>
 
-                        
+
                     </div>
                     <div class="carousel-item">
                         <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
@@ -540,61 +158,45 @@
             </div>
             <div class="row">
                 <div class="col-12" text>
-                    <h3 align="center"><b> Promo</b> </h3> 
+                    <h3 align="center"><b> Promo</b> </h3>
                 </div>
             </div>
 
-            <style>
-                .bd-placeholder-img {
-                    font-size: 1.125rem;
-                    text-anchor: middle;
-                    -webkit-user-select: none;
-                    -moz-user-select: none;
-                    user-select: none;
-                }
-
-                @media (min-width: 768px) {
-                    .bd-placeholder-img-lg {
-                        font-size: 3.5rem;
-                    }
-                }
-            </style>
-
             <!-- Card Promo -->
-                    <div class="container"> 
-                                <div class="row row-cols-1 row-cols-md-3 g-4 ">
-                                        <div class="col  ">
-                                            <div class="card h-100 border-white">
-                                            <img src="img/promo11.png" class="card-img-top" alt="...">
-                                            <div class="card-body">
-                                                
-                                            </div>
-                                           
-                                            </div>
-                                        </div>
-                                        <div class="col  ">
-                                            <div class="card h-100 border-white">
-                                            <img src="img/promo12.png" class="card-img-top" alt="...">
-                                            <div class="card-body">
-                                                
-                                            </div>
-                                           
-                                            </div>
-                                        </div>
-                                        <div class="col  ">
-                                            <div class="card h-100 border-white">
-                                            <img src="img/promo13.png" class="card-img-top" alt="...">
-                                            <div class="card-body">
-                                                
-                                            </div>
-                                           
-                                            </div>
-                                        </div>
-                                </div>
-                    </div>
+            <div class="container">
+                <div class="row row-cols-1 row-cols-md-3 g-4 ">
+                    <div class="col  ">
+                        <div class="card h-100 border-white">
+                            <img src="img/promo11.png" class="card-img-top" alt="...">
+                            <div class="card-body">
 
-                    <!-- End Card Promo -->
-        
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col  ">
+                        <div class="card h-100 border-white">
+                            <img src="img/promo12.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col  ">
+                        <div class="card h-100 border-white">
+                            <img src="img/promo13.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- End Card Promo -->
+
 
             <!-- Testimoni -->
             <br><br>
@@ -615,7 +217,7 @@
                             <p class="lead">Terimakasih banyak buat Nikah-Yuk! yang sudah nyediain Photographer yang sabar dan ngarahin fotonya juga bagus jadi ngga terlalu banyak ngulang juga, selain itu banyak memberi ide buat kita tanpa harus bingung lagi.</p>
                         </div>
                         <div class="col-md-5">
-                            <img src="img/nikah1.png" alt=""> 
+                            <img src="img/nikah1.png" alt="">
                         </div>
                     </div>
 
@@ -627,7 +229,7 @@
                             <p class="lead">Awalnya sempet ragu takut ga sesuai gaunnya sama jasnya tapi ternyata desaignernya bagus banget bikinnya. semuanya serba detail dan mau di ulang lagi kalo ada yang ga pas makasih Nikah-yuk !! sudah mewujudkan pernikahan kami</p>
                         </div>
                         <div class="col-md-5 order-md-1">
-                            <img src="img/nikah2.png" alt=""> 
+                            <img src="img/nikah2.png" alt="">
 
                         </div>
                     </div>
@@ -640,216 +242,18 @@
                             <p class="lead">keren sih buat photographer sama muanya takut banget kalo makeupnya jadi luntur karena foto outdor tapi ternyata engga sama sekali dan photographer yang cepet fotonya ga ribet bisa dapet lansung pose yang bagus</p>
                         </div>
                         <div class="col-md-5">
-                            <img src="img/nikah3.png" alt=""> 
+                            <img src="img/nikah3.png" alt="">
 
                         </div>
                     </div>
 
                     <hr class="featurette-divider">
-
-        <!-- Testimoni -->
-        <br><br>
-        <div>
-            <div class="row">
-                <div class="col-12" text>
-                    <h3 align="center"><b>Testimoni</b></h3>
-
                 </div>
             </div>
-            
+
             <!-- Keunggulan website -->
             <div class="keunggulan website">
-                <style>
-                    @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
-                    .btn:focus,
-                    .btn:active {
-                        outline: none !important;
-                    }
-
-                    .title-text-content-2-2 {
-                        padding-top: 5rem;
-                        margin-bottom: 3rem;
-                    }
-
-                    .text-title-content-2-2 {
-                        color: #121212;
-                        margin-bottom: 0.625rem;
-                        font-size: 2.25rem;
-                        line-height: 2.5rem;
-                        font-weight: 600;
-                    }
-
-                    .text-caption-content-2-2 {
-                        color: #121212;
-                        font-weight: 300;
-                    }
-
-                    .column-content-2-2 {
-                        padding-left: 2.25rem;
-                        padding-right: 2.25rem;
-                        padding-top: 2rem;
-                        padding-bottom: 2rem;
-                    }
-
-                    .icon-content-2-2 {
-                        margin-bottom: 1.5rem;
-                    }
-
-                    .icon-content-2-2-title {
-                        font-size: 1.5rem;
-                        line-height: 2rem;
-                        margin-bottom: 0.625rem;
-                        color: #121212;
-                    }
-
-                    .icon-content-2-2-caption {
-                        font-size: 1rem;
-                        line-height: 1.625;
-                        letter-spacing: 0.025em;
-                        color: #565656;
-                    }
-
-                    .card-block-content-2-2 {
-                        padding: 1rem 1rem 5rem 1rem;
-                    }
-
-                    .card-content-2-2 {
-                        padding: 1.75rem;
-                        background-color: #EEF6F4;
-                        border-radius: 0.75rem;
-                        border: 1px solid #27C499;
-                    }
-
-                    .card-content-2-2-title {
-                        font-size: 1.5rem;
-                        line-height: 2rem;
-                        margin-bottom: 0.625rem;
-                        color: #000000;
-                        font-weight: 600;
-                    }
-
-                    .card-content-2-2-caption {
-                        font-size: 1rem;
-                        line-height: 1.5rem;
-                        color: #565656;
-                        letter-spacing: 0.025em;
-                        font-weight: 300;
-                        margin-bottom: 0;
-                    }
-
-                    .btn-card-content-2-2 {
-                        font-size: 1rem;
-                        line-height: 1.5rem;
-                        font-weight: 700;
-                        color: #ffffff;
-                        background-color: #27C499;
-                        padding-top: 1rem;
-                        padding-bottom: 1rem;
-                        width: 100%;
-                        border-radius: 0.75rem;
-                        margin-bottom: 1.25rem;
-                    }
-
-                    .btn-card-content-2-2:hover {
-                        color: #ffffff;
-                        --tw-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
-                        box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-                    }
-
-                    .btn-outline-content-2-2 {
-                        font-size: 1rem;
-                        line-height: 1.5rem;
-                        color: #979797;
-                        border: 1px solid #979797;
-                        padding-top: 1rem;
-                        padding-bottom: 1rem;
-                        width: 100%;
-                        border-radius: 0.75rem;
-                    }
-
-                    .btn-outline-content-2-2:hover {
-                        border: 1px solid #27C499;
-                        color: #27C499;
-                    }
-
-                    .card-text-content-2-2 {
-                        padding-top: 1.5rem;
-                        padding-bottom: 1.5rem;
-                    }
-
-                    .grid-padding-content-2-2 {
-                        padding: 0rem 1rem 3rem 1rem;
-                    }
-
-                    @media (min-width: 576px) {
-                        .grid-padding-content-2-2 {
-                            padding: 0rem 2rem 3rem 2rem;
-                        }
-
-                        .card-block-content-2-2 {
-                            padding: 3rem 2rem 5rem 2rem;
-                        }
-                    }
-
-                    @media (min-width: 768px) {
-                        .grid-padding-content-2-2 {
-                            padding: 0rem 4rem 3rem 4rem;
-                        }
-
-                        .card-block-content-2-2 {
-                            padding: 3rem 4rem 5rem 4rem;
-                        }
-                    }
-
-                    @media (min-width: 992px) {
-                        .grid-padding-content-2-2 {
-                            padding: 1rem 6rem 3rem 6rem;
-                        }
-
-                        .card-block-content-2-2 {
-                            padding: 3rem 6rem 5rem 6rem;
-                        }
-
-                        .column-content-2-2 {
-                            padding-left: 2.25rem;
-                            padding-right: 2.25rem;
-                            padding-top: 0;
-                            padding-bottom: 0;
-                        }
-                    }
-
-                    @media (min-width: 1200px) {
-                        .grid-padding-content-2-2 {
-                            padding: 1rem 10rem 3rem 10rem;
-                        }
-
-                        .card-block-content-2-2 {
-                            padding: 3rem 6rem 5rem 6rem;
-                        }
-
-                        .card-btn-space-content-2-2 {
-                            margin-top: 15px;
-                            margin-bottom: 15px;
-                        }
-
-                        .btn-card-content-2-2 {
-                            width: 95%;
-                            float: right;
-                        }
-
-                        .btn-outline-content-2-2 {
-                            width: 95%;
-                            float: right;
-                        }
-                    }
-
-                    @media (max-width: 980px) {
-                        .card-btn-space-content-2-2 {
-                            width: 100%;
-                        }
-                    }
-                </style>
+                
                 <div style="font-family: 'Poppins', sans-serif;">
 
                     <div class="text-center title-text-content-2-2">
@@ -883,26 +287,6 @@
                             </div>
                         </div>
                     </div>
-
-                    <!-- <div class="card-block-content-2-2">
-                        <div class="card-content-2-2">
-                            <div class="d-flex flex-lg-row flex-column align-items-center">
-                                <div class="me-lg-3">
-                                    <img src="http://api.elements.buildwithangga.com/storage/files/2/assets/Content/Content2/Content-2-1%20(1).png" alt="">
-                                </div>
-                                <div class="flex-grow-1 text-lg-start text-center card-text-content-2-2">
-                                    <h3 class="card-content-2-2-title">Fast Business Management in 30 minutes</h3>
-                                    <p class="d-none d-lg-block card-content-2-2-caption">Our tools for business analysis helps an organization understand<br> market or business development.</p>
-                                    <p class="d-block d-lg-none card-content-2-2-caption">Our tools for business analysis helps an organization understand market or business development.</p>
-                                </div>
-                                <div class="card-btn-space-content-2-2">
-                                    <button class="btn btn-card-content-2-2">Buy Now</button>
-                                    <button class="btn btn-outline-content-2-2">Demo Version</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div> -->
-
                 </div>
             </div>
 
@@ -910,184 +294,6 @@
 
             <!-- Price -->
             <div class="price">
-                <style>
-                    @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
-                    .btn:focus,
-                    .btn:active {
-                        outline: none !important;
-                    }
-
-                    .main-content-3-7 {
-                        padding: 5rem 2rem 7rem 2rem;
-                    }
-
-                    .title-text-content-3-7 {
-                        font-size: 1.875rem;
-                        line-height: 2.25rem;
-                        letter-spacing: 0.05em;
-                        font-weight: 800;
-                        margin-bottom: 0.75rem;
-                        color: #2E3A53;
-                    }
-
-                    .caption-text-content-3-7 {
-                        font-size: 1rem;
-                        line-height: 1.5rem;
-                        letter-spacing: 0.025em;
-                        color: #8E8FAD;
-                        margin-bottom: 0;
-                    }
-
-                    .card-content-3-7 {
-                        transition: 0.4s;
-                        top: 0px;
-                        left: 0px;
-                        position: relative;
-                        padding: 1rem 0 1rem 0;
-                    }
-
-                    .card-content-3-7:hover {
-                        top: -3px;
-                        left: -3px;
-                        position: relative;
-                        transition: 0.4s;
-                    }
-
-                    .card-outline-content-3-7 {
-                        border: 1px solid #E5EBF9;
-                        padding: 2rem 2.75rem 2rem 2.75rem;
-                        background-color: #FFFFFF;
-                        border-radius: 1rem;
-                    }
-
-                    .price-title-content-3-7 {
-                        color: #141C2E;
-                        font-size: 1.25rem;
-                        line-height: 1.75rem;
-                        letter-spacing: 0.025em;
-                        font-weight: 500;
-                        margin-bottom: 0.75rem;
-                    }
-
-                    .price-value-content-3-7 {
-                        font-size: 2.25rem;
-                        line-height: 2.5rem;
-                        letter-spacing: 0.025em;
-                        margin-bottom: 0.75rem;
-                        font-weight: 500;
-                        color: #2E3A53;
-                    }
-
-                    .price-duration-content-3-7 {
-                        font-weight: 400;
-                        font-size: 1rem;
-                        line-height: 1.5rem;
-                        margin: 0.625rem;
-                        color: #9E9E9E;
-                    }
-
-                    .price-caption-content-3-7 {
-                        font-weight: 400;
-                        font-size: 1rem;
-                        line-height: 1.5rem;
-                        letter-spacing: 0.025em;
-                        margin-bottom: 2.5rem;
-                        color: #C3C3C8;
-                    }
-
-                    .price-list-content-3-7 .check-3-7 {
-                        color: #2E3A53;
-                        letter-spacing: 0.025em;
-                        font-size: 0.875rem;
-                        line-height: 1.25rem;
-                        margin-bottom: 1.75rem;
-                    }
-
-                    .price-list-content-3-7 .no-check-3-7 {
-                        color: #E1E1E1;
-                        letter-spacing: 0.025em;
-                        font-size: 0.875rem;
-                        line-height: 1.25rem;
-                        margin-bottom: 1.75rem;
-                    }
-
-                    .span-icon-3-7 {
-                        width: 1rem;
-                        height: 1rem;
-                        margin-right: 0.75rem;
-                    }
-
-                    .btn-outline-content-3-7 {
-                        border: 1px solid #2EC49C;
-                        color: #2EC49C;
-                        padding-top: 1rem;
-                        padding-bottom: 1rem;
-                        font-weight: 500;
-                        letter-spacing: 0.025em;
-                        border-radius: 0.5rem;
-                    }
-
-                    .btn-outline-content-3-7:hover {
-                        background-color: #2EC49C;
-                        color: #FFFFFF;
-                    }
-
-                    .btn-fill-content-3-7 {
-                        background-image: linear-gradient(rgba(91, 203, 173, 1), rgba(39, 194, 153, 1));
-                        color: #FFFFFF;
-                        padding-top: 1rem;
-                        padding-bottom: 1rem;
-                        font-weight: 500;
-                        letter-spacing: 0.025em;
-                        border-radius: 0.5rem;
-                    }
-
-                    .btn-fill-content-3-7:hover {
-                        color: #FFFFFF;
-                        background-image: linear-gradient(#29B18D, #29B18D);
-                    }
-
-                    @media (min-width: 576px) {
-                        .title-text-content-3-7 {
-                            font-size: 2.25rem;
-                            line-height: 2.5rem;
-                        }
-
-                        .card-content-3-7 {
-                            padding: 1rem 1rem 1rem 1rem;
-                        }
-                    }
-
-                    @media (min-width: 768px) {
-                        .main-content-3-7 {
-                            padding-left: 3.5rem;
-                            padding-right: 3.5rem;
-                        }
-                    }
-
-                    @media (min-width: 992px) {
-                        .main-content-3-7 {
-                            padding-left: 3.5rem;
-                            padding-right: 3.5rem;
-                        }
-
-                        .caption-text-content-3-7 {
-                            width: 66.666667%;
-                        }
-
-                        .card-content-3-7 {
-                            width: 33.333333%;
-                        }
-                    }
-
-                    @media (min-width: 1200px) {
-                        .main-content-3-7 {
-                            padding-left: 9rem;
-                            padding-right: 9rem;
-                        }
-                    }
-                </style>
                 <div class="main-content-3-7 overflow-hidden" style="font-family: 'Poppins', sans-serif;">
                     <div class="container mx-auto">
                         <div class="d-flex flex-column text-center w-100" style="margin-bottom: 2.25rem;">
@@ -1270,136 +476,13 @@
 
             <!-- Footer  -->
             <div class="footer">
-                <style>
-                    @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
-                    .list-space-footer-2-2 {
-                        margin-bottom: 1.25rem;
-                    }
-
-                    .list-space-footer-2-2-title {
-                        margin-bottom: 1.5rem;
-                    }
-
-                    .footer-text-title-footer-2-2 {
-                        font-size: 1.5rem;
-                        font-weight: 600;
-                        color: #000000;
-                    }
-
-                    .list-menu-footer-2-2 {
-                        color: #c7c7c7;
-                        text-decoration: none !important;
-                        cursor: pointer;
-                    }
-
-                    .list-menu-footer-2-2:hover {
-                        color: #555252;
-                    }
-
-                    hr.hr-footer-2-2 {
-                        margin: 0;
-                        border: 0;
-                        border-top: 1px solid rgba(0, 0, 0, 0.1);
-                    }
-
-                    .border-color-footer-2-2 {
-                        color: #c7c7c7;
-                    }
-
-                    .footer-link-footer-2-2 {
-                        margin-right: 1.25rem;
-                        color: #c7c7c7;
-                    }
-
-                    .footer-link-footer-2-2:hover {
-                        color: #555252;
-                        cursor: pointer;
-                    }
-
-                    .social-media-c-footer-2-2:hover circle,
-                    .social-media-p-footer-2-2:hover path {
-                        fill: #555252;
-                        cursor: pointer;
-                    }
-
-                    .footer-info-space-footer-2-2 {
-                        padding-top: 3rem;
-                    }
-
-                    .social-media-left-footer-2-2 {
-                        margin-right: 1.25rem;
-                    }
-
-                    .social-media-center-1-footer-2-2 {
-                        margin-right: 1.25rem;
-                    }
-
-                    .social-media-center-2-footer-2-2 {
-                        margin-right: 1.25rem;
-                    }
-
-                    .list-footer-footer-2-2 {
-                        padding: 5rem 1rem 6rem 1rem;
-                    }
-
-                    .info-footer-footer-2-2 {
-                        padding-left: 1rem;
-                        padding-right: 1rem;
-                        padding-bottom: 3rem;
-                    }
-
-                    @media (max-width: 980px) {
-                        .footer-responsive-space-footer-2-2 {
-                            margin-bottom: 1.25rem;
-                            margin-top: 1.25rem;
-                        }
-                    }
-
-                    @media (min-width: 576px) {
-                        .list-footer-footer-2-2 {
-                            padding: 5rem 2rem 6rem 2rem;
-                        }
-
-                        .info-footer-footer-2-2 {
-                            padding-left: 2rem;
-                            padding-right: 2rem;
-                            padding-bottom: 3rem;
-                        }
-                    }
-
-                    @media (min-width: 768px) {
-                        .list-footer-footer-2-2 {
-                            padding: 5rem 4rem 6rem 4rem;
-                        }
-
-                        .info-footer-footer-2-2 {
-                            padding-left: 4rem;
-                            padding-right: 4rem;
-                            padding-bottom: 3rem;
-                        }
-                    }
-
-                    @media (min-width: 992px) {
-                        .list-footer-footer-2-2 {
-                            padding: 5rem 6rem 6rem 6rem;
-                        }
-
-                        .info-footer-footer-2-2 {
-                            padding-left: 6rem;
-                            padding-right: 6rem;
-                            padding-bottom: 3rem;
-                        }
-                    }
-                </style>
-                
                 <br><br><br><br>
                 <div style="font-family: 'Poppins', sans-serif;">
                     <div class="list-footer-footer-2-2 bg-light">
                         <div class="row">
                             <div class="col-lg-4 col-md-6">
                                 <div class="">
-                                    <div class="list-space-footer-2-2">
+                                    <div class="list-space-footer-2-2-2">
                                         <img src="img/logo1.png" alt="">
                                     </div>
                                 </div>
