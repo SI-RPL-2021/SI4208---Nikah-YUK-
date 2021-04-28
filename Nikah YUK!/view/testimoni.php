@@ -296,7 +296,7 @@
         <div class="header-4-2" style="font-family: 'Poppins', sans-serif;">
             <nav class="navbar navbar-expand-lg navbar-light">
                 <a href="#">
-                    <img style="margin-right:0.75rem" src="img/logo1.png" alt="">
+                    <img style="margin-right:0.75rem" src="../img/logo1.png" alt="">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="modal" data-bs-target="#targetModal-header-4-2">
                     <span class="navbar-toggler-icon"></span>
@@ -354,7 +354,7 @@
                             <a class="nav-link" href="Landing_Page.php">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">FAQ</a>
+                            <a class="nav-link" href="Faq.php">FAQ</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Tutorial</a>
@@ -366,7 +366,7 @@
                             <a class="nav-link" href="#">Loker</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Consultation</a>
+                            <a class="nav-link" href="Konsultasi.php">Consultation</a>
                         </li>
                         <li class="nav-item active">
                             <a class="nav-link" href="testimoni.php">Testimoni</a>
@@ -393,7 +393,7 @@
                   <div class="row">
                     <div class="col">
                       <div class="testimonial">
-                        <img src="img/undangan.png" alt="">
+                        <img src="../img/undangan.png" alt="">
                         <div class="name">julia & simon</div>
                         <div class="stars">
                           <i class="fas fa-star"></i>
@@ -411,7 +411,7 @@
           
                     <div class="col">
                       <div class="testimonial">
-                        <img src="img/makeup.png" alt="">
+                        <img src="../img/makeup.png" alt="">
                         <div class="name">Geri & Lidia</div>
                         <div class="stars">
                           <i class="fas fa-star"></i>
@@ -429,7 +429,7 @@
           
                     <div class="col">
                       <div class="testimonial">
-                        <img src="img/gedung.png" alt="">
+                        <img src="../img/gedung.png" alt="">
                         <div class="name">Daniel & marsha </div>
                         <div class="stars">
                           <i class="fas fa-star"></i>
@@ -444,7 +444,7 @@
 
                     <div class="col">
                       <div class="testimonial">
-                        <img src="img/foto.png" alt="">
+                        <img src="../img/foto.png" alt="">
                         <div class="name">Tom & Ellen </div>
                         <div class="stars">
                           <i class="fas fa-star"></i>
@@ -462,7 +462,7 @@
 
                     <div class="col">
                       <div class="testimonial">
-                        <img src="img/makanan.png" alt="">
+                        <img src="../img/makanan.png" alt="">
                         <div class="name"> Peter & Olivia </div>
                         <div class="stars">
                           <i class="fas fa-star"></i>
@@ -480,7 +480,7 @@
 
                     <div class="col">
                       <div class="testimonial">
-                        <img src="img/baju.png" alt="">
+                        <img src="../img/baju.png" alt="">
                         <div class="name">Connor & Millie </div>
                         <div class="stars">
                           <i class="fas fa-star"></i>
@@ -626,7 +626,7 @@
                         <div class="col-lg-3 col-md-6">
                             <div class="">
                                 <div class="list-space-footer-2-2">
-                                    <img src="img/logo1.png" alt="">
+                                    <img src="../img/logo1.png" alt="">
                                 </div>
                                 <nav style="list-style-type:none;">
                                     <li class="list-space-footer-2-2">

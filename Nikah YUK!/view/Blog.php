@@ -20,7 +20,7 @@
         <div class="header-2-2" style="font-family: 'Poppins', sans-serif;">
             <nav class="navbar navbar-expand-lg navbar-light">
                 <a href="#">
-                    <img style="margin-right:0.75rem" src="img/logo1.png" alt="">
+                    <img style="margin-right:0.75rem" src="../img/logo1.png" alt="">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="modal" data-bs-target="#targetModal-header-2-2">
                     <span class="navbar-toggler-icon"></span>
@@ -47,19 +47,19 @@
                             <a class="nav-link" href="Landing_Page.php">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">FAQ</a>
+                            <a class="nav-link" href="Faq.php">FAQ</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Tutorial</a>
                         </li>
                         <li class="nav-item active">
-                            <a class="nav-link" href="#">Blog</a>
+                            <a class="nav-link" href="Blog.php">Blog</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Loker</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Consultation</a>
+                            <a class="nav-link" href="Konsultasi.php">Consultation</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="testimoni.php">Testimoni</a>
@@ -98,7 +98,7 @@
             <div class="card mb-2">
                 <div class="row">
                     <div class="col-md-6">
-                        <img src="img/Fotopernikahan.png" class="card-img" alt="gambar" height="100%">
+                        <img src="../img/Fotopernikahan.png" class="card-img" alt="gambar" height="100%">
                     </div>
                     <div class="col-md-6" style="text-align:center">
                         <div class="card-body">
@@ -133,7 +133,7 @@
                         </div>
                     </div>
                     <div class="col-lg-6">
-                        <img src="img/Vendor.jpg" class="card-img" alt="gambar" height="100%">
+                        <img src="../img/Vendor.jpg" class="card-img" alt="gambar" height="100%">
                     </div>
                 </div>
             </div>
@@ -143,7 +143,7 @@
             <div class="card mb-6">
                 <div class="row no-gutters">
                     <div class="col-lg-6">
-                        <img src="img/Vendorprofil.jpg" class="card-img" alt="gambar" height="100%">
+                        <img src="../img/Vendorprofil.jpg" class="card-img" alt="gambar" height="100%">
                     </div>
                     <div class="col-md-6" style="text-align:center">
                         <div class="card-body">
@@ -174,7 +174,7 @@
                         <div class="col-lg-4 col-md-6">
                             <div class="">
                                 <div class="list-space-footer-2-2-2">
-                                    <img src="img/logo1.png" alt="">
+                                    <img src="../img/logo1.png" alt="">
                                 </div>
                             </div>
                         </div>

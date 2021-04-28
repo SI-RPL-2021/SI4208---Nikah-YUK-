@@ -30,7 +30,7 @@
         <div class="header-4-2" style="font-family: 'Poppins', sans-serif;">
             <nav class="navbar navbar-expand-lg navbar-light">
                 <a href="#">
-                    <img style="margin-right:0.75rem" src="img/logo1.png" alt="">
+                    <img style="margin-right:0.75rem" src="../img/logo1.png" alt="">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="modal" data-bs-target="#targetModal-header-4-2">
                     <span class="navbar-toggler-icon"></span>
@@ -85,10 +85,10 @@
                 <div class="collapse navbar-collapse" id="navbarTogglerDemo-header-4-2">
                     <ul class="navbar-nav me-auto mt-2 mt-lg-0">
                         <li class="nav-item active">
-                            <a class="nav-link" href="#">Home</a>
+                            <a class="nav-link" href="Landing_Page.php">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">FAQ</a>
+                            <a class="nav-link" href="Faq.php">FAQ</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Tutorial</a>
@@ -100,7 +100,7 @@
                             <a class="nav-link" href="#">Loker</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Consultation</a>
+                            <a class="nav-link" href="Konsultasi.php">Consultation</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="testimoni.php">Testimoni</a>
@@ -128,7 +128,7 @@
                     <div class="carousel-item active">
                         <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
                             <rect width="100%" height="100%" fill="#777" />
-                            <img src="img/wedding1.jpg" alt="">
+                            <img src="../img/wedding1.jpg" alt="">
                         </svg>
 
                         <div class="container">
@@ -138,7 +138,7 @@
                     <div class="carousel-item">
                         <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
                             <rect width="100%" height="100%" fill="#777" />
-                            <img src="img/wedding3.jpg" alt="">
+                            <img src="../img/wedding3.jpg" alt="">
                         </svg>
 
                         
@@ -146,7 +146,7 @@
                     <div class="carousel-item">
                         <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
                             <rect width="100%" height="100%" fill="#777" />
-                            <img src="img/wedding4.jpg" alt="">
+                            <img src="../img/wedding4.jpg" alt="">
                         </svg>
 
                     </div>
@@ -180,7 +180,7 @@
                                 <div class="row row-cols-1 row-cols-md-3 g-4 ">
                                         <div class="col  ">
                                             <div class="card h-100 border-white">
-                                            <img src="img/promo11.png" class="card-img-top" alt="...">
+                                            <img src="../img/promo11.png" class="card-img-top" alt="...">
                                             <div class="card-body">
                                                 
                                             </div>
@@ -189,7 +189,7 @@
                                         </div>
                                         <div class="col  ">
                                             <div class="card h-100 border-white">
-                                            <img src="img/promo12.png" class="card-img-top" alt="...">
+                                            <img src="../img/promo12.png" class="card-img-top" alt="...">
                                             <div class="card-body">
                                                 
                                             </div>
@@ -198,7 +198,7 @@
                                         </div>
                                         <div class="col  ">
                                             <div class="card h-100 border-white">
-                                            <img src="img/promo13.png" class="card-img-top" alt="...">
+                                            <img src="../img/promo13.png" class="card-img-top" alt="...">
                                             <div class="card-body">
                                                 
                                             </div>
@@ -230,7 +230,7 @@
                             <p class="lead">Terimakasih banyak buat Nikah-Yuk! yang sudah nyediain Photographer yang sabar dan ngarahin fotonya juga bagus jadi ngga terlalu banyak ngulang juga, selain itu banyak memberi ide buat kita tanpa harus bingung lagi.</p>
                         </div>
                         <div class="col-md-5">
-                            <img src="img/nikah1.png" alt=""> 
+                            <img src="../img/nikah1.png" alt=""> 
                         </div>
                     </div>
 
@@ -242,7 +242,7 @@
                             <p class="lead">Awalnya sempet ragu takut ga sesuai gaunnya sama jasnya tapi ternyata desaignernya bagus banget bikinnya. semuanya serba detail dan mau di ulang lagi kalo ada yang ga pas makasih Nikah-yuk !! sudah mewujudkan pernikahan kami</p>
                         </div>
                         <div class="col-md-5 order-md-1">
-                            <img src="img/nikah2.png" alt=""> 
+                            <img src="../img/nikah2.png" alt=""> 
 
                         </div>
                     </div>
@@ -255,7 +255,7 @@
                             <p class="lead">keren sih buat photographer sama muanya takut banget kalo makeupnya jadi luntur karena foto outdor tapi ternyata engga sama sekali dan photographer yang cepet fotonya ga ribet bisa dapet lansung pose yang bagus</p>
                         </div>
                         <div class="col-md-5">
-                            <img src="img/nikah3.png" alt=""> 
+                            <img src="../img/nikah3.png" alt=""> 
 
                         </div>
                     </div>
@@ -495,7 +495,7 @@
                             <div class="col-lg-4 col-md-6">
                                 <div class="">
                                     <div class="list-space-footer-2-2-2">
-                                        <img src="img/logo1.png" alt="">
+                                        <img src="../img/logo1.png" alt="">
                                     </div>
                                 </div>
                             </div>
