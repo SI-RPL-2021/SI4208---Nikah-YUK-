@@ -3,14 +3,12 @@
     require '../controller/function.php';
 
     if (isset($_SESSION['email'])) {
+        
     } else {
         header("Location: Login.php");
     }
-    if (isset($_SESSION['nama'])){
-        
-    } else {
-
-    }
+   
+    
 ?>
 
 <!DOCTYPE html>
@@ -109,7 +107,7 @@
                             <a class="nav-link" href="#">Services</a>
                         </li>
                     </ul>
-                    <button class="btn btn-default btn-no-fill-header-4-2">Hi!, <?=$_SESSION['nama'];?></button>
+                    <button class="btn btn-default btn-no-fill-header-4-2">Hi!, <?=$_SESSION['email'];?></button>
                     <a href="../controller/logout.php"><button class="btn btn-fill-header-4-2">Logout</button></a>
                 </div>
             </nav>

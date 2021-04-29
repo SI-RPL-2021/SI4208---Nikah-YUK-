@@ -1,12 +1,87 @@
-<!doctype html>
-<html lang="en">
-
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Blog</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="../style/blog_page.css">
+    
+    <style type="text/css">
+        .sidenav {
+            height: 45%;
+            width: 300px;
+            position: fixed;
+            z-index: 2;
+            /* top: 0; */
+            right: 65px;
+            background-color: #FFFAFA;
+            overflow-x: hidden;
+            padding-top: 20px;
+        }
+
+        .sidenav a {
+            padding: 6px 8px 6px 16px;
+            text-decoration: none;
+            font-size: 25px;
+            color: black;
+            display: block;
+        }
+
+        .sidenav a:hover {
+            color: black;
+        }
+
+        .main {
+            margin-right: 160px;
+            /* Same as the width of the sidenav */
+            font-size: 28px;
+            /* Increased text to enable scrolling */
+            padding: 0px 10px;
+        }
+
+        @media screen and (max-height: 350px) {
+            .sidenav {
+                padding-top: 15px;
+            }
+
+            .sidenav a {
+                font-size: 18px;
+            }
+        }
+
+        .letter1 {
+            letter-spacing: 1px;
+        }
+
+        .word5 {
+            word-spacing: 5px;
+        }
+
+        body {
+            font-family: verdana;
+            font-size: 12px;
+        }
+
+        .margin {
+            margin: 100px 150px 100px 150px;
+        }
+
+        .container {
+            width: 50%;
+            height: auto;
+            background: white;
+            margin: auto;
+            margin-top: 5px;
+            padding-bottom: 5px;
+        }
+
+        .badan {
+            height: 450px;
+        }
+
+        .garis_tepi2 {
+            border: 10px double green;
+        }
+    </style>
 
 <body>
     <section style="height:100%; width: 100%; box-sizing: border-box; background-color: #FFFFFF">
@@ -75,106 +150,97 @@
         </div>
 
 
+        <!---------------------------------------------------------------------------------------------- Blog ----------------------------------------------------------------------------------------->
+
+
+        <!-- <div class="badan">
+            <div class="sidebar">
+                sidebar
+                <ul>
+                    <li><a href="">boom</a></li>
+                </ul>
+            </div>
+        </div> -->
 
         <br><br><br>
+        <div class="row">
+            <div class="col-12"></div>
+        </div>
+        <div class="row">
+            <div class="col-12" text>
+                <h2 align="center"><b> Vendor Profile </b> </h2>
+            </div>
+        </div>
+        <br><br><br>
+
+        <div class="sidenav garis_tepi2">
+            <a align="center" href="Blog.php">Halaman Blog</a>
+            <hr />
+            <a href="Blog_Building.php">Building</a><br>
+            <a href="Blog_Photography.php">Photography</a><br>
+            <a href="Blog_Prepar.php">Preparation</a><br>
+            <a href="Blog_Vendor.php">Vendor</a>
+        </div>
+
         <div class="container">
-            <div class="row">
-                <div class="col-12"></div>
-            </div>
-            <div class="row">
-                <div class="col-12" text>
-                    <h2 align="center"><b> Halaman Blog</b> </h2>
-                </div>
-            </div>
-            <br><br><br>
-
-
-            <!-- <h1 style="text-align:center"> Halaman Blog </h1> -->
-
-
-            <!---------------------------------------------------------------------------------------------- Blog ----------------------------------------------------------------------------------------->
-
-
-            <div class="card mb-2">
-                <div class="row">
-                    <div class="col-md-6">
-                        <img src="../img/Fotopernikahan.png" class="card-img" alt="gambar" height="100%">
+            <div class="card">
+                <div class="">
+                    <div class="col">
+                        <img src="../img/Vendorprofil.jpg" class="card-img">
                     </div>
-                    <div class="col-md-6" style="text-align:center">
-                        <div class="card-body">
-                            <h5 class="card-title">Wedding Preparation</h5>
-                            <p>Ketika si dia sudah melamar dan acara pertunangan sudah dilakukan, artinya kamu sudah harus segera siap-siap to the next preparation! Mungkin kamu bingung harus mulai dari mana, apa dulu yang dikerjakan, hingga gimana cara mewujudkan seluruh impian pernikahan kalian. Sangking bingungnya akhirnya kamu malah panik. Tapi tenang, Sputnik bisa jadi wedding guide kalian dalam menemukan inspirasi pernikahan, hingga step-step apa saja yang perlu dilakukan.
-                            Mewujudkan hari pernikahan memang rasanya campur aduk, ya kan! Mulai dari exciting sendiri, bingung, jadi gampang sensi karena terlalu banyak worry, ditambah drama dadakan yang tiba-tiba muncul. Untuk menghindari hal-hal yang ketinggalan dalam proses persiapan pernikahan maka berikut ini punya contekan persiapan pernikahan untuk kalian bride-to-be, so check this out</p>
-                            <p>....................</p>
-                            <br><br><br>
-                            <a href="Blog_Prepar.php" class="btn btn-dark">Read More</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
 
-            <br><br><br>
-
-            <div class="card mb-3">
-                <div class="row no-gutters">
-                    <div class="col-md-6 text-white bg-secondary" style="text-align:center">
-                        <div class="card-body">
-                            <h5 class="card-title">Wedding Building</h5>
-                            <p>Ketika Nikah-Yuk Lovers memutuskan untuk menggelar resepsi pernikahan di gedung, artinya kita sudah siap akan biaya gedung pernikahan lebih yang harus dikeluarkan serta rencana untuk tempat tinggal kedepan. Supaya biaya tak membengkak, pilih gedung yang harga sewanya sesuai bujet.
-                                Dalam melakukan ”persiapan pernikahan” memilih venue atau tempat pernikahan adalah hal yang harus dilakukan calon pengantin dari jauh-jauh hari. Sebab, beberapa gedung pernikahan terutama yang terletak di pusat kota seperti Jakarta, sudah penuh dipesan hingga setahun ke depan oleh calon pengantin lain. Bahkan masih banyak yang harus masuk ke dalam daftar antrian untuk bisa memesan tempat.
-                                Biasanya pihak pengelola gedung akan mendahulukan orang yang paling cepat memberi uang tanda jadi. Semakin lama kita mengambil keputusan soal tempat resepsi, terkait biaya resepsi dan biaya gedung pernikahan maka akan semakin terbatas juga pilihan yang tersedia.
-                                Agar bisa menemukan tempat resepsi sesuai keinginan, berikut referensi serta estimasi biaya pernikahan di gedung dan paket pernikahan di Jakarta. Dari gedung pemerintah, hingga hotel bintang lima, mulai yang termurah hingga termahal.</p>
-                            <p>....................</p>
-                            <br><br><br>
-                            <a href="Blog_Building.php" class="btn btn-dark">Read More</a>
-                        </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <img src="../img/Vendor.jpg" class="card-img" alt="gambar" height="100%">
-                    </div>
-                </div>
-            </div>
-
-            <br><br><br>
-
-            <div class="card mb-6">
-                <div class="row no-gutters">
-                    <div class="col-lg-6">
-                        <img src="../img/Vendorprofil.jpg" class="card-img" alt="gambar" height="100%">
-                    </div>
-                    <div class="col-md-6" style="text-align:center">
-                        <div class="card-body">
-                            <h5 class="card-title">Vendor Profile</h5>
-                            <p>Dalam mempersiapkan pernikahan, dibutuhkan kesiapan matang dari segala aspek, termasuk juga soal urusan vendor pernikahan. Memilih vendor pernikahan tak bisa ditentukan begitu saja. Kita sebagai calon pengantin yang akan menggunakan jasa mereka, harus mengetahui kredibilitas masing-masing vendor agar pesta pernikahan dapat berjalan mulus.
+                    <div class="text-justify word5">
+                        <div class="puul-right margin">
+                            <h4 class="card-title"> <b>5 Vendor Pernikahan Nikah-Yuk</b></h4>
+                            <h6>Dalam mempersiapkan pernikahan, dibutuhkan kesiapan matang dari segala aspek, termasuk juga soal urusan vendor pernikahan. Memilih vendor pernikahan tak bisa ditentukan begitu saja. Kita sebagai calon pengantin yang akan menggunakan jasa mereka, harus mengetahui kredibilitas masing-masing vendor agar pesta pernikahan dapat berjalan mulus.
                                 Tetapi biasanya, banyak calon pengantin yang merasa kewalahan dan bingung untuk menentukan vendor utama dalam mempersiapkan pernikahan. Ladies, apakah Anda salah satunya?
-                                Jika iya, maka jangan khawatir. Berikut kumparanWOMAN berikan lima daftar vendor pernikahan yang harus segera ditentukan saat Anda dan pasangan memutuskan untuk menikah. Apa saja?</p>
-                            <p>....................</p>
-                            <br><br><br>
-                            <a href="Blog_Vendor.php" class="btn btn-dark">Read More</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <br><br><br>
-
-            <div class="card mb-3">
-                <div class="row no-gutters">
-                    <div class="col-md-6 text-white bg-secondary" style="text-align:center">
-                        <div class="card-body">
-                            <h5 class="card-title">Wedding Photography & Video</h5>
+                                Jika iya, maka jangan khawatir. Berikut kumparanWOMAN berikan lima daftar vendor pernikahan yang harus segera ditentukan saat Anda dan pasangan memutuskan untuk menikah. Apa saja?
+                            </h6>
                             <br>
-                            <p>
-                                Fotografer pernikahan adalah merupakan pekerjaan fotografi yang rumit dan tersulit di dunia. Alasannya sederhana, tidak ada pengambilan foto pernikahan ulang. Pernikahan ini, dimana anda bertanggung jawab untuk memotretnya, hanya terjadi satu kali. Tidak ada istilah “kamera rusak”, “memory card tidak cukup” atau “baterai flash lupa di-charge”.
-                                Tapi, anda bisa menyingkirkan ketakutan dari foto-foto pernikahan dengan mengikuti panduan untuk merekam foto-foto yang dibutuhkan untuk menceritakan kisah dari awal sampai akhir. Anda akan diajak melalui setiap tahap di hari pernikahan, mulai dari foto persiapan sampai foto pre-wedding, dan mulai dari memotret di lokasi acara sampai merekam keceriaan di acara resepsi pernikahan, sehingga anda bisa menghadapi semuanya dengan percaya diri.
-                            </p>
-                            <p>....................</p>
-                            <br><br><br>
-                            <a href="Blog_Photography.php" class="btn btn-dark">Read More</a>
+                            <img src="../img/Vendorprofil.jpg" class="card-img" alt="gambar" height="100%">
+                            <h6>
+                                <b>1. Wedding Organizer Nikah-Yuk</b>
+                                Ketika ada kesepakatan antara Anda dan pasangan untuk menikah dan membuat resepsi pernikahan, satu hal yang perlu ditentukan terlebih dahulu apakah Anda akan menggunakan jasa Wedding Organizer atau tidak. Bila iya, sebaiknya segera tentukan Wedding Organizer, mereka bisa membantu mempersiapkan pernikahan sekaligus memberikan referensi vendor lainnya.
+                                Namun bila Anda tidak berencana menggunakan jasa Wedding Organizer, Anda dan pasangan harus meluangkan waktu khusus untuk mencari vendor gedung pernikahan setidaknya satu tahun sebelum menikah.
+                            </h6>
+                            <br>
+                            <img src="../img/gedung.jpg" class="card-img" alt="gambar" height="100%">
+                            <h6>
+                                <b> 2. Gedung Pernikahan</b>
+                                5 Vendor Pernikahan yang Harus Segera Ditentukan saat Memutuskan Menikah (1)
+                                Pernikahan Dian Pelangi. Foto: THEUPPERMOST/Tito Rikardo & Hedrian Ngabito
+                                Bila sudah mendapatkan tanggal pernikahan yang diinginkan, langkah selanjutnya yang harus dilakukan adalah mencari gedung pernikahan. Biasanya, mencari lokasi pernikahan dilakukan mulai dari satu tahun hingga enam bulan sebelum pernikahan.
+                                Dalam memilih gedung pernikahan, pastikan apakah lokasi yang diinginkan sesuai dengan konsep dan tema pernikahan, apakah Anda ingin pesta indoor atau outdoor, apakah Anda ingin mengundang banyak tamu atau hanya kerabat dekat saja. Hal ini perlu dipikirkan matang-matang mengingat mencari jumlah gedung pernikahan dengan lokasi yang strategis cukup terbatas dan biaya sewanya pun tidak murah.
+                            </h6>
+                            <br>
+                            <img src="../img/catering.png" class="card-img" alt="gambar" height="100%">
+                            <h6>
+                                <b> 3. Katering dan Dekorasi</b>
+                                5 Vendor Pernikahan yang Harus Segera Ditentukan saat Memutuskan Menikah (2)
+                                Ilustrasi Venue Pernikahan Foto: Shardayyy Photography
+                                Biasanya, setiap gedung pernikahan memiliki afiliasi atau rekanan dengan vendor katering dan dekorasi. Tetapi bila Anda dan pasangan tidak ingin menggunakan rekanan vendor katering dan dekorasi dari pihak gedung, Anda pun bisa mencari katering dan dekorasi sendiri.
+                                Tak ada salahnya datangi pameran pernikahan yang banyak diikuti oleh vendor-vendor, termasuk pula vendor katering. Di sana, Anda biasanya bisa menyicipi makanan (food tasting) secara gratis sekaligus berkonsultasi mengenai menu makanan sebelum memutuskan vendor katering yang akan dipakai.
+                                Untuk dekorasi, saat ini banyak vendor yang memasarkan usahanya melalui akun media sosial dan beberapa aplikasi wedding directory. Karena pada dasarnya, dekorasi pernikahan disesuaikan oleh selera kedua calon pengantin, sehingga penting sekali memilih vendor yang mampu mengerti keinginan Anda.
+                            </h6>
+                            <br>
+                            <img src="../img/pengantin.jpg" class="card-img" alt="gambar" height="100%">
+                            <h6>
+                                <b> 4. Baju Pengantin dan Makeup Artist</b>
+                                5 Vendor Pernikahan yang Harus Segera Ditentukan saat Memutuskan Menikah (3)
+                                Cantik dengan Gaun Pengantin Model Longgar. Foto: dok. @lindswell_k/ Instagram
+                                Dalam memilih vendor pernikahan, biasanya calon pengantin perempuan memiliki peran besar dalam menentukan vendor. Salah satu vendor yang harus segera ditentukan adalah baju pengantin dan makeup artist. Biasanya, baju pengantin harus dibuat secara khusus sehingga memakan waktu yang cukup lama.
+                                Sementara itu, memilih makeup artist pun tak bisa sembarangan. Biasanya, para makeup artist memiliki beberapa penawaran harga, misalnya makeup untuk akad nikah saja atau satu paket dengan makeup retouch untuk resepsi. Jangan ragu untuk bertanya dengan detail kepada makeup artist, termasuk apakah Anda bisa melakukan tes makeup terlebih dahulu atau tidak.
+                            </h6>
+                            <br>
+                            <img src="../img/foto-foto.jpg" class="card-img" alt="gambar" height="100%">
+                            <h6>
+                                <b> 5. Dokumentasi foto dan video</b>
+                                Vendor lain yang tak kalah penting dalam mempersiapkan pernikahan adalah vendor dokumentasi, baik foto maupun video. Vendor ini bersifat personal, artinya tergantung selera dan kebutuhan Anda. Apakah Anda hanya perlu dokumentasi saat hari pernikahan saja, ataukah Anda perlu dokumentasi untuk pre-wedding. Tak heran, setiap vendor foto dan dokumentasi memiliki harga yang bervariasi.
+                                Setelah kelima vendor ini sudah ditentukan, maka Anda bisa mencari vendor-vendor lainnya yang tidak membutuhkan waktu lama untuk mengurusnya. Misalnya, vendor undangan pernikahan, souvenir, kotak seserahan, dan lain-lain.
+                            </h6>
+                            <h5>So Ladies, siap merencanakan pernikahan dengan matang?</h5>
+
                         </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <img src="../img/weddingfoto.jpg" class="card-img" alt="gambar" height="100%">
                     </div>
                 </div>
             </div>
@@ -186,6 +252,128 @@
 
 
         <div class="footer">
+            <style>
+                @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+                .list-space-footer-2-2 {
+                    margin-bottom: 1.25rem;
+                }
+
+                .list-space-footer-2-2-title {
+                    margin-bottom: 1.5rem;
+                }
+
+                .footer-text-title-footer-2-2 {
+                    font-size: 1.5rem;
+                    font-weight: 600;
+                    color: #000000;
+                }
+
+                .list-menu-footer-2-2 {
+                    color: #c7c7c7;
+                    text-decoration: none !important;
+                    cursor: pointer;
+                }
+
+                .list-menu-footer-2-2:hover {
+                    color: #555252;
+                }
+
+                hr.hr-footer-2-2 {
+                    margin: 0;
+                    border: 0;
+                    border-top: 1px solid rgba(0, 0, 0, 0.1);
+                }
+
+                .border-color-footer-2-2 {
+                    color: #c7c7c7;
+                }
+
+                .footer-link-footer-2-2 {
+                    margin-right: 1.25rem;
+                    color: #c7c7c7;
+                }
+
+                .footer-link-footer-2-2:hover {
+                    color: #555252;
+                    cursor: pointer;
+                }
+
+                .social-media-c-footer-2-2:hover circle,
+                .social-media-p-footer-2-2:hover path {
+                    fill: #555252;
+                    cursor: pointer;
+                }
+
+                .footer-info-space-footer-2-2 {
+                    padding-top: 3rem;
+                }
+
+                .social-media-left-footer-2-2 {
+                    margin-right: 1.25rem;
+                }
+
+                .social-media-center-1-footer-2-2 {
+                    margin-right: 1.25rem;
+                }
+
+                .social-media-center-2-footer-2-2 {
+                    margin-right: 1.25rem;
+                }
+
+                .list-footer-footer-2-2 {
+                    padding: 5rem 1rem 6rem 1rem;
+                }
+
+                .info-footer-footer-2-2 {
+                    padding-left: 1rem;
+                    padding-right: 1rem;
+                    padding-bottom: 3rem;
+                }
+
+                @media (max-width: 980px) {
+                    .footer-responsive-space-footer-2-2 {
+                        margin-bottom: 1.25rem;
+                        margin-top: 1.25rem;
+                    }
+                }
+
+                @media (min-width: 576px) {
+                    .list-footer-footer-2-2 {
+                        padding: 5rem 2rem 6rem 2rem;
+                    }
+
+                    .info-footer-footer-2-2 {
+                        padding-left: 2rem;
+                        padding-right: 2rem;
+                        padding-bottom: 3rem;
+                    }
+                }
+
+                @media (min-width: 768px) {
+                    .list-footer-footer-2-2 {
+                        padding: 5rem 4rem 6rem 4rem;
+                    }
+
+                    .info-footer-footer-2-2 {
+                        padding-left: 4rem;
+                        padding-right: 4rem;
+                        padding-bottom: 3rem;
+                    }
+                }
+
+                @media (min-width: 992px) {
+                    .list-footer-footer-2-2 {
+                        padding: 5rem 6rem 6rem 6rem;
+                    }
+
+                    .info-footer-footer-2-2 {
+                        padding-left: 6rem;
+                        padding-right: 6rem;
+                        padding-bottom: 3rem;
+                    }
+                }
+            </style>
             <br><br><br><br>
             <div style="font-family: 'Poppins', sans-serif;">
                 <div class="list-footer-footer-2-2 bg-light">
