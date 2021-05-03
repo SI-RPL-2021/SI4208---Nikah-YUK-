@@ -18,27 +18,24 @@ if (isset($_POST['name']) && isset($_POST['message']) && isset($_POST['email']) 
 	
 
 	if (empty($message) || empty($name) || empty($email) || empty($nilai) ) {
-		header("Location: testimoni.php");
+		header("Location: ../view/testimoni.php");
 	}else {
 
 		$sql = "INSERT INTO testimoni(name, message, email, nilai) VALUES('$name', '$message', '$email', '$nilai')";
 		$result = mysqli_query($conn, $sql);
-
+		
 		if ($result) {
-		//    echo  "Nama pasangan :".$name. "<br>";
-		// 	echo "email:". $email."<br>";
-		// 	echo "message:" .$message."<br>";
-		// 	echo "nilai :" . $nilai. "<br>";
+		   echo  "Nama pasangan :".$name. "<br>";
+			echo "email:". $email."<br>";
+			echo "message:" .$message."<br>";
+			echo "nilai :" . $nilai. "<br>";
 
-			header("Location: ../view/testimoni.php");
-			
-				
+			// kalo mau liat isi waktu send yg bawah ini apus aja
+			header("Location: ../view/testimoni.php");	
 			
 		}else {
 			echo "Your message could not be sent!";
 		}
 	}
-		}else {
-			header("Location: testimoni.php");
 }
 
