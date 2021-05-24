@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 29, 2021 at 07:25 PM
+-- Generation Time: May 24, 2021 at 09:49 PM
 -- Server version: 10.4.14-MariaDB
 -- PHP Version: 7.4.9
 
@@ -40,8 +40,13 @@ CREATE TABLE `testimoni` (
 --
 
 INSERT INTO `testimoni` (`id`, `name`, `message`, `email`, `nilai`) VALUES
-(25, 'Claery jessica tampubolon', 'heemm', 'claeryjessica01@gmail.com', 3),
-(26, 'Claery jessica tampubolon', 'wokee', 'claer@gmail.com', 3);
+(34, 'MARSHA &amp; DANIEL', 'Sempet ragu juga awalnya karena takutnya ga sesuai sama yang kita mau tapi ternyata sebagus itu gaun sama jas nya dibuat terimakasih banyak buat NIKAH-YUK!!!!', 'marsha@gmail.com', 5),
+(35, 'SARAH &amp; JULIAN', 'Buat undangannya bagus banget sih desainnya unik harganya juga terjangkau banget buat aku dan yang pasti vendornya cepet seleseinnyaa', 'sarah@gmail.com', 5),
+(36, 'MELISA &amp; RENDI', 'Mesen souvenirnya disini vendornya baik banget ga masalah kita minta ganti terus dan souvenirnya bagus banget temen temen pada bilang bagus juga', 'melisa@gmail', 5),
+(37, 'RARA &amp; DIMAS', 'terimakasih yaaa nikah yukk seneng banget sama vendor dan pelayannnya sebagus itu next kalo ada yang mau nikah bakal aku suruh cek NIKAH-YUK!!', 'rara@gmail.com', 5),
+(38, 'MELI &amp; RENALDI', 'Mesen makanannya disini vendornya baik banget ga masalah kita minta ganti terus dan makanannya enak banget temen temen pada bilang enak juga', 'meli@gmail.com', 5),
+(40, 'Rini &amp; riko', 'puas sekali vendor nya ramah', 'rini@gmail.com', 5),
+(41, 'Riko &amp; rani', 'lala', 'riko@gmail.com', 1);
 
 -- --------------------------------------------------------
 
@@ -65,7 +70,6 @@ INSERT INTO `users` (`id`, `name`, `email`, `phone_number`, `password`) VALUES
 (21, 'Ardy Rikardo', 'ardyrikardo@365.telkomuniversity.ac.id', '082214741918', '123456'),
 (25, 'Bonyfasius', 'bony@gmail.com', '082214741918', '456123'),
 (30, 'Ardy Rikardo', 'info@sagconsulting.com', '022754108', '123456'),
-(31, 'Dhanu', 'Dhanu@gmail.com', '123456', '123456'),
 (32, 'Ardy Rikardo', 'admin@jogja.id', '123456', '123456'),
 (33, 'Ardy Rikardo', 'info@sagconsulting.com', '022754108', '789456'),
 (34, 'naufal', 'naufal@gmail.com', '456789', '456123'),
@@ -73,7 +77,10 @@ INSERT INTO `users` (`id`, `name`, `email`, `phone_number`, `password`) VALUES
 (36, 'deva', 'deva@gmail.com', '456789', '123456'),
 (37, 'bobon', 'bobon@gmail.com', '456789', '123456'),
 (38, 'Ardy Rikardo', 'info@sagconsulting.com', '022754108', '456789'),
-(39, 'lala', 'lala@gmail.com', '456123', '123456');
+(39, 'lala', 'lala@gmail.com', '456123', '123456'),
+(40, 'mama', 'mamah@gmail.com', '456789', '123456'),
+(41, 'Cley', 'cleyapip@gmail.com', '082214741918', '123456'),
+(42, 'Ramadhanu', 'dh0anu@gmail.com', '082214741918', '123456');
 
 --
 -- Indexes for dumped tables
@@ -99,13 +106,13 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `testimoni`
 --
 ALTER TABLE `testimoni`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=27;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=43;
 
 --
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=40;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=43;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
