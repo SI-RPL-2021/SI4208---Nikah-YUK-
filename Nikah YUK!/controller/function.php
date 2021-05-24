@@ -83,11 +83,8 @@
             }
 
             $_SESSION['message'] = 'Berhasil Login';
-<<<<<<< HEAD
-            header("Location: Welcome_page.php");
-=======
+            
             header("Location: user/Welcome_page.php");
->>>>>>> Ardy
         }
     }
 }

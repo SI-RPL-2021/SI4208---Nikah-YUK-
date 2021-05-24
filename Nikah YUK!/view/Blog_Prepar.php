@@ -185,11 +185,7 @@
             <div class="card">
                 <div class="">
                     <div class="col">
-<<<<<<< HEAD
-                        <img src="img/Fotopernikahan.png" class="card-img">
-=======
                         <img src="../img/Fotopernikahan.png" class="card-img">
->>>>>>> Ardy
                     </div>
 
                     <div class="text-justify word5">

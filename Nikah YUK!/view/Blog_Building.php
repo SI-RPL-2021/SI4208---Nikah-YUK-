@@ -94,11 +94,7 @@
         <div class="header-2-2" style="font-family: 'Poppins', sans-serif;">
             <nav class="navbar navbar-expand-lg navbar-light">
                 <a href="#">
-<<<<<<< HEAD
-                    <img style="margin-right:0.75rem" src="img/logo1.png" alt="">
-=======
                     <img style="margin-right:0.75rem" src="../img/logo1.png" alt="">
->>>>>>> Ardy
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="modal" data-bs-target="#targetModal-header-2-2">
                     <span class="navbar-toggler-icon"></span>
@@ -189,11 +185,7 @@
             <div class="card">
                 <div class="">
                     <div class="col">
-<<<<<<< HEAD
-                        <img src="img/Vendor.jpg" class="card-img">
-=======
                         <img src="../img/Vendor.jpg" class="card-img">
->>>>>>> Ardy
                     </div>
 
                     <div class="text-justify word5">
