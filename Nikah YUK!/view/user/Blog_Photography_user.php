@@ -1,9 +1,23 @@
+<?php
+    session_start();
+    require '../../controller/function.php';
+
+    if (isset($_SESSION['email'])) {
+        
+    } else {
+        header("Location: ../Login.php");
+    }
+   
+    
+?>
+
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Blog</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="../style/blog_page.css">
+    <link rel="stylesheet" type="text/css" href="../../style/blog_page.css">
+    <link rel="stylesheet" type="text/css" href="../../style/landing_page.css">
     <style type="text/css">
         .sidenav {
             height: 45%;
@@ -94,7 +108,7 @@
         <div class="header-2-2" style="font-family: 'Poppins', sans-serif;">
             <nav class="navbar navbar-expand-lg navbar-light">
                 <a href="#">
-                    <img style="margin-right:0.75rem" src="../img/logo1.png" alt="">
+                    <img style="margin-right:0.75rem" src="../../img/logo1.png" alt="">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="modal" data-bs-target="#targetModal-header-2-2">
                     <span class="navbar-toggler-icon"></span>
@@ -118,32 +132,32 @@
                 <div class="collapse navbar-collapse" id="navbarTogglerDemo-header-2-2">
                     <ul class="navbar-nav me-auto mt-1 mt-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link" href="Landing_Page.php">Home</a>
+                            <a class="nav-link" href="Welcome_page.php">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="Faq.php">FAQ</a>
+                            <a class="nav-link" href="Faq_user.php">FAQ</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Tutorial</a>
                         </li>
                         <li class="nav-item active">
-                            <a class="nav-link" href="Blog.php">Blog</a>
+                            <a class="nav-link" href="Blog_user.php">Blog</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Loker</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="Konsultasi.php">Consultation</a>
+                            <a class="nav-link" href="Konsultasi_user.php">Consultation</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="testimoni.php">Testimoni</a>
+                            <a class="nav-link" href="testimoni_user.php">Testimoni</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Services</a>
                         </li>
                     </ul>
-                    <a href="Login.php"><button class="btn btn-default btn-no-fill-header-2-2">Log In</button></a>
-                    <a href="SignUp.php"><button class="btn btn-fill-header-2-2">Sign Up</button></a>
+                    <button class="btn btn-default btn-no-fill-header-4-2">Hi!, <?=$_SESSION['email'];?></button>
+                    <a href="../../controller/logout.php"><button class="btn btn-fill-header-4-2">Logout</button></a>
                 </div>
             </nav>
         </div>
@@ -167,89 +181,106 @@
         </div>
         <div class="row">
             <div class="col-12" text>
-                <h2 align="center"><b> Wedding Preparation </b> </h2>
+                <h2 align="center"><b> Wedding Photography & Video </b> </h2>
             </div>
         </div>
         <br><br><br>
 
         <div class="sidenav garis_tepi2">
-            <a align="center" href="Blog.php">Halaman Blog</a>
+            <a align="center" href="Blog_user.php">Halaman Blog</a>
             <hr />
-            <a href="Blog_Building.php">Building</a><br>
-            <a href="Blog_Photography.php">Photography</a><br>
-            <a href="Blog_Prepar.php">Preparation</a><br>
-            <a href="Blog_Vendor.php">Vendor</a>
+            <a href="Blog_Building_user.php">Building</a><br>
+            <a href="Blog_Photography_user.php">Photography</a><br>
+            <a href="Blog_Prepar_user.php">Preparation</a><br>
+            <a href="Blog_Vendor_user.php">Vendor</a>
         </div>
 
         <div class="container">
             <div class="card">
                 <div class="">
                     <div class="col">
-<<<<<<< HEAD
-                        <img src="img/Fotopernikahan.png" class="card-img">
-=======
-                        <img src="../img/Fotopernikahan.png" class="card-img">
->>>>>>> Ardy
+                        <img src="../../img/weddingfoto.jpg" class="card-img">
                     </div>
 
                     <div class="text-justify word5">
                         <div class="puul-right margin">
-                            <h4 class="card-title"> <b>Daftar Lengkap List Persiapan Pernikahan Nikah-Yuk</b></h4>
+                            <h4 class="card-title"> <b> Wedding Photography: Bekerjasama bersama-sama </b></h4>
                             <h6>
-                                Ketika si dia sudah melamar dan acara pertunangan sudah dilakukan, artinya kamu sudah harus segera siap-siap to the next preparation! Mungkin kamu bingung harus mulai dari mana, apa dulu yang dikerjakan, hingga gimana cara mewujudkan seluruh impian pernikahan kalian. Sangking bingungnya akhirnya kamu malah panik. Tapi tenang, Sputnik bisa jadi wedding guide kalian dalam menemukan inspirasi pernikahan, hingga step-step apa saja yang perlu dilakukan.
+                                Fotografer pernikahan adalah merupakan pekerjaan fotografi yang rumit dan tersulit di dunia. Alasannya sederhana, tidak ada pengambilan foto pernikahan ulang. Pernikahan ini, dimana anda bertanggung jawab untuk memotretnya, hanya terjadi satu kali. Tidak ada istilah “kamera rusak”, “memory card tidak cukup” atau “baterai flash lupa di-charge”.
                                 <br><br>
-                                Mewujudkan hari pernikahan memang rasanya campur aduk, ya kan! Mulai dari exciting sendiri, bingung, jadi gampang sensi karena terlalu banyak worry, ditambah drama dadakan yang tiba-tiba muncul. Untuk menghindari hal-hal yang ketinggalan dalam proses persiapan pernikahan maka berikut ini punya contekan persiapan pernikahan untuk kalian bride-to-be, so check this out…
+                                Tapi, anda bisa menyingkirkan ketakutan dari foto-foto pernikahan dengan mengikuti panduan untuk merekam foto-foto yang dibutuhkan untuk menceritakan kisah dari awal sampai akhir. Anda akan diajak melalui setiap tahap di hari pernikahan, mulai dari foto persiapan sampai foto pre-wedding, dan mulai dari memotret di lokasi acara sampai merekam keceriaan di acara resepsi pernikahan, sehingga anda bisa menghadapi semuanya dengan percaya diri.
                             </h6>
                             <br>
-                            <!-- <img src="img/Vendorprofil.jpg" class="card-img" alt="gambar" height="100%"> -->
+
                             <h6>
-                                <b>Menentukan Tanggal dan Budget Pernikahan</b>
-                                Hal pertama sekali adalah tentukan tanggal pernikahan kalian. Kalian akan susah melangkah untuk booking tempat pernikahan ataupun vendor sana sini kalau belum menemukan tanggal fix pernikahan. Karena untuk bisa tahu vendor pernikahan yang kamu inginkan bisa atau tidak membantu kalian, tentunya melalui tanggal pernikahan.
-                                <br><br>
-                                Persiapan pernikahan lainnya yang perlu kamu siapkan sejak awal adalah budget pernikahan. Budget pernikahan jangan disepelekan loh! Budget menjadi hal yang sensitif antar calon pengantin dan juga kedua keluarga.
-                                <br><br>
-                                Sputnik menyarankan agar kamu berdua menjalin komunikasi yang baik untuk urusan budget, keterbukaan dalam budget pernikahan akan lebih memudahkan persiapan pernikahan kalian. Jika budget sudah kalian kantongi, tinggal membagi masing-masing pos pengeluaran vendor pernikahan.
-                                <br><br>
-                                Agar kalian tidak over budget, sebaiknya tentukan jumlah keseluruhan acara persiapan pernikahan kalian dibawah jumlah budget yang kalian punya. Hal ini mengantisipasi perbedaan harga ataupun keperluan tambahan persiapan pernikahan kalian.
+                                <b>Persiapan pernikahan</b>
                             </h6>
                             <br>
-                            <!-- <img src="img/gedung.jpg" class="card-img" alt="gambar" height="100%"> -->
+                            <img src="../../img/foto1.jpg" class="card-img" alt="gambar" height="100%">
+                            <br>
                             <h6>
-                                <b> Konsep </b>
-                                Setelah masalah budget persiapan pernikahan selesai, lanjut lagi untuk menentukan konsep acara. Terus konsep ini datang dari mana sih, yang pasti datang dari keinginan atau impian pernikahan yang diwujudkan. Artinya kalian harus tahu apa yang kalian inginkan.
-                                <br><br>
-                                Setidaknya kamu tahu konsep apa yang diinginkan, apakah itu formal, semi formal, ataupun yang santai namun intimate. Setelah itu benar-benar dimulai untuk mencari konsep persiapan pernikahan yang lebih detil.
-                                <br><br>
-                                Inspirasi persiapan pernikahan apalagi sebuah konsep acara bisa kamu liat dari berbagai sosial media, website pernikahan, hingga ulasan pernikahan yang menurut kamu memiliki daya tarik untuk menjadi inspirasi.
-                                <br><br>
-                                Brainstorming konsep Persiapan Pernikahan amat sangat diperlukan, kamu harus rajin-rajin searching web pernikahan termasuk ulasan seputar pernikahan.
+                                Persiapan! Anda tak bisa meremehkan kekuatan dari kesiapan diri. Pertama, pastikan semua peralatan fotografi siap digunakan dan bersih. Gunakan blower brush untuk menghilangkan debu di semua lensa dan sensor. Baterai harus di-charge penuh, termasuk baterai-baterai cadangan.
                             </h6>
                             <br>
-                            <!-- <img src="img/catering.png" class="card-img" alt="gambar" height="100%"> -->
+
+                            <h6> <b> 1. Foto pre-wedding </b></h6>
                             <h6>
-                                <b> Tempat Pernikahan Atau Wedding Venue </b>
-                                Konsep yang sudah ada, tinggal kamu wujudkan melalui hal krusial yang satu ini. Yup! wedding venue atau tempat pernikahan menjadi nomor satu yang penting. Biasanya drama persiapan pernikahan dimulai deh, dari sulitnya mencari gedung yang sesuai budget dan fasilitas yang diinginkan, hingga wedding venue yang ternyata full booked ditanggal pernikahan kalian.
-                                <br><br>
-                                Eiittss.. jangan langsung jadi bridezilla kalau hal itu terjadi sama kalian, karena itu semua juga dialami hampir semua calon pengantin. Mengantisipasinya adalah dengan membuat daftar tempat pernikahan yang menjadi incaran kamu dan pasangan. Sehingga kalau plan A ngga berjalan, kamu bisa langsung ganti plan B. Jangan sampai kamu terpatok hanya satu tempat pernikahan saja, ini hanya akan menghambat rencana persiapan pernikahan kalian nantinya.
-                                <br><br>
-                                Jika sudah menemukan wedding venue yang tepat langsung DP, agar kamu lebih merasa lega dan lanjut ke perjuangan persiapan pernikahan lainnya!
+                                Melakukan foto pre-wedding selalu berguna, karena setiap orang beraksi berbeda ketika mereka menjadi pusat perhatian, dan anda akan belajar cara mendapatkan yang terbaik dari mereka.
                             </h6>
                             <br>
-                            <!-- <img src="img/pengantin.jpg" class="card-img" alt="gambar" height="100%"> -->
+
+                            <h6> <b> 2. Diskusikan cara anda </b></h6>
                             <h6>
-                                <b> Wedding Check List Timeline </b>
-                                Agar pernikahan kalian berjalan sesuai waktu yang ditentukan dan semuanya ngga dibuat keriting jadi bridezilla, coba untuk membuat wedding checklist timeline. Dengan wedding checklist timeline akan sangat membantu persiapan pernikahan kalian. Sputnik punya catatan check list yang bisa kamu jadikan guideline dalam menyusun rencana persiapan pernikahan bareng pasangan.
+                                Inilah kesempatan bagi calon pengantin untuk mengatakan apakah mereka menginginkan tipe fotografi pernikahan yang seperti apa tradisional atau yang lebih santai. Berdiskusilah dengan mereka.
                             </h6>
                             <br>
-                            <!-- <img src="img/foto-foto.jpg" class="card-img" alt="gambar" height="100%"> -->
+
+                            <h6> <b> 3. Membuat daftar foto pernikahan </b></h6>
                             <h6>
-                                <b> Catering </b>
-                                catering atau F&B merupakan pos budget pernikahan yang terbesar dalam pengeluaran sebuah pesta pernikahan. Untuk itu, catering akan sangat berpengaruh dengan jumlah undangan kalian. Jadi sebelum kalian menentukan vendor catering pernikahan yang tepat, sebaiknya ketahui dulu jumlah tamu undangan kalian.
-                                <br><br>
-                                Tips yang kedua adalah, arrange waktu yang tepat bersama pasangan dan keluarga untuk bisa mencicipi menu makanannya. Test food sangatlah berpengaruh, ngga mau kan sudah bayar banyak untuk catering tapi hasilnya tidak sesuai. Jadi sebaiknya gunakan waktu kosong untuk bisa langsung mencicipi tiap menu yang menjadi andalan ataupun menu gubukannya.
-                                <br><br>
-                                Jangan ragu juga untuk berkonsultasi dengan pihak marketing catering, karena catering service yang berpengalaman akan memberikan solusi yang baik dalam menentukan jumlah porsi yang tepat.
+                                Anda sebaiknya membuat sebuah daftar foto pernikahan yang anda butuhkan untuk menjadi bahan album, cetakan, dll. Tidak ada “adegan ulang” dalam acara pernikahan, sehingga anda harus yakin bahwa anda berangkat dengan daftar foto pernikahan di tangan berisi foto apa yang akan anda ambil, mulai dari foto pengantin wanita dan pria secara formal hingga foto-foto detail (para undangan, cincin, buket, sepatu pengantin wanita, dll), dan foto resepsi seperti adegan memotong kue, penerima tamu, dll. Tanpa daftar tertulis, anda tidak akan memiliki pegangan dan hampir dipastikan anda akan melewatkan satu atau bahkan beberapa foto penting. Pastikan anda berbicara dengan kedua pengantin sebelum anda mematangkan daftar foto pernikahan anda.
                             </h6>
+                            <br>
+
+                            <h6> <b> 4. Memiliki cadangan untuk segalanya </b></h6>
+                            <h6>
+                                Kalau ada potensi kesalahan pada pernikahan yang sedang anda foto, potensi itu bisa terwujud sewaktu-waktu. Itulah kenapa para fotografer pernikahan profesional selalu membawa cadangan untuk segalanya, karena tidak ada adegan ulang. Minimal anda harus memiliki 2 body kamera, baterai cadangan untuk kamera dan flash, bahkan juga flash cadangan. Anda juga membutuhkan memory card tambahan dan lensa cadangan.
+                            </h6>
+                            <br>
+
+                            <h6> <b> 5. Perhatikan cuaca acara pernikahan </b></h6>
+                            <h6>
+                                Cuaca akan mengubah cara melakukan pemotretan pernikahan. Selalu ada baiknya memiliki payung cantik untuk dibawa sebagai properti, jadi ketika hujan deras sekalipun, masih mendapatkan portrait seru.
+                                pre-wedding foto, foto pernikahan, cara mengabadikan pernikahan
+                                <br><br>
+                                Cuaca akan mengubah cara melakukan pemotretan pernikahan. Selalu ada baiknya memiliki payung cantik untuk dibawa sebagai properti, jadi ketika hujan deras sekalipun, masih mendapatkan portrait seru.
+                            </h6>
+                            <br>
+
+                            <h6> <b> 6. Mengintip lokasi pernikahan </b></h6>
+                            <img src="../../img/foto2.jpg" class="card-img" alt="gambar" height="100%">
+
+                            <h6>
+                                Mengecek tingkat cahaya dan sudut pandang di lokasi pernikahan sangat penting. Kunjungi lokasi pada jam yang sama dengan waktu yang direncanakan untuk acara pernikahan, sehingga anda bisa melihat arah datangnya cahaya.
+                            </h6>
+                            <br>
+
+                            <h6> <b> 7. Ketahui jadwalnya acara pernikahan </b></h6>
+                            <h6>
+                                Ingatlah jadwal acara jika memungkinkan, tapi bawa juga copy salinannya, dan tandai waktunya dengan jelas. Anda harus teratur dan selalu ada di posisi sebelum waktunya.
+                            </h6>
+                            <br>
+
+                            <h6> <b> 8. Fotografer wedding kedua </b></h6>
+                            <h6>
+                                Banyak fotografer pernikahan profesional membawa serta fotografer kedua untuk memastikan bahwa mereka meliput seluruh momen yang paling penting. Semakin besar acara pernikahan, semakin anda membutuhkan fotografer kedua. Anda tidak bisa bekerja dimana-mana sekaligus, dan jika ada sesuatu yang salah (masalah peralatan atau apapun), akan ada orang lain yang terus bisa memotret, atau menangani masalahnya supaya anda bisa terus memotret.
+                            </h6>
+                            <br>
+
+                            <h6> <b> 9. Bawalah tangga untuk memotret dari posisi yang lebih tinggi </b></h6>
+                            <h6>
+                                Pada pernikahan, anda akan mengatur dan memotret sekelompok orang banyak (untuk foto formal), dan salah satu trik yang digunakan para fotografer pernikahan profesional adalah membawa tangga kecil yang ringan dan bisa dilipat. Mengambil portrait grup formal dari sudut yang lebih tinggi akan sangat membantu, karena anda jadi bisa melihat lebih banyak wajah dan mengatur grup anda dengan lebih mudah.
+                            </h6>
+                            <br>
 
                         </div>
                     </div>
@@ -392,7 +423,7 @@
                         <div class="col-lg-4 col-md-6">
                             <div class="">
                                 <div class="list-space-footer-2-2-2">
-                                    <img src="img/logo1.png" alt="">
+                                    <img src="../../img/logo1.png" alt="">
                                 </div>
                             </div>
                         </div>

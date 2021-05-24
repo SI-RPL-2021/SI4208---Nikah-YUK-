@@ -1,9 +1,24 @@
+<?php
+    session_start();
+    require '../../controller/function.php';
+
+    if (isset($_SESSION['email'])) {
+        
+    } else {
+        header("Location: ../Login.php");
+    }
+   
+    
+?>
+
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Blog</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="../style/blog_page.css">
+    <link rel="stylesheet" type="text/css" href="../../style/blog_page.css">
+    <link rel="stylesheet" type="text/css" href="../../style/landing_page.css">
+    
     <style type="text/css">
         .sidenav {
             height: 45%;
@@ -94,7 +109,7 @@
         <div class="header-2-2" style="font-family: 'Poppins', sans-serif;">
             <nav class="navbar navbar-expand-lg navbar-light">
                 <a href="#">
-                    <img style="margin-right:0.75rem" src="../img/logo1.png" alt="">
+                    <img style="margin-right:0.75rem" src="../../img/logo1.png" alt="">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="modal" data-bs-target="#targetModal-header-2-2">
                     <span class="navbar-toggler-icon"></span>
@@ -118,32 +133,32 @@
                 <div class="collapse navbar-collapse" id="navbarTogglerDemo-header-2-2">
                     <ul class="navbar-nav me-auto mt-1 mt-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link" href="Landing_Page.php">Home</a>
+                            <a class="nav-link" href="Welcome_page.php">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="Faq.php">FAQ</a>
+                            <a class="nav-link" href="Faq_user.php">FAQ</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Tutorial</a>
                         </li>
                         <li class="nav-item active">
-                            <a class="nav-link" href="Blog.php">Blog</a>
+                            <a class="nav-link" href="Blog_user.php">Blog</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Loker</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="Konsultasi.php">Consultation</a>
+                            <a class="nav-link" href="Konsultasi_user.php">Consultation</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="testimoni.php">Testimoni</a>
+                            <a class="nav-link" href="testimoni_user.php">Testimoni</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Services</a>
                         </li>
                     </ul>
-                    <a href="Login.php"><button class="btn btn-default btn-no-fill-header-2-2">Log In</button></a>
-                    <a href="SignUp.php"><button class="btn btn-fill-header-2-2">Sign Up</button></a>
+                    <button class="btn btn-default btn-no-fill-header-4-2">Hi!, <?=$_SESSION['email'];?></button>
+                    <a href="../../controller/logout.php"><button class="btn btn-fill-header-4-2">Logout</button></a>
                 </div>
             </nav>
         </div>
@@ -167,89 +182,77 @@
         </div>
         <div class="row">
             <div class="col-12" text>
-                <h2 align="center"><b> Wedding Preparation </b> </h2>
+                <h2 align="center"><b> Vendor Profile </b> </h2>
             </div>
         </div>
         <br><br><br>
 
         <div class="sidenav garis_tepi2">
-            <a align="center" href="Blog.php">Halaman Blog</a>
+            <a align="center" href="Blog_user.php">Halaman Blog</a>
             <hr />
-            <a href="Blog_Building.php">Building</a><br>
-            <a href="Blog_Photography.php">Photography</a><br>
-            <a href="Blog_Prepar.php">Preparation</a><br>
-            <a href="Blog_Vendor.php">Vendor</a>
+            <a href="Blog_Building_user.php">Building</a><br>
+            <a href="Blog_Photography_user.php">Photography</a><br>
+            <a href="Blog_Prepar_user.php">Preparation</a><br>
+            <a href="Blog_Vendor_user.php">Vendor</a>
         </div>
 
         <div class="container">
             <div class="card">
                 <div class="">
                     <div class="col">
-<<<<<<< HEAD
-                        <img src="img/Fotopernikahan.png" class="card-img">
-=======
-                        <img src="../img/Fotopernikahan.png" class="card-img">
->>>>>>> Ardy
+                        <img src="../../img/Vendorprofil.jpg" class="card-img">
                     </div>
 
                     <div class="text-justify word5">
                         <div class="puul-right margin">
-                            <h4 class="card-title"> <b>Daftar Lengkap List Persiapan Pernikahan Nikah-Yuk</b></h4>
-                            <h6>
-                                Ketika si dia sudah melamar dan acara pertunangan sudah dilakukan, artinya kamu sudah harus segera siap-siap to the next preparation! Mungkin kamu bingung harus mulai dari mana, apa dulu yang dikerjakan, hingga gimana cara mewujudkan seluruh impian pernikahan kalian. Sangking bingungnya akhirnya kamu malah panik. Tapi tenang, Sputnik bisa jadi wedding guide kalian dalam menemukan inspirasi pernikahan, hingga step-step apa saja yang perlu dilakukan.
-                                <br><br>
-                                Mewujudkan hari pernikahan memang rasanya campur aduk, ya kan! Mulai dari exciting sendiri, bingung, jadi gampang sensi karena terlalu banyak worry, ditambah drama dadakan yang tiba-tiba muncul. Untuk menghindari hal-hal yang ketinggalan dalam proses persiapan pernikahan maka berikut ini punya contekan persiapan pernikahan untuk kalian bride-to-be, so check this out…
+                            <h4 class="card-title"> <b>5 Vendor Pernikahan Nikah-Yuk</b></h4>
+                            <h6>Dalam mempersiapkan pernikahan, dibutuhkan kesiapan matang dari segala aspek, termasuk juga soal urusan vendor pernikahan. Memilih vendor pernikahan tak bisa ditentukan begitu saja. Kita sebagai calon pengantin yang akan menggunakan jasa mereka, harus mengetahui kredibilitas masing-masing vendor agar pesta pernikahan dapat berjalan mulus.
+                                Tetapi biasanya, banyak calon pengantin yang merasa kewalahan dan bingung untuk menentukan vendor utama dalam mempersiapkan pernikahan. Ladies, apakah Anda salah satunya?
+                                Jika iya, maka jangan khawatir. Berikut kumparanWOMAN berikan lima daftar vendor pernikahan yang harus segera ditentukan saat Anda dan pasangan memutuskan untuk menikah. Apa saja?
                             </h6>
                             <br>
-                            <!-- <img src="img/Vendorprofil.jpg" class="card-img" alt="gambar" height="100%"> -->
+                            <img src="../../img/Vendorprofil.jpg" class="card-img" alt="gambar" height="100%">
                             <h6>
-                                <b>Menentukan Tanggal dan Budget Pernikahan</b>
-                                Hal pertama sekali adalah tentukan tanggal pernikahan kalian. Kalian akan susah melangkah untuk booking tempat pernikahan ataupun vendor sana sini kalau belum menemukan tanggal fix pernikahan. Karena untuk bisa tahu vendor pernikahan yang kamu inginkan bisa atau tidak membantu kalian, tentunya melalui tanggal pernikahan.
-                                <br><br>
-                                Persiapan pernikahan lainnya yang perlu kamu siapkan sejak awal adalah budget pernikahan. Budget pernikahan jangan disepelekan loh! Budget menjadi hal yang sensitif antar calon pengantin dan juga kedua keluarga.
-                                <br><br>
-                                Sputnik menyarankan agar kamu berdua menjalin komunikasi yang baik untuk urusan budget, keterbukaan dalam budget pernikahan akan lebih memudahkan persiapan pernikahan kalian. Jika budget sudah kalian kantongi, tinggal membagi masing-masing pos pengeluaran vendor pernikahan.
-                                <br><br>
-                                Agar kalian tidak over budget, sebaiknya tentukan jumlah keseluruhan acara persiapan pernikahan kalian dibawah jumlah budget yang kalian punya. Hal ini mengantisipasi perbedaan harga ataupun keperluan tambahan persiapan pernikahan kalian.
+                                <b>1. Wedding Organizer Nikah-Yuk</b>
+                                Ketika ada kesepakatan antara Anda dan pasangan untuk menikah dan membuat resepsi pernikahan, satu hal yang perlu ditentukan terlebih dahulu apakah Anda akan menggunakan jasa Wedding Organizer atau tidak. Bila iya, sebaiknya segera tentukan Wedding Organizer, mereka bisa membantu mempersiapkan pernikahan sekaligus memberikan referensi vendor lainnya.
+                                Namun bila Anda tidak berencana menggunakan jasa Wedding Organizer, Anda dan pasangan harus meluangkan waktu khusus untuk mencari vendor gedung pernikahan setidaknya satu tahun sebelum menikah.
                             </h6>
                             <br>
-                            <!-- <img src="img/gedung.jpg" class="card-img" alt="gambar" height="100%"> -->
+                            <img src="../../img/gedung.jpg" class="card-img" alt="gambar" height="100%">
                             <h6>
-                                <b> Konsep </b>
-                                Setelah masalah budget persiapan pernikahan selesai, lanjut lagi untuk menentukan konsep acara. Terus konsep ini datang dari mana sih, yang pasti datang dari keinginan atau impian pernikahan yang diwujudkan. Artinya kalian harus tahu apa yang kalian inginkan.
-                                <br><br>
-                                Setidaknya kamu tahu konsep apa yang diinginkan, apakah itu formal, semi formal, ataupun yang santai namun intimate. Setelah itu benar-benar dimulai untuk mencari konsep persiapan pernikahan yang lebih detil.
-                                <br><br>
-                                Inspirasi persiapan pernikahan apalagi sebuah konsep acara bisa kamu liat dari berbagai sosial media, website pernikahan, hingga ulasan pernikahan yang menurut kamu memiliki daya tarik untuk menjadi inspirasi.
-                                <br><br>
-                                Brainstorming konsep Persiapan Pernikahan amat sangat diperlukan, kamu harus rajin-rajin searching web pernikahan termasuk ulasan seputar pernikahan.
+                                <b> 2. Gedung Pernikahan</b>
+                                5 Vendor Pernikahan yang Harus Segera Ditentukan saat Memutuskan Menikah (1)
+                                Pernikahan Dian Pelangi. Foto: THEUPPERMOST/Tito Rikardo & Hedrian Ngabito
+                                Bila sudah mendapatkan tanggal pernikahan yang diinginkan, langkah selanjutnya yang harus dilakukan adalah mencari gedung pernikahan. Biasanya, mencari lokasi pernikahan dilakukan mulai dari satu tahun hingga enam bulan sebelum pernikahan.
+                                Dalam memilih gedung pernikahan, pastikan apakah lokasi yang diinginkan sesuai dengan konsep dan tema pernikahan, apakah Anda ingin pesta indoor atau outdoor, apakah Anda ingin mengundang banyak tamu atau hanya kerabat dekat saja. Hal ini perlu dipikirkan matang-matang mengingat mencari jumlah gedung pernikahan dengan lokasi yang strategis cukup terbatas dan biaya sewanya pun tidak murah.
                             </h6>
                             <br>
-                            <!-- <img src="img/catering.png" class="card-img" alt="gambar" height="100%"> -->
+                            <img src="../../img/catering.png" class="card-img" alt="gambar" height="100%">
                             <h6>
-                                <b> Tempat Pernikahan Atau Wedding Venue </b>
-                                Konsep yang sudah ada, tinggal kamu wujudkan melalui hal krusial yang satu ini. Yup! wedding venue atau tempat pernikahan menjadi nomor satu yang penting. Biasanya drama persiapan pernikahan dimulai deh, dari sulitnya mencari gedung yang sesuai budget dan fasilitas yang diinginkan, hingga wedding venue yang ternyata full booked ditanggal pernikahan kalian.
-                                <br><br>
-                                Eiittss.. jangan langsung jadi bridezilla kalau hal itu terjadi sama kalian, karena itu semua juga dialami hampir semua calon pengantin. Mengantisipasinya adalah dengan membuat daftar tempat pernikahan yang menjadi incaran kamu dan pasangan. Sehingga kalau plan A ngga berjalan, kamu bisa langsung ganti plan B. Jangan sampai kamu terpatok hanya satu tempat pernikahan saja, ini hanya akan menghambat rencana persiapan pernikahan kalian nantinya.
-                                <br><br>
-                                Jika sudah menemukan wedding venue yang tepat langsung DP, agar kamu lebih merasa lega dan lanjut ke perjuangan persiapan pernikahan lainnya!
+                                <b> 3. Katering dan Dekorasi</b>
+                                5 Vendor Pernikahan yang Harus Segera Ditentukan saat Memutuskan Menikah (2)
+                                Ilustrasi Venue Pernikahan Foto: Shardayyy Photography
+                                Biasanya, setiap gedung pernikahan memiliki afiliasi atau rekanan dengan vendor katering dan dekorasi. Tetapi bila Anda dan pasangan tidak ingin menggunakan rekanan vendor katering dan dekorasi dari pihak gedung, Anda pun bisa mencari katering dan dekorasi sendiri.
+                                Tak ada salahnya datangi pameran pernikahan yang banyak diikuti oleh vendor-vendor, termasuk pula vendor katering. Di sana, Anda biasanya bisa menyicipi makanan (food tasting) secara gratis sekaligus berkonsultasi mengenai menu makanan sebelum memutuskan vendor katering yang akan dipakai.
+                                Untuk dekorasi, saat ini banyak vendor yang memasarkan usahanya melalui akun media sosial dan beberapa aplikasi wedding directory. Karena pada dasarnya, dekorasi pernikahan disesuaikan oleh selera kedua calon pengantin, sehingga penting sekali memilih vendor yang mampu mengerti keinginan Anda.
                             </h6>
                             <br>
-                            <!-- <img src="img/pengantin.jpg" class="card-img" alt="gambar" height="100%"> -->
+                            <img src="../../img/pengantin.jpg" class="card-img" alt="gambar" height="100%">
                             <h6>
-                                <b> Wedding Check List Timeline </b>
-                                Agar pernikahan kalian berjalan sesuai waktu yang ditentukan dan semuanya ngga dibuat keriting jadi bridezilla, coba untuk membuat wedding checklist timeline. Dengan wedding checklist timeline akan sangat membantu persiapan pernikahan kalian. Sputnik punya catatan check list yang bisa kamu jadikan guideline dalam menyusun rencana persiapan pernikahan bareng pasangan.
+                                <b> 4. Baju Pengantin dan Makeup Artist</b>
+                                5 Vendor Pernikahan yang Harus Segera Ditentukan saat Memutuskan Menikah (3)
+                                Cantik dengan Gaun Pengantin Model Longgar. Foto: dok. @lindswell_k/ Instagram
+                                Dalam memilih vendor pernikahan, biasanya calon pengantin perempuan memiliki peran besar dalam menentukan vendor. Salah satu vendor yang harus segera ditentukan adalah baju pengantin dan makeup artist. Biasanya, baju pengantin harus dibuat secara khusus sehingga memakan waktu yang cukup lama.
+                                Sementara itu, memilih makeup artist pun tak bisa sembarangan. Biasanya, para makeup artist memiliki beberapa penawaran harga, misalnya makeup untuk akad nikah saja atau satu paket dengan makeup retouch untuk resepsi. Jangan ragu untuk bertanya dengan detail kepada makeup artist, termasuk apakah Anda bisa melakukan tes makeup terlebih dahulu atau tidak.
                             </h6>
                             <br>
-                            <!-- <img src="img/foto-foto.jpg" class="card-img" alt="gambar" height="100%"> -->
+                            <img src="../../img/foto-foto.jpg" class="card-img" alt="gambar" height="100%">
                             <h6>
-                                <b> Catering </b>
-                                catering atau F&B merupakan pos budget pernikahan yang terbesar dalam pengeluaran sebuah pesta pernikahan. Untuk itu, catering akan sangat berpengaruh dengan jumlah undangan kalian. Jadi sebelum kalian menentukan vendor catering pernikahan yang tepat, sebaiknya ketahui dulu jumlah tamu undangan kalian.
-                                <br><br>
-                                Tips yang kedua adalah, arrange waktu yang tepat bersama pasangan dan keluarga untuk bisa mencicipi menu makanannya. Test food sangatlah berpengaruh, ngga mau kan sudah bayar banyak untuk catering tapi hasilnya tidak sesuai. Jadi sebaiknya gunakan waktu kosong untuk bisa langsung mencicipi tiap menu yang menjadi andalan ataupun menu gubukannya.
-                                <br><br>
-                                Jangan ragu juga untuk berkonsultasi dengan pihak marketing catering, karena catering service yang berpengalaman akan memberikan solusi yang baik dalam menentukan jumlah porsi yang tepat.
+                                <b> 5. Dokumentasi foto dan video</b>
+                                Vendor lain yang tak kalah penting dalam mempersiapkan pernikahan adalah vendor dokumentasi, baik foto maupun video. Vendor ini bersifat personal, artinya tergantung selera dan kebutuhan Anda. Apakah Anda hanya perlu dokumentasi saat hari pernikahan saja, ataukah Anda perlu dokumentasi untuk pre-wedding. Tak heran, setiap vendor foto dan dokumentasi memiliki harga yang bervariasi.
+                                Setelah kelima vendor ini sudah ditentukan, maka Anda bisa mencari vendor-vendor lainnya yang tidak membutuhkan waktu lama untuk mengurusnya. Misalnya, vendor undangan pernikahan, souvenir, kotak seserahan, dan lain-lain.
                             </h6>
+                            <h5>So Ladies, siap merencanakan pernikahan dengan matang?</h5>
 
                         </div>
                     </div>
@@ -392,7 +395,7 @@
                         <div class="col-lg-4 col-md-6">
                             <div class="">
                                 <div class="list-space-footer-2-2-2">
-                                    <img src="img/logo1.png" alt="">
+                                    <img src="../../img/logo1.png" alt="">
                                 </div>
                             </div>
                         </div>

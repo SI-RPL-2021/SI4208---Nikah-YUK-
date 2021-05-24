@@ -1,9 +1,23 @@
+<?php
+    session_start();
+    require '../../controller/function.php';
+
+    if (isset($_SESSION['email'])) {
+        
+    } else {
+        header("Location: ../Login.php");
+    }
+   
+    
+?>
+
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Blog</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="../style/blog_page.css">
+    <link rel="stylesheet" type="text/css" href="../../style/blog_page.css">
+    <link rel="stylesheet" type="text/css" href="../../style/landing_page.css">
     <style type="text/css">
         .sidenav {
             height: 45%;
@@ -94,7 +108,7 @@
         <div class="header-2-2" style="font-family: 'Poppins', sans-serif;">
             <nav class="navbar navbar-expand-lg navbar-light">
                 <a href="#">
-                    <img style="margin-right:0.75rem" src="../img/logo1.png" alt="">
+                    <img style="margin-right:0.75rem" src="../../img/logo1.png" alt="">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="modal" data-bs-target="#targetModal-header-2-2">
                     <span class="navbar-toggler-icon"></span>
@@ -118,16 +132,16 @@
                 <div class="collapse navbar-collapse" id="navbarTogglerDemo-header-2-2">
                     <ul class="navbar-nav me-auto mt-1 mt-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link" href="Landing_Page.php">Home</a>
+                            <a class="nav-link" href="Welcome_page.php">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="Faq.php">FAQ</a>
+                            <a class="nav-link" href="Faq_user.php">FAQ</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Tutorial</a>
                         </li>
                         <li class="nav-item active">
-                            <a class="nav-link" href="Blog.php">Blog</a>
+                            <a class="nav-link" href="Blog_user.php">Blog</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Loker</a>
@@ -142,8 +156,8 @@
                             <a class="nav-link" href="#">Services</a>
                         </li>
                     </ul>
-                    <a href="Login.php"><button class="btn btn-default btn-no-fill-header-2-2">Log In</button></a>
-                    <a href="SignUp.php"><button class="btn btn-fill-header-2-2">Sign Up</button></a>
+                    <button class="btn btn-default btn-no-fill-header-4-2">Hi!, <?=$_SESSION['email'];?></button>
+                    <a href="../../controller/logout.php"><button class="btn btn-fill-header-4-2">Logout</button></a>
                 </div>
             </nav>
         </div>
@@ -173,23 +187,19 @@
         <br><br><br>
 
         <div class="sidenav garis_tepi2">
-            <a align="center" href="Blog.php">Halaman Blog</a>
+            <a align="center" href="Blog_user.php">Halaman Blog</a>
             <hr />
-            <a href="Blog_Building.php">Building</a><br>
-            <a href="Blog_Photography.php">Photography</a><br>
-            <a href="Blog_Prepar.php">Preparation</a><br>
-            <a href="Blog_Vendor.php">Vendor</a>
+            <a href="Blog_Building_user.php">Building</a><br>
+            <a href="Blog_Photography_user.php">Photography</a><br>
+            <a href="Blog_Prepar_user.php">Preparation</a><br>
+            <a href="Blog_Vendor_user.php">Vendor</a>
         </div>
 
         <div class="container">
             <div class="card">
                 <div class="">
                     <div class="col">
-<<<<<<< HEAD
-                        <img src="img/Fotopernikahan.png" class="card-img">
-=======
-                        <img src="../img/Fotopernikahan.png" class="card-img">
->>>>>>> Ardy
+                        <img src="../../img/Fotopernikahan.png" class="card-img">
                     </div>
 
                     <div class="text-justify word5">
@@ -392,7 +402,7 @@
                         <div class="col-lg-4 col-md-6">
                             <div class="">
                                 <div class="list-space-footer-2-2-2">
-                                    <img src="img/logo1.png" alt="">
+                                    <img src="../../img/logo1.png" alt="">
                                 </div>
                             </div>
                         </div>

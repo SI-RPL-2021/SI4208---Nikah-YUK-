@@ -1,9 +1,23 @@
+<?php
+    session_start();
+    require '../../controller/function.php';
+
+    if (isset($_SESSION['email'])) {
+        
+    } else {
+        header("Location: ../Login.php");
+    }
+   
+    
+?>
+
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Blog</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="../style/blog_page.css">
+    <link rel="stylesheet" type="text/css" href="../../style/blog_page.css">
+    <link rel="stylesheet" type="text/css" href="../../style/landing_page.css">
     <style type="text/css">
         .sidenav {
             height: 45%;
@@ -94,7 +108,7 @@
         <div class="header-2-2" style="font-family: 'Poppins', sans-serif;">
             <nav class="navbar navbar-expand-lg navbar-light">
                 <a href="#">
-                    <img style="margin-right:0.75rem" src="../img/logo1.png" alt="">
+                    <img style="margin-right:0.75rem" src="../../img/logo1.png" alt="">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="modal" data-bs-target="#targetModal-header-2-2">
                     <span class="navbar-toggler-icon"></span>
@@ -118,32 +132,32 @@
                 <div class="collapse navbar-collapse" id="navbarTogglerDemo-header-2-2">
                     <ul class="navbar-nav me-auto mt-1 mt-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link" href="Landing_Page.php">Home</a>
+                            <a class="nav-link" href="Welcome_page.php">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="Faq.php">FAQ</a>
+                            <a class="nav-link" href="Faq_user.php">FAQ</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Tutorial</a>
                         </li>
                         <li class="nav-item active">
-                            <a class="nav-link" href="Blog.php">Blog</a>
+                            <a class="nav-link" href="Blog_user.php">Blog</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Loker</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="Konsultasi.php">Consultation</a>
+                            <a class="nav-link" href="Konsultasi_user.php">Consultation</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="testimoni.php">Testimoni</a>
+                            <a class="nav-link" href="testimoni_user.php">Testimoni</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Services</a>
                         </li>
                     </ul>
-                    <a href="Login.php"><button class="btn btn-default btn-no-fill-header-2-2">Log In</button></a>
-                    <a href="SignUp.php"><button class="btn btn-fill-header-2-2">Sign Up</button></a>
+                    <button class="btn btn-default btn-no-fill-header-4-2">Hi!, <?=$_SESSION['email'];?></button>
+                    <a href="../../controller/logout.php"><button class="btn btn-fill-header-4-2">Logout</button></a>
                 </div>
             </nav>
         </div>
@@ -167,89 +181,104 @@
         </div>
         <div class="row">
             <div class="col-12" text>
-                <h2 align="center"><b> Wedding Preparation </b> </h2>
+                <h2 align="center"><b> Wedding Building </b> </h2>
             </div>
         </div>
         <br><br><br>
 
         <div class="sidenav garis_tepi2">
-            <a align="center" href="Blog.php">Halaman Blog</a>
+            <a align="center" href="Blog_user.php">Halaman Blog</a>
             <hr />
-            <a href="Blog_Building.php">Building</a><br>
-            <a href="Blog_Photography.php">Photography</a><br>
-            <a href="Blog_Prepar.php">Preparation</a><br>
-            <a href="Blog_Vendor.php">Vendor</a>
+            <a href="Blog_Building_user.php">Building</a><br>
+            <a href="Blog_Photography_user.php">Photography</a><br>
+            <a href="Blog_Prepar_user.php">Preparation</a><br>
+            <a href="Blog_Vendor_user.php">Vendor</a>
         </div>
 
         <div class="container">
             <div class="card">
                 <div class="">
                     <div class="col">
-<<<<<<< HEAD
-                        <img src="img/Fotopernikahan.png" class="card-img">
-=======
-                        <img src="../img/Fotopernikahan.png" class="card-img">
->>>>>>> Ardy
+                        <img src="../../img/Vendor.jpg" class="card-img">
                     </div>
 
                     <div class="text-justify word5">
                         <div class="puul-right margin">
-                            <h4 class="card-title"> <b>Daftar Lengkap List Persiapan Pernikahan Nikah-Yuk</b></h4>
-                            <h6>
-                                Ketika si dia sudah melamar dan acara pertunangan sudah dilakukan, artinya kamu sudah harus segera siap-siap to the next preparation! Mungkin kamu bingung harus mulai dari mana, apa dulu yang dikerjakan, hingga gimana cara mewujudkan seluruh impian pernikahan kalian. Sangking bingungnya akhirnya kamu malah panik. Tapi tenang, Sputnik bisa jadi wedding guide kalian dalam menemukan inspirasi pernikahan, hingga step-step apa saja yang perlu dilakukan.
+                            <h4 class="card-title"> <b> Yuk Nikah-Yuk Lovers Mulai Nabung Dari Sekarang Untuk Biaya Gedung Pernikahan! Intip  Rekomendasi Nikah-Yuk 7 Gedung Di Jakarta  </b></h4>
+                            <h6>Ketika Nikah-Yuk Lovers memutuskan untuk menggelar resepsi pernikahan di gedung, artinya kita sudah siap akan biaya gedung pernikahan lebih yang harus dikeluarkan serta rencana untuk tempat tinggal kedepan. Supaya biaya tak membengkak, pilih gedung yang harga sewanya sesuai bujet.
                                 <br><br>
-                                Mewujudkan hari pernikahan memang rasanya campur aduk, ya kan! Mulai dari exciting sendiri, bingung, jadi gampang sensi karena terlalu banyak worry, ditambah drama dadakan yang tiba-tiba muncul. Untuk menghindari hal-hal yang ketinggalan dalam proses persiapan pernikahan maka berikut ini punya contekan persiapan pernikahan untuk kalian bride-to-be, so check this out…
+                                Dalam melakukan ”persiapan pernikahan” memilih venue atau tempat pernikahan adalah hal yang harus dilakukan calon pengantin dari jauh-jauh hari. Sebab, beberapa gedung pernikahan terutama yang terletak di pusat kota seperti Jakarta, sudah penuh dipesan hingga setahun ke depan oleh calon pengantin lain. Bahkan masih banyak yang harus masuk ke dalam daftar antrian untuk bisa memesan tempat.
+                                <br><br>
+                                Biasanya pihak pengelola gedung akan mendahulukan orang yang paling cepat memberi uang tanda jadi. Semakin lama kita mengambil keputusan soal tempat resepsi, terkait biaya resepsi dan biaya gedung pernikahan maka akan semakin terbatas juga pilihan yang tersedia.
+                                <br><br>
+                                Agar bisa menemukan tempat resepsi sesuai keinginan, berikut referensi serta estimasi biaya pernikahan di gedung dan paket pernikahan di Jakarta. Dari gedung pemerintah, hingga hotel bintang lima, mulai yang termurah hingga termahal.
                             </h6>
                             <br>
-                            <!-- <img src="img/Vendorprofil.jpg" class="card-img" alt="gambar" height="100%"> -->
                             <h6>
-                                <b>Menentukan Tanggal dan Budget Pernikahan</b>
-                                Hal pertama sekali adalah tentukan tanggal pernikahan kalian. Kalian akan susah melangkah untuk booking tempat pernikahan ataupun vendor sana sini kalau belum menemukan tanggal fix pernikahan. Karena untuk bisa tahu vendor pernikahan yang kamu inginkan bisa atau tidak membantu kalian, tentunya melalui tanggal pernikahan.
-                                <br><br>
-                                Persiapan pernikahan lainnya yang perlu kamu siapkan sejak awal adalah budget pernikahan. Budget pernikahan jangan disepelekan loh! Budget menjadi hal yang sensitif antar calon pengantin dan juga kedua keluarga.
-                                <br><br>
-                                Sputnik menyarankan agar kamu berdua menjalin komunikasi yang baik untuk urusan budget, keterbukaan dalam budget pernikahan akan lebih memudahkan persiapan pernikahan kalian. Jika budget sudah kalian kantongi, tinggal membagi masing-masing pos pengeluaran vendor pernikahan.
-                                <br><br>
-                                Agar kalian tidak over budget, sebaiknya tentukan jumlah keseluruhan acara persiapan pernikahan kalian dibawah jumlah budget yang kalian punya. Hal ini mengantisipasi perbedaan harga ataupun keperluan tambahan persiapan pernikahan kalian.
+                                <b>Rincian Biaya Gedung Pernikahan Dan Aula Dengan Harga Sewa Di Bawah Rp50 Juta</b>
+                            </h6>
+                            <img src="../../img/building.jpg" class="card-img" alt="gambar" height="100%">
+                            <h6>
+                                Ternyata masih banyak biaya gedung pernikahan di Jakarta yang menawarkan tarif sewa terjangkau bahkan di bawah Rp 50 juta. Berikut beberapa informasi yang sudah Kula dapatkan.
                             </h6>
                             <br>
-                            <!-- <img src="img/gedung.jpg" class="card-img" alt="gambar" height="100%"> -->
+
+                            <h6> <b> 1. Gedung Departemen Pertanian </b></h6>
                             <h6>
-                                <b> Konsep </b>
-                                Setelah masalah budget persiapan pernikahan selesai, lanjut lagi untuk menentukan konsep acara. Terus konsep ini datang dari mana sih, yang pasti datang dari keinginan atau impian pernikahan yang diwujudkan. Artinya kalian harus tahu apa yang kalian inginkan.
-                                <br><br>
-                                Setidaknya kamu tahu konsep apa yang diinginkan, apakah itu formal, semi formal, ataupun yang santai namun intimate. Setelah itu benar-benar dimulai untuk mencari konsep persiapan pernikahan yang lebih detil.
-                                <br><br>
-                                Inspirasi persiapan pernikahan apalagi sebuah konsep acara bisa kamu liat dari berbagai sosial media, website pernikahan, hingga ulasan pernikahan yang menurut kamu memiliki daya tarik untuk menjadi inspirasi.
-                                <br><br>
-                                Brainstorming konsep Persiapan Pernikahan amat sangat diperlukan, kamu harus rajin-rajin searching web pernikahan termasuk ulasan seputar pernikahan.
+                                Gedung Departemen Pertanian jadi salah satu gedung pernikahan favorit di Jakarta Selatan. Bukan hanya bisa menampung tamu undangan dalam kapasitas besar hingga 2000 orang, harga sewa Gedung Deptan juga tergolong murah yaitu hanya sekitar Rp20 juta.
+                                Kalau tak mau didahului calon pengantin lain, sebaiknya lakukan pemesanan gedung setahun sebelum tanggal pernikahan jika mau mengadakan resepsi di sini.
                             </h6>
                             <br>
-                            <!-- <img src="img/catering.png" class="card-img" alt="gambar" height="100%"> -->
+
+                            <h6> <b> 2. Gedung Graha Elnusa </b></h6>
                             <h6>
-                                <b> Tempat Pernikahan Atau Wedding Venue </b>
-                                Konsep yang sudah ada, tinggal kamu wujudkan melalui hal krusial yang satu ini. Yup! wedding venue atau tempat pernikahan menjadi nomor satu yang penting. Biasanya drama persiapan pernikahan dimulai deh, dari sulitnya mencari gedung yang sesuai budget dan fasilitas yang diinginkan, hingga wedding venue yang ternyata full booked ditanggal pernikahan kalian.
-                                <br><br>
-                                Eiittss.. jangan langsung jadi bridezilla kalau hal itu terjadi sama kalian, karena itu semua juga dialami hampir semua calon pengantin. Mengantisipasinya adalah dengan membuat daftar tempat pernikahan yang menjadi incaran kamu dan pasangan. Sehingga kalau plan A ngga berjalan, kamu bisa langsung ganti plan B. Jangan sampai kamu terpatok hanya satu tempat pernikahan saja, ini hanya akan menghambat rencana persiapan pernikahan kalian nantinya.
-                                <br><br>
-                                Jika sudah menemukan wedding venue yang tepat langsung DP, agar kamu lebih merasa lega dan lanjut ke perjuangan persiapan pernikahan lainnya!
+                                Gedung Graha Elnusa yang terletak di Jalan TB. Simatupang ini juga banyak diincar oleh calon pengantin. Lokasinya yang strategis akan memudahkan akses tamu undangan menuju lokasi pernikahan. Dengan harga sewa sebesar Rp30 juta, gedung ini bisa menampung hingga 800 tamu undangan.
                             </h6>
                             <br>
-                            <!-- <img src="img/pengantin.jpg" class="card-img" alt="gambar" height="100%"> -->
+
+                            <h6> <b> 3. Gedung Departemen Sosial </b></h6>
                             <h6>
-                                <b> Wedding Check List Timeline </b>
-                                Agar pernikahan kalian berjalan sesuai waktu yang ditentukan dan semuanya ngga dibuat keriting jadi bridezilla, coba untuk membuat wedding checklist timeline. Dengan wedding checklist timeline akan sangat membantu persiapan pernikahan kalian. Sputnik punya catatan check list yang bisa kamu jadikan guideline dalam menyusun rencana persiapan pernikahan bareng pasangan.
+                                Bergeser ke pusat Jakarta, terdapat pula Gedung Departemen Sosial yang memiliki area parkir sangat luas. Kapasitas Gedung Depsos bisa menampung hingga 2000 orang. Harga sewanya pun cukup terjangkau yaitu sekitar Rp25 juta. Tapi, siap-siap bersaing dengan calon pengantin lain karena gedung ini hampir selalu fully booked setiap tahunnya.
                             </h6>
                             <br>
-                            <!-- <img src="img/foto-foto.jpg" class="card-img" alt="gambar" height="100%"> -->
+
+                            <h6> <b> 4. Aula Sudirman Makodam Jaya </b></h6>
                             <h6>
-                                <b> Catering </b>
-                                catering atau F&B merupakan pos budget pernikahan yang terbesar dalam pengeluaran sebuah pesta pernikahan. Untuk itu, catering akan sangat berpengaruh dengan jumlah undangan kalian. Jadi sebelum kalian menentukan vendor catering pernikahan yang tepat, sebaiknya ketahui dulu jumlah tamu undangan kalian.
-                                <br><br>
-                                Tips yang kedua adalah, arrange waktu yang tepat bersama pasangan dan keluarga untuk bisa mencicipi menu makanannya. Test food sangatlah berpengaruh, ngga mau kan sudah bayar banyak untuk catering tapi hasilnya tidak sesuai. Jadi sebaiknya gunakan waktu kosong untuk bisa langsung mencicipi tiap menu yang menjadi andalan ataupun menu gubukannya.
-                                <br><br>
-                                Jangan ragu juga untuk berkonsultasi dengan pihak marketing catering, karena catering service yang berpengalaman akan memberikan solusi yang baik dalam menentukan jumlah porsi yang tepat.
+                                Berlokasi di Cawang UKI, gedung Makodam Jaya menjadi favorit banyak calon pengantin yang bertempat tinggal di Jakarta Timur. Selain letaknya yang strategis, harga sewanya pun tak menghabiskan tabungan. Siapkan kocek Rp20 juta jika resepsi diadakan di siang hari, dan Rp 25 juta untuk resepsi malam hari. Gedung ini bisa menampung hingga 1000 tamu undangan.
                             </h6>
+                            <br>
+
+                            <h6> <b> 5. Azilla Villa </b></h6>
+                            <h6>
+                                Bagi calon pengantin yang mendambakan konsep pernikahan semi-outdoor, gedung pernikahan yang terletak di Cipayung, Jakarta Timur ini bisa jadi pilihan. Tak hanya berbentuk aula seperti gedung kebanyakan, Azilla Villa juga memiliki kolam renang dan kebun yang cukup lebar, cocok untuk pengantin yang ingin lebih dekat dengan tamu undangan.
+                                <br><br>
+                                Gedung ini memang ditujukan untuk biaya gedung pernikahan yang intim. Sebab, kapasitas tamu undangan yang bisa ditampung hanya sekitar 400 orang. Harga sewa gedung pernikahan ini mulai dari Rp25 juta.
+                                <br><br>
+                                Mungkin beberapa dari kita tidak begitu familiar dengan nama-nama gedung serbaguna di atas. Beberapa calon pengantin pasti ingin menggelar pernikahan di gedung yang lebih intim.
+                                <br><br>
+                                Selain karena lokasi yang strategis, hampir semua orang tahu akan keberadaan gedung tersebut sehingga tamu undangan tak akan kepusingan lagi saat mencari lokasi. Memang kocek yang diperlukan akan lebih besar. Namun jika bujet mencukupi, berikut gedung pernikahan populer yang bisa dipilih.
+                            </h6>
+                            <br>
+
+                            <h6> <b> 6. Sasana Kriya Taman Mini </b></h6>
+                            <h6>
+                                Terletak di kawasan Taman Mini Indonesia Indah, tempat ini cocok untuk resepsi pernikahan dengan jumlah tamu undangan yang banyak. Selain aula yang besar, lahan parkirnya pun sangat luas.
+                                <br><br>
+                                Sasana Kriya memiliki tiga gedung dengan kapasitas berbeda-beda, mulai dari 800 hingga 3000 orang. Khusus untuk menyewa gedung saja, Sasana Kriya mematok harga mulai dari Rp35 juta.
+                            </h6>
+                            <br>
+
+                            <h6> <b> 7. Gedung Arsip Nasional RI </b></h6>
+                            <h6>
+                                Sejak konsep garden party diganderungi oleh pasangan muda, biaya gedung pernikahan ini menjadi salah satu pilihan favorit calon pengantin yang mau mengadakan pernikahan dengan konsep pernikahan outdoor dan indoor.
+                                <br><br>
+                                Uniknya, selain memiliki kebun yang bisa menampung sekitar 1.500 orang, terdapat pula area indoor yang bisa menampung hingga 500 orang. Jadi, gedung ini adalah pilihan aman untuk mengantisipasi terjadinya hujan di resepsi pernikahan kita.
+                                <br><br>
+                                Sebenarnya, harga sewa gedung ini dimulai dari Rp 35 juta. Namun sayangnya kita hanya boleh menggunakan vendor rekanan gedung sehingga biaya paket yang dibayarkan sudah termasuk biaya catering. Paket yang ditawarkan mulai dari Rp 95 juta untuk 500 orang.
+                                <br><br>
+                                Nah itu dia beberapa rekomendasi biaya gedung pernikahan yang terjangkau bagi pasangan kaula muda yang sedang merintis harus menghitung total biaya pernikahan di gedung, keseluruhan vendor yang dibutuhkan bahkan sampai biaya bulan madu! Selain itu terdapat paket biaya gedung pernikahan di Jakarta yang disediakan oleh Weeding Organizer dan Event Organizer yang handal dan terpercaya! Yuk cek disini ALovers.
+                            </h6>
+                            <br>
 
                         </div>
                     </div>
@@ -392,7 +421,7 @@
                         <div class="col-lg-4 col-md-6">
                             <div class="">
                                 <div class="list-space-footer-2-2-2">
-                                    <img src="img/logo1.png" alt="">
+                                    <img src="../../img/logo1.png" alt="">
                                 </div>
                             </div>
                         </div>
