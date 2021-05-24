@@ -1,12 +1,86 @@
-<!doctype html>
-<html lang="en">
-
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Blog</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="../style/blog_page.css">
+    <style type="text/css">
+        .sidenav {
+            height: 45%;
+            width: 300px;
+            position: fixed;
+            z-index: 2;
+            /* top: 0; */
+            right: 65px;
+            background-color: #FFFAFA;
+            overflow-x: hidden;
+            padding-top: 20px;
+        }
+
+        .sidenav a {
+            padding: 6px 8px 6px 16px;
+            text-decoration: none;
+            font-size: 25px;
+            color: black;
+            display: block;
+        }
+
+        .sidenav a:hover {
+            color: black;
+        }
+
+        .main {
+            margin-right: 160px;
+            /* Same as the width of the sidenav */
+            font-size: 28px;
+            /* Increased text to enable scrolling */
+            padding: 0px 10px;
+        }
+
+        @media screen and (max-height: 350px) {
+            .sidenav {
+                padding-top: 15px;
+            }
+
+            .sidenav a {
+                font-size: 18px;
+            }
+        }
+
+        .letter1 {
+            letter-spacing: 1px;
+        }
+
+        .word5 {
+            word-spacing: 5px;
+        }
+
+        body {
+            font-family: verdana;
+            font-size: 12px;
+        }
+
+        .margin {
+            margin: 100px 150px 100px 150px;
+        }
+
+        .container {
+            width: 50%;
+            height: auto;
+            background: white;
+            margin: auto;
+            margin-top: 5px;
+            padding-bottom: 5px;
+        }
+
+        .badan {
+            height: 450px;
+        }
+
+        .garis_tepi2 {
+            border: 10px double green;
+        }
+    </style>
 
 <body>
     <section style="height:100%; width: 100%; box-sizing: border-box; background-color: #FFFFFF">
@@ -75,106 +149,124 @@
         </div>
 
 
+        <!---------------------------------------------------------------------------------------------- Blog ----------------------------------------------------------------------------------------->
+
+
+        <!-- <div class="badan">
+            <div class="sidebar">
+                sidebar
+                <ul>
+                    <li><a href="">boom</a></li>
+                </ul>
+            </div>
+        </div> -->
 
         <br><br><br>
+        <div class="row">
+            <div class="col-12"></div>
+        </div>
+        <div class="row">
+            <div class="col-12" text>
+                <h2 align="center"><b> Wedding Building </b> </h2>
+            </div>
+        </div>
+        <br><br><br>
+
+        <div class="sidenav garis_tepi2">
+            <a align="center" href="Blog.php">Halaman Blog</a>
+            <hr />
+            <a href="Blog_Building.php">Building</a><br>
+            <a href="Blog_Photography.php">Photography</a><br>
+            <a href="Blog_Prepar.php">Preparation</a><br>
+            <a href="Blog_Vendor.php">Vendor</a>
+        </div>
+
         <div class="container">
-            <div class="row">
-                <div class="col-12"></div>
-            </div>
-            <div class="row">
-                <div class="col-12" text>
-                    <h2 align="center"><b> Halaman Blog</b> </h2>
-                </div>
-            </div>
-            <br><br><br>
-
-
-            <!-- <h1 style="text-align:center"> Halaman Blog </h1> -->
-
-
-            <!---------------------------------------------------------------------------------------------- Blog ----------------------------------------------------------------------------------------->
-
-
-            <div class="card mb-2">
-                <div class="row">
-                    <div class="col-md-6">
-                        <img src="../img/Fotopernikahan.png" class="card-img" alt="gambar" height="100%">
+            <div class="card">
+                <div class="">
+                    <div class="col">
+                        <img src="../img/Vendor.jpg" class="card-img">
                     </div>
-                    <div class="col-md-6" style="text-align:center">
-                        <div class="card-body">
-                            <h5 class="card-title">Wedding Preparation</h5>
-                            <p>Ketika si dia sudah melamar dan acara pertunangan sudah dilakukan, artinya kamu sudah harus segera siap-siap to the next preparation! Mungkin kamu bingung harus mulai dari mana, apa dulu yang dikerjakan, hingga gimana cara mewujudkan seluruh impian pernikahan kalian. Sangking bingungnya akhirnya kamu malah panik. Tapi tenang, Sputnik bisa jadi wedding guide kalian dalam menemukan inspirasi pernikahan, hingga step-step apa saja yang perlu dilakukan.
-                            Mewujudkan hari pernikahan memang rasanya campur aduk, ya kan! Mulai dari exciting sendiri, bingung, jadi gampang sensi karena terlalu banyak worry, ditambah drama dadakan yang tiba-tiba muncul. Untuk menghindari hal-hal yang ketinggalan dalam proses persiapan pernikahan maka berikut ini punya contekan persiapan pernikahan untuk kalian bride-to-be, so check this out</p>
-                            <p>....................</p>
-                            <br><br><br>
-                            <a href="Blog_Prepar.php" class="btn btn-dark">Read More</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
 
-            <br><br><br>
-
-            <div class="card mb-3">
-                <div class="row no-gutters">
-                    <div class="col-md-6 text-white bg-secondary" style="text-align:center">
-                        <div class="card-body">
-                            <h5 class="card-title">Wedding Building</h5>
-                            <p>Ketika Nikah-Yuk Lovers memutuskan untuk menggelar resepsi pernikahan di gedung, artinya kita sudah siap akan biaya gedung pernikahan lebih yang harus dikeluarkan serta rencana untuk tempat tinggal kedepan. Supaya biaya tak membengkak, pilih gedung yang harga sewanya sesuai bujet.
+                    <div class="text-justify word5">
+                        <div class="puul-right margin">
+                            <h4 class="card-title"> <b> Yuk Nikah-Yuk Lovers Mulai Nabung Dari Sekarang Untuk Biaya Gedung Pernikahan! Intip  Rekomendasi Nikah-Yuk 7 Gedung Di Jakarta  </b></h4>
+                            <h6>Ketika Nikah-Yuk Lovers memutuskan untuk menggelar resepsi pernikahan di gedung, artinya kita sudah siap akan biaya gedung pernikahan lebih yang harus dikeluarkan serta rencana untuk tempat tinggal kedepan. Supaya biaya tak membengkak, pilih gedung yang harga sewanya sesuai bujet.
+                                <br><br>
                                 Dalam melakukan ”persiapan pernikahan” memilih venue atau tempat pernikahan adalah hal yang harus dilakukan calon pengantin dari jauh-jauh hari. Sebab, beberapa gedung pernikahan terutama yang terletak di pusat kota seperti Jakarta, sudah penuh dipesan hingga setahun ke depan oleh calon pengantin lain. Bahkan masih banyak yang harus masuk ke dalam daftar antrian untuk bisa memesan tempat.
+                                <br><br>
                                 Biasanya pihak pengelola gedung akan mendahulukan orang yang paling cepat memberi uang tanda jadi. Semakin lama kita mengambil keputusan soal tempat resepsi, terkait biaya resepsi dan biaya gedung pernikahan maka akan semakin terbatas juga pilihan yang tersedia.
-                                Agar bisa menemukan tempat resepsi sesuai keinginan, berikut referensi serta estimasi biaya pernikahan di gedung dan paket pernikahan di Jakarta. Dari gedung pemerintah, hingga hotel bintang lima, mulai yang termurah hingga termahal.</p>
-                            <p>....................</p>
-                            <br><br><br>
-                            <a href="Blog_Building.php" class="btn btn-dark">Read More</a>
-                        </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <img src="../img/Vendor.jpg" class="card-img" alt="gambar" height="100%">
-                    </div>
-                </div>
-            </div>
-
-            <br><br><br>
-
-            <div class="card mb-6">
-                <div class="row no-gutters">
-                    <div class="col-lg-6">
-                        <img src="../img/Vendorprofil.jpg" class="card-img" alt="gambar" height="100%">
-                    </div>
-                    <div class="col-md-6" style="text-align:center">
-                        <div class="card-body">
-                            <h5 class="card-title">Vendor Profile</h5>
-                            <p>Dalam mempersiapkan pernikahan, dibutuhkan kesiapan matang dari segala aspek, termasuk juga soal urusan vendor pernikahan. Memilih vendor pernikahan tak bisa ditentukan begitu saja. Kita sebagai calon pengantin yang akan menggunakan jasa mereka, harus mengetahui kredibilitas masing-masing vendor agar pesta pernikahan dapat berjalan mulus.
-                                Tetapi biasanya, banyak calon pengantin yang merasa kewalahan dan bingung untuk menentukan vendor utama dalam mempersiapkan pernikahan. Ladies, apakah Anda salah satunya?
-                                Jika iya, maka jangan khawatir. Berikut kumparanWOMAN berikan lima daftar vendor pernikahan yang harus segera ditentukan saat Anda dan pasangan memutuskan untuk menikah. Apa saja?</p>
-                            <p>....................</p>
-                            <br><br><br>
-                            <a href="Blog_Vendor.php" class="btn btn-dark">Read More</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <br><br><br>
-
-            <div class="card mb-3">
-                <div class="row no-gutters">
-                    <div class="col-md-6 text-white bg-secondary" style="text-align:center">
-                        <div class="card-body">
-                            <h5 class="card-title">Wedding Photography & Video</h5>
+                                <br><br>
+                                Agar bisa menemukan tempat resepsi sesuai keinginan, berikut referensi serta estimasi biaya pernikahan di gedung dan paket pernikahan di Jakarta. Dari gedung pemerintah, hingga hotel bintang lima, mulai yang termurah hingga termahal.
+                            </h6>
                             <br>
-                            <p>
-                                Fotografer pernikahan adalah merupakan pekerjaan fotografi yang rumit dan tersulit di dunia. Alasannya sederhana, tidak ada pengambilan foto pernikahan ulang. Pernikahan ini, dimana anda bertanggung jawab untuk memotretnya, hanya terjadi satu kali. Tidak ada istilah “kamera rusak”, “memory card tidak cukup” atau “baterai flash lupa di-charge”.
-                                Tapi, anda bisa menyingkirkan ketakutan dari foto-foto pernikahan dengan mengikuti panduan untuk merekam foto-foto yang dibutuhkan untuk menceritakan kisah dari awal sampai akhir. Anda akan diajak melalui setiap tahap di hari pernikahan, mulai dari foto persiapan sampai foto pre-wedding, dan mulai dari memotret di lokasi acara sampai merekam keceriaan di acara resepsi pernikahan, sehingga anda bisa menghadapi semuanya dengan percaya diri.
-                            </p>
-                            <p>....................</p>
-                            <br><br><br>
-                            <a href="Blog_Photography.php" class="btn btn-dark">Read More</a>
+                            <h6>
+                                <b>Rincian Biaya Gedung Pernikahan Dan Aula Dengan Harga Sewa Di Bawah Rp50 Juta</b>
+                            </h6>
+                            <img src="../img/building.jpg" class="card-img" alt="gambar" height="100%">
+                            <h6>
+                                Ternyata masih banyak biaya gedung pernikahan di Jakarta yang menawarkan tarif sewa terjangkau bahkan di bawah Rp 50 juta. Berikut beberapa informasi yang sudah Kula dapatkan.
+                            </h6>
+                            <br>
+
+                            <h6> <b> 1. Gedung Departemen Pertanian </b></h6>
+                            <h6>
+                                Gedung Departemen Pertanian jadi salah satu gedung pernikahan favorit di Jakarta Selatan. Bukan hanya bisa menampung tamu undangan dalam kapasitas besar hingga 2000 orang, harga sewa Gedung Deptan juga tergolong murah yaitu hanya sekitar Rp20 juta.
+                                Kalau tak mau didahului calon pengantin lain, sebaiknya lakukan pemesanan gedung setahun sebelum tanggal pernikahan jika mau mengadakan resepsi di sini.
+                            </h6>
+                            <br>
+
+                            <h6> <b> 2. Gedung Graha Elnusa </b></h6>
+                            <h6>
+                                Gedung Graha Elnusa yang terletak di Jalan TB. Simatupang ini juga banyak diincar oleh calon pengantin. Lokasinya yang strategis akan memudahkan akses tamu undangan menuju lokasi pernikahan. Dengan harga sewa sebesar Rp30 juta, gedung ini bisa menampung hingga 800 tamu undangan.
+                            </h6>
+                            <br>
+
+                            <h6> <b> 3. Gedung Departemen Sosial </b></h6>
+                            <h6>
+                                Bergeser ke pusat Jakarta, terdapat pula Gedung Departemen Sosial yang memiliki area parkir sangat luas. Kapasitas Gedung Depsos bisa menampung hingga 2000 orang. Harga sewanya pun cukup terjangkau yaitu sekitar Rp25 juta. Tapi, siap-siap bersaing dengan calon pengantin lain karena gedung ini hampir selalu fully booked setiap tahunnya.
+                            </h6>
+                            <br>
+
+                            <h6> <b> 4. Aula Sudirman Makodam Jaya </b></h6>
+                            <h6>
+                                Berlokasi di Cawang UKI, gedung Makodam Jaya menjadi favorit banyak calon pengantin yang bertempat tinggal di Jakarta Timur. Selain letaknya yang strategis, harga sewanya pun tak menghabiskan tabungan. Siapkan kocek Rp20 juta jika resepsi diadakan di siang hari, dan Rp 25 juta untuk resepsi malam hari. Gedung ini bisa menampung hingga 1000 tamu undangan.
+                            </h6>
+                            <br>
+
+                            <h6> <b> 5. Azilla Villa </b></h6>
+                            <h6>
+                                Bagi calon pengantin yang mendambakan konsep pernikahan semi-outdoor, gedung pernikahan yang terletak di Cipayung, Jakarta Timur ini bisa jadi pilihan. Tak hanya berbentuk aula seperti gedung kebanyakan, Azilla Villa juga memiliki kolam renang dan kebun yang cukup lebar, cocok untuk pengantin yang ingin lebih dekat dengan tamu undangan.
+                                <br><br>
+                                Gedung ini memang ditujukan untuk biaya gedung pernikahan yang intim. Sebab, kapasitas tamu undangan yang bisa ditampung hanya sekitar 400 orang. Harga sewa gedung pernikahan ini mulai dari Rp25 juta.
+                                <br><br>
+                                Mungkin beberapa dari kita tidak begitu familiar dengan nama-nama gedung serbaguna di atas. Beberapa calon pengantin pasti ingin menggelar pernikahan di gedung yang lebih intim.
+                                <br><br>
+                                Selain karena lokasi yang strategis, hampir semua orang tahu akan keberadaan gedung tersebut sehingga tamu undangan tak akan kepusingan lagi saat mencari lokasi. Memang kocek yang diperlukan akan lebih besar. Namun jika bujet mencukupi, berikut gedung pernikahan populer yang bisa dipilih.
+                            </h6>
+                            <br>
+
+                            <h6> <b> 6. Sasana Kriya Taman Mini </b></h6>
+                            <h6>
+                                Terletak di kawasan Taman Mini Indonesia Indah, tempat ini cocok untuk resepsi pernikahan dengan jumlah tamu undangan yang banyak. Selain aula yang besar, lahan parkirnya pun sangat luas.
+                                <br><br>
+                                Sasana Kriya memiliki tiga gedung dengan kapasitas berbeda-beda, mulai dari 800 hingga 3000 orang. Khusus untuk menyewa gedung saja, Sasana Kriya mematok harga mulai dari Rp35 juta.
+                            </h6>
+                            <br>
+
+                            <h6> <b> 7. Gedung Arsip Nasional RI </b></h6>
+                            <h6>
+                                Sejak konsep garden party diganderungi oleh pasangan muda, biaya gedung pernikahan ini menjadi salah satu pilihan favorit calon pengantin yang mau mengadakan pernikahan dengan konsep pernikahan outdoor dan indoor.
+                                <br><br>
+                                Uniknya, selain memiliki kebun yang bisa menampung sekitar 1.500 orang, terdapat pula area indoor yang bisa menampung hingga 500 orang. Jadi, gedung ini adalah pilihan aman untuk mengantisipasi terjadinya hujan di resepsi pernikahan kita.
+                                <br><br>
+                                Sebenarnya, harga sewa gedung ini dimulai dari Rp 35 juta. Namun sayangnya kita hanya boleh menggunakan vendor rekanan gedung sehingga biaya paket yang dibayarkan sudah termasuk biaya catering. Paket yang ditawarkan mulai dari Rp 95 juta untuk 500 orang.
+                                <br><br>
+                                Nah itu dia beberapa rekomendasi biaya gedung pernikahan yang terjangkau bagi pasangan kaula muda yang sedang merintis harus menghitung total biaya pernikahan di gedung, keseluruhan vendor yang dibutuhkan bahkan sampai biaya bulan madu! Selain itu terdapat paket biaya gedung pernikahan di Jakarta yang disediakan oleh Weeding Organizer dan Event Organizer yang handal dan terpercaya! Yuk cek disini ALovers.
+                            </h6>
+                            <br>
+
                         </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <img src="../img/weddingfoto.jpg" class="card-img" alt="gambar" height="100%">
                     </div>
                 </div>
             </div>
@@ -186,6 +278,128 @@
 
 
         <div class="footer">
+            <style>
+                @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+                .list-space-footer-2-2 {
+                    margin-bottom: 1.25rem;
+                }
+
+                .list-space-footer-2-2-title {
+                    margin-bottom: 1.5rem;
+                }
+
+                .footer-text-title-footer-2-2 {
+                    font-size: 1.5rem;
+                    font-weight: 600;
+                    color: #000000;
+                }
+
+                .list-menu-footer-2-2 {
+                    color: #c7c7c7;
+                    text-decoration: none !important;
+                    cursor: pointer;
+                }
+
+                .list-menu-footer-2-2:hover {
+                    color: #555252;
+                }
+
+                hr.hr-footer-2-2 {
+                    margin: 0;
+                    border: 0;
+                    border-top: 1px solid rgba(0, 0, 0, 0.1);
+                }
+
+                .border-color-footer-2-2 {
+                    color: #c7c7c7;
+                }
+
+                .footer-link-footer-2-2 {
+                    margin-right: 1.25rem;
+                    color: #c7c7c7;
+                }
+
+                .footer-link-footer-2-2:hover {
+                    color: #555252;
+                    cursor: pointer;
+                }
+
+                .social-media-c-footer-2-2:hover circle,
+                .social-media-p-footer-2-2:hover path {
+                    fill: #555252;
+                    cursor: pointer;
+                }
+
+                .footer-info-space-footer-2-2 {
+                    padding-top: 3rem;
+                }
+
+                .social-media-left-footer-2-2 {
+                    margin-right: 1.25rem;
+                }
+
+                .social-media-center-1-footer-2-2 {
+                    margin-right: 1.25rem;
+                }
+
+                .social-media-center-2-footer-2-2 {
+                    margin-right: 1.25rem;
+                }
+
+                .list-footer-footer-2-2 {
+                    padding: 5rem 1rem 6rem 1rem;
+                }
+
+                .info-footer-footer-2-2 {
+                    padding-left: 1rem;
+                    padding-right: 1rem;
+                    padding-bottom: 3rem;
+                }
+
+                @media (max-width: 980px) {
+                    .footer-responsive-space-footer-2-2 {
+                        margin-bottom: 1.25rem;
+                        margin-top: 1.25rem;
+                    }
+                }
+
+                @media (min-width: 576px) {
+                    .list-footer-footer-2-2 {
+                        padding: 5rem 2rem 6rem 2rem;
+                    }
+
+                    .info-footer-footer-2-2 {
+                        padding-left: 2rem;
+                        padding-right: 2rem;
+                        padding-bottom: 3rem;
+                    }
+                }
+
+                @media (min-width: 768px) {
+                    .list-footer-footer-2-2 {
+                        padding: 5rem 4rem 6rem 4rem;
+                    }
+
+                    .info-footer-footer-2-2 {
+                        padding-left: 4rem;
+                        padding-right: 4rem;
+                        padding-bottom: 3rem;
+                    }
+                }
+
+                @media (min-width: 992px) {
+                    .list-footer-footer-2-2 {
+                        padding: 5rem 6rem 6rem 6rem;
+                    }
+
+                    .info-footer-footer-2-2 {
+                        padding-left: 6rem;
+                        padding-right: 6rem;
+                        padding-bottom: 3rem;
+                    }
+                }
+            </style>
             <br><br><br><br>
             <div style="font-family: 'Poppins', sans-serif;">
                 <div class="list-footer-footer-2-2 bg-light">

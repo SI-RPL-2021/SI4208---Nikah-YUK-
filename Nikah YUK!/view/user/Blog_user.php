@@ -1,3 +1,17 @@
+<?php
+    session_start();
+    require '../../controller/function.php';
+
+    if (isset($_SESSION['email'])) {
+        
+    } else {
+        header("Location: ../Login.php");
+    }
+   
+    
+?>
+
+
 <!doctype html>
 <html lang="en">
 
@@ -6,7 +20,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Blog</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="../style/blog_page.css">
+    <link rel="stylesheet" type="text/css" href="../../style/blog_page.css">
+    <link rel="stylesheet" type="text/css" href="../../style/landing_page.css">
 
 <body>
     <section style="height:100%; width: 100%; box-sizing: border-box; background-color: #FFFFFF">
@@ -20,7 +35,7 @@
         <div class="header-2-2" style="font-family: 'Poppins', sans-serif;">
             <nav class="navbar navbar-expand-lg navbar-light">
                 <a href="#">
-                    <img style="margin-right:0.75rem" src="../img/logo1.png" alt="">
+                    <img style="margin-right:0.75rem" src="../../img/logo1.png" alt="">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="modal" data-bs-target="#targetModal-header-2-2">
                     <span class="navbar-toggler-icon"></span>
@@ -44,32 +59,32 @@
                 <div class="collapse navbar-collapse" id="navbarTogglerDemo-header-2-2">
                     <ul class="navbar-nav me-auto mt-1 mt-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link" href="Landing_Page.php">Home</a>
+                            <a class="nav-link" href="Welcome_page.php">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="Faq.php">FAQ</a>
+                            <a class="nav-link" href="Faq_user.php">FAQ</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Tutorial</a>
                         </li>
                         <li class="nav-item active">
-                            <a class="nav-link" href="Blog.php">Blog</a>
+                            <a class="nav-link" href="Blog_user.php">Blog</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Loker</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="Konsultasi.php">Consultation</a>
+                            <a class="nav-link" href="Konsultasi_user.php">Consultation</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="testimoni.php">Testimoni</a>
+                            <a class="nav-link" href="testimoni_user.php">Testimoni</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Services</a>
                         </li>
                     </ul>
-                    <a href="Login.php"><button class="btn btn-default btn-no-fill-header-2-2">Log In</button></a>
-                    <a href="SignUp.php"><button class="btn btn-fill-header-2-2">Sign Up</button></a>
+                    <button class="btn btn-default btn-no-fill-header-4-2">Hi!, <?=$_SESSION['email'];?></button>
+                    <a href="../../controller/logout.php"><button class="btn btn-fill-header-4-2">Logout</button></a>
                 </div>
             </nav>
         </div>
@@ -98,7 +113,7 @@
             <div class="card mb-2">
                 <div class="row">
                     <div class="col-md-6">
-                        <img src="../img/Fotopernikahan.png" class="card-img" alt="gambar" height="100%">
+                        <img src="../../img/Fotopernikahan.png" class="card-img" alt="gambar" height="100%">
                     </div>
                     <div class="col-md-6" style="text-align:center">
                         <div class="card-body">
@@ -107,7 +122,7 @@
                             Mewujudkan hari pernikahan memang rasanya campur aduk, ya kan! Mulai dari exciting sendiri, bingung, jadi gampang sensi karena terlalu banyak worry, ditambah drama dadakan yang tiba-tiba muncul. Untuk menghindari hal-hal yang ketinggalan dalam proses persiapan pernikahan maka berikut ini punya contekan persiapan pernikahan untuk kalian bride-to-be, so check this out</p>
                             <p>....................</p>
                             <br><br><br>
-                            <a href="Blog_Prepar.php" class="btn btn-dark">Read More</a>
+                            <a href="Blog_Prepar_user.php" class="btn btn-dark">Read More</a>
                         </div>
                     </div>
                 </div>
@@ -126,11 +141,11 @@
                                 Agar bisa menemukan tempat resepsi sesuai keinginan, berikut referensi serta estimasi biaya pernikahan di gedung dan paket pernikahan di Jakarta. Dari gedung pemerintah, hingga hotel bintang lima, mulai yang termurah hingga termahal.</p>
                             <p>....................</p>
                             <br><br><br>
-                            <a href="Blog_Building.php" class="btn btn-dark">Read More</a>
+                            <a href="Blog_Building_user.php" class="btn btn-dark">Read More</a>
                         </div>
                     </div>
                     <div class="col-lg-6">
-                        <img src="../img/Vendor.jpg" class="card-img" alt="gambar" height="100%">
+                        <img src="../../img/Vendor.jpg" class="card-img" alt="gambar" height="100%">
                     </div>
                 </div>
             </div>
@@ -140,7 +155,7 @@
             <div class="card mb-6">
                 <div class="row no-gutters">
                     <div class="col-lg-6">
-                        <img src="../img/Vendorprofil.jpg" class="card-img" alt="gambar" height="100%">
+                        <img src="../../img/Vendorprofil.jpg" class="card-img" alt="gambar" height="100%">
                     </div>
                     <div class="col-md-6" style="text-align:center">
                         <div class="card-body">
@@ -150,7 +165,7 @@
                                 Jika iya, maka jangan khawatir. Berikut kumparanWOMAN berikan lima daftar vendor pernikahan yang harus segera ditentukan saat Anda dan pasangan memutuskan untuk menikah. Apa saja?</p>
                             <p>....................</p>
                             <br><br><br>
-                            <a href="Blog_Vendor.php" class="btn btn-dark">Read More</a>
+                            <a href="Blog_Vendor_user.php" class="btn btn-dark">Read More</a>
                         </div>
                     </div>
                 </div>
@@ -170,11 +185,11 @@
                             </p>
                             <p>....................</p>
                             <br><br><br>
-                            <a href="Blog_Photography.php" class="btn btn-dark">Read More</a>
+                            <a href="Blog_Photography_user.php" class="btn btn-dark">Read More</a>
                         </div>
                     </div>
                     <div class="col-lg-6">
-                        <img src="../img/weddingfoto.jpg" class="card-img" alt="gambar" height="100%">
+                        <img src="../../img/weddingfoto.jpg" class="card-img" alt="gambar" height="100%">
                     </div>
                 </div>
             </div>
@@ -193,7 +208,7 @@
                         <div class="col-lg-4 col-md-6">
                             <div class="">
                                 <div class="list-space-footer-2-2-2">
-                                    <img src="../img/logo1.png" alt="">
+                                    <img src="../../img/logo1.png" alt="">
                                 </div>
                             </div>
                         </div>

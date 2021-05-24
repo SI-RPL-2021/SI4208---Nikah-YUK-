@@ -6,24 +6,27 @@
     if (isset($_POST["register1"])) {
 
       if (regis($_POST) > 0) {
-        ?>
-        <div class="alert alert-warning" role="alert">
-          Berhasil Registrasi!!
-        </div>
-        <?php
-          header("Location: Login.php");
-          exit;
-        ?>
-      <?php } else { ?>
-        <div class="alert alert-warning" role="alert">
-          Gagal Registrasi!!
-        </div>
-        <?php
-          header("Location: SignUp.php");
-          exit;
-        ?>
-    <?php   }
-    }  ?>
+       
+        
+        function tampilAlert($text, $tipe) {
+        echo "<div class=\"alert alert-".$tipe."\" role=\"alert\">
+                <p>".$text."</p>
+              </div>";
+        }
+        
+        tampilAlert("Data Berhasil Ditambahkan", "success");
+        
+
+       } else { 
+          echo mysqli_error($conn);  
+        
+          // header("Location: SignUp.php");
+        
+       }
+       
+   }
+?>  
+  
 
 <!DOCTYPE html>
 <html lang="en">
@@ -301,7 +304,7 @@
     </div>
 
   </section>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+  <scrip src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></scrip>
 </body>
 
 </html>

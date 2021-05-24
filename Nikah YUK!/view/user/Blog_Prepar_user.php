@@ -1,12 +1,100 @@
-<!doctype html>
-<html lang="en">
+<?php
+    session_start();
+    require '../../controller/function.php';
+
+    if (isset($_SESSION['email'])) {
+        
+    } else {
+        header("Location: ../Login.php");
+    }
+   
+    
+?>
 
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Blog</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="../style/blog_page.css">
+    <link rel="stylesheet" type="text/css" href="../../style/blog_page.css">
+    <link rel="stylesheet" type="text/css" href="../../style/landing_page.css">
+    <style type="text/css">
+        .sidenav {
+            height: 45%;
+            width: 300px;
+            position: fixed;
+            z-index: 2;
+            /* top: 0; */
+            right: 65px;
+            background-color: #FFFAFA;
+            overflow-x: hidden;
+            padding-top: 20px;
+        }
+
+        .sidenav a {
+            padding: 6px 8px 6px 16px;
+            text-decoration: none;
+            font-size: 25px;
+            color: black;
+            display: block;
+        }
+
+        .sidenav a:hover {
+            color: black;
+        }
+
+        .main {
+            margin-right: 160px;
+            /* Same as the width of the sidenav */
+            font-size: 28px;
+            /* Increased text to enable scrolling */
+            padding: 0px 10px;
+        }
+
+        @media screen and (max-height: 350px) {
+            .sidenav {
+                padding-top: 15px;
+            }
+
+            .sidenav a {
+                font-size: 18px;
+            }
+        }
+
+        .letter1 {
+            letter-spacing: 1px;
+        }
+
+        .word5 {
+            word-spacing: 5px;
+        }
+
+        body {
+            font-family: verdana;
+            font-size: 12px;
+        }
+
+        .margin {
+            margin: 100px 150px 100px 150px;
+        }
+
+        .container {
+            width: 50%;
+            height: auto;
+            background: white;
+            margin: auto;
+            margin-top: 5px;
+            padding-bottom: 5px;
+        }
+
+        .badan {
+            height: 450px;
+        }
+
+        .garis_tepi2 {
+            border: 10px double green;
+        }
+    </style>
 
 <body>
     <section style="height:100%; width: 100%; box-sizing: border-box; background-color: #FFFFFF">
@@ -20,7 +108,7 @@
         <div class="header-2-2" style="font-family: 'Poppins', sans-serif;">
             <nav class="navbar navbar-expand-lg navbar-light">
                 <a href="#">
-                    <img style="margin-right:0.75rem" src="../img/logo1.png" alt="">
+                    <img style="margin-right:0.75rem" src="../../img/logo1.png" alt="">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="modal" data-bs-target="#targetModal-header-2-2">
                     <span class="navbar-toggler-icon"></span>
@@ -44,16 +132,16 @@
                 <div class="collapse navbar-collapse" id="navbarTogglerDemo-header-2-2">
                     <ul class="navbar-nav me-auto mt-1 mt-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link" href="Landing_Page.php">Home</a>
+                            <a class="nav-link" href="Welcome_page.php">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="Faq.php">FAQ</a>
+                            <a class="nav-link" href="Faq_user.php">FAQ</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Tutorial</a>
                         </li>
                         <li class="nav-item active">
-                            <a class="nav-link" href="Blog.php">Blog</a>
+                            <a class="nav-link" href="Blog_user.php">Blog</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Loker</a>
@@ -68,113 +156,112 @@
                             <a class="nav-link" href="#">Services</a>
                         </li>
                     </ul>
-                    <a href="Login.php"><button class="btn btn-default btn-no-fill-header-2-2">Log In</button></a>
-                    <a href="SignUp.php"><button class="btn btn-fill-header-2-2">Sign Up</button></a>
+                    <button class="btn btn-default btn-no-fill-header-4-2">Hi!, <?=$_SESSION['email'];?></button>
+                    <a href="../../controller/logout.php"><button class="btn btn-fill-header-4-2">Logout</button></a>
                 </div>
             </nav>
         </div>
 
 
+        <!---------------------------------------------------------------------------------------------- Blog ----------------------------------------------------------------------------------------->
+
+
+        <!-- <div class="badan">
+            <div class="sidebar">
+                sidebar
+                <ul>
+                    <li><a href="">boom</a></li>
+                </ul>
+            </div>
+        </div> -->
 
         <br><br><br>
+        <div class="row">
+            <div class="col-12"></div>
+        </div>
+        <div class="row">
+            <div class="col-12" text>
+                <h2 align="center"><b> Wedding Preparation </b> </h2>
+            </div>
+        </div>
+        <br><br><br>
+
+        <div class="sidenav garis_tepi2">
+            <a align="center" href="Blog_user.php">Halaman Blog</a>
+            <hr />
+            <a href="Blog_Building_user.php">Building</a><br>
+            <a href="Blog_Photography_user.php">Photography</a><br>
+            <a href="Blog_Prepar_user.php">Preparation</a><br>
+            <a href="Blog_Vendor_user.php">Vendor</a>
+        </div>
+
         <div class="container">
-            <div class="row">
-                <div class="col-12"></div>
-            </div>
-            <div class="row">
-                <div class="col-12" text>
-                    <h2 align="center"><b> Halaman Blog</b> </h2>
-                </div>
-            </div>
-            <br><br><br>
-
-
-            <!-- <h1 style="text-align:center"> Halaman Blog </h1> -->
-
-
-            <!---------------------------------------------------------------------------------------------- Blog ----------------------------------------------------------------------------------------->
-
-
-            <div class="card mb-2">
-                <div class="row">
-                    <div class="col-md-6">
-                        <img src="../img/Fotopernikahan.png" class="card-img" alt="gambar" height="100%">
+            <div class="card">
+                <div class="">
+                    <div class="col">
+                        <img src="../../img/Fotopernikahan.png" class="card-img">
                     </div>
-                    <div class="col-md-6" style="text-align:center">
-                        <div class="card-body">
-                            <h5 class="card-title">Wedding Preparation</h5>
-                            <p>Ketika si dia sudah melamar dan acara pertunangan sudah dilakukan, artinya kamu sudah harus segera siap-siap to the next preparation! Mungkin kamu bingung harus mulai dari mana, apa dulu yang dikerjakan, hingga gimana cara mewujudkan seluruh impian pernikahan kalian. Sangking bingungnya akhirnya kamu malah panik. Tapi tenang, Sputnik bisa jadi wedding guide kalian dalam menemukan inspirasi pernikahan, hingga step-step apa saja yang perlu dilakukan.
-                            Mewujudkan hari pernikahan memang rasanya campur aduk, ya kan! Mulai dari exciting sendiri, bingung, jadi gampang sensi karena terlalu banyak worry, ditambah drama dadakan yang tiba-tiba muncul. Untuk menghindari hal-hal yang ketinggalan dalam proses persiapan pernikahan maka berikut ini punya contekan persiapan pernikahan untuk kalian bride-to-be, so check this out</p>
-                            <p>....................</p>
-                            <br><br><br>
-                            <a href="Blog_Prepar.php" class="btn btn-dark">Read More</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
 
-            <br><br><br>
-
-            <div class="card mb-3">
-                <div class="row no-gutters">
-                    <div class="col-md-6 text-white bg-secondary" style="text-align:center">
-                        <div class="card-body">
-                            <h5 class="card-title">Wedding Building</h5>
-                            <p>Ketika Nikah-Yuk Lovers memutuskan untuk menggelar resepsi pernikahan di gedung, artinya kita sudah siap akan biaya gedung pernikahan lebih yang harus dikeluarkan serta rencana untuk tempat tinggal kedepan. Supaya biaya tak membengkak, pilih gedung yang harga sewanya sesuai bujet.
-                                Dalam melakukan ”persiapan pernikahan” memilih venue atau tempat pernikahan adalah hal yang harus dilakukan calon pengantin dari jauh-jauh hari. Sebab, beberapa gedung pernikahan terutama yang terletak di pusat kota seperti Jakarta, sudah penuh dipesan hingga setahun ke depan oleh calon pengantin lain. Bahkan masih banyak yang harus masuk ke dalam daftar antrian untuk bisa memesan tempat.
-                                Biasanya pihak pengelola gedung akan mendahulukan orang yang paling cepat memberi uang tanda jadi. Semakin lama kita mengambil keputusan soal tempat resepsi, terkait biaya resepsi dan biaya gedung pernikahan maka akan semakin terbatas juga pilihan yang tersedia.
-                                Agar bisa menemukan tempat resepsi sesuai keinginan, berikut referensi serta estimasi biaya pernikahan di gedung dan paket pernikahan di Jakarta. Dari gedung pemerintah, hingga hotel bintang lima, mulai yang termurah hingga termahal.</p>
-                            <p>....................</p>
-                            <br><br><br>
-                            <a href="Blog_Building.php" class="btn btn-dark">Read More</a>
-                        </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <img src="../img/Vendor.jpg" class="card-img" alt="gambar" height="100%">
-                    </div>
-                </div>
-            </div>
-
-            <br><br><br>
-
-            <div class="card mb-6">
-                <div class="row no-gutters">
-                    <div class="col-lg-6">
-                        <img src="../img/Vendorprofil.jpg" class="card-img" alt="gambar" height="100%">
-                    </div>
-                    <div class="col-md-6" style="text-align:center">
-                        <div class="card-body">
-                            <h5 class="card-title">Vendor Profile</h5>
-                            <p>Dalam mempersiapkan pernikahan, dibutuhkan kesiapan matang dari segala aspek, termasuk juga soal urusan vendor pernikahan. Memilih vendor pernikahan tak bisa ditentukan begitu saja. Kita sebagai calon pengantin yang akan menggunakan jasa mereka, harus mengetahui kredibilitas masing-masing vendor agar pesta pernikahan dapat berjalan mulus.
-                                Tetapi biasanya, banyak calon pengantin yang merasa kewalahan dan bingung untuk menentukan vendor utama dalam mempersiapkan pernikahan. Ladies, apakah Anda salah satunya?
-                                Jika iya, maka jangan khawatir. Berikut kumparanWOMAN berikan lima daftar vendor pernikahan yang harus segera ditentukan saat Anda dan pasangan memutuskan untuk menikah. Apa saja?</p>
-                            <p>....................</p>
-                            <br><br><br>
-                            <a href="Blog_Vendor.php" class="btn btn-dark">Read More</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <br><br><br>
-
-            <div class="card mb-3">
-                <div class="row no-gutters">
-                    <div class="col-md-6 text-white bg-secondary" style="text-align:center">
-                        <div class="card-body">
-                            <h5 class="card-title">Wedding Photography & Video</h5>
+                    <div class="text-justify word5">
+                        <div class="puul-right margin">
+                            <h4 class="card-title"> <b>Daftar Lengkap List Persiapan Pernikahan Nikah-Yuk</b></h4>
+                            <h6>
+                                Ketika si dia sudah melamar dan acara pertunangan sudah dilakukan, artinya kamu sudah harus segera siap-siap to the next preparation! Mungkin kamu bingung harus mulai dari mana, apa dulu yang dikerjakan, hingga gimana cara mewujudkan seluruh impian pernikahan kalian. Sangking bingungnya akhirnya kamu malah panik. Tapi tenang, Sputnik bisa jadi wedding guide kalian dalam menemukan inspirasi pernikahan, hingga step-step apa saja yang perlu dilakukan.
+                                <br><br>
+                                Mewujudkan hari pernikahan memang rasanya campur aduk, ya kan! Mulai dari exciting sendiri, bingung, jadi gampang sensi karena terlalu banyak worry, ditambah drama dadakan yang tiba-tiba muncul. Untuk menghindari hal-hal yang ketinggalan dalam proses persiapan pernikahan maka berikut ini punya contekan persiapan pernikahan untuk kalian bride-to-be, so check this out…
+                            </h6>
                             <br>
-                            <p>
-                                Fotografer pernikahan adalah merupakan pekerjaan fotografi yang rumit dan tersulit di dunia. Alasannya sederhana, tidak ada pengambilan foto pernikahan ulang. Pernikahan ini, dimana anda bertanggung jawab untuk memotretnya, hanya terjadi satu kali. Tidak ada istilah “kamera rusak”, “memory card tidak cukup” atau “baterai flash lupa di-charge”.
-                                Tapi, anda bisa menyingkirkan ketakutan dari foto-foto pernikahan dengan mengikuti panduan untuk merekam foto-foto yang dibutuhkan untuk menceritakan kisah dari awal sampai akhir. Anda akan diajak melalui setiap tahap di hari pernikahan, mulai dari foto persiapan sampai foto pre-wedding, dan mulai dari memotret di lokasi acara sampai merekam keceriaan di acara resepsi pernikahan, sehingga anda bisa menghadapi semuanya dengan percaya diri.
-                            </p>
-                            <p>....................</p>
-                            <br><br><br>
-                            <a href="Blog_Photography.php" class="btn btn-dark">Read More</a>
+                            <!-- <img src="img/Vendorprofil.jpg" class="card-img" alt="gambar" height="100%"> -->
+                            <h6>
+                                <b>Menentukan Tanggal dan Budget Pernikahan</b>
+                                Hal pertama sekali adalah tentukan tanggal pernikahan kalian. Kalian akan susah melangkah untuk booking tempat pernikahan ataupun vendor sana sini kalau belum menemukan tanggal fix pernikahan. Karena untuk bisa tahu vendor pernikahan yang kamu inginkan bisa atau tidak membantu kalian, tentunya melalui tanggal pernikahan.
+                                <br><br>
+                                Persiapan pernikahan lainnya yang perlu kamu siapkan sejak awal adalah budget pernikahan. Budget pernikahan jangan disepelekan loh! Budget menjadi hal yang sensitif antar calon pengantin dan juga kedua keluarga.
+                                <br><br>
+                                Sputnik menyarankan agar kamu berdua menjalin komunikasi yang baik untuk urusan budget, keterbukaan dalam budget pernikahan akan lebih memudahkan persiapan pernikahan kalian. Jika budget sudah kalian kantongi, tinggal membagi masing-masing pos pengeluaran vendor pernikahan.
+                                <br><br>
+                                Agar kalian tidak over budget, sebaiknya tentukan jumlah keseluruhan acara persiapan pernikahan kalian dibawah jumlah budget yang kalian punya. Hal ini mengantisipasi perbedaan harga ataupun keperluan tambahan persiapan pernikahan kalian.
+                            </h6>
+                            <br>
+                            <!-- <img src="img/gedung.jpg" class="card-img" alt="gambar" height="100%"> -->
+                            <h6>
+                                <b> Konsep </b>
+                                Setelah masalah budget persiapan pernikahan selesai, lanjut lagi untuk menentukan konsep acara. Terus konsep ini datang dari mana sih, yang pasti datang dari keinginan atau impian pernikahan yang diwujudkan. Artinya kalian harus tahu apa yang kalian inginkan.
+                                <br><br>
+                                Setidaknya kamu tahu konsep apa yang diinginkan, apakah itu formal, semi formal, ataupun yang santai namun intimate. Setelah itu benar-benar dimulai untuk mencari konsep persiapan pernikahan yang lebih detil.
+                                <br><br>
+                                Inspirasi persiapan pernikahan apalagi sebuah konsep acara bisa kamu liat dari berbagai sosial media, website pernikahan, hingga ulasan pernikahan yang menurut kamu memiliki daya tarik untuk menjadi inspirasi.
+                                <br><br>
+                                Brainstorming konsep Persiapan Pernikahan amat sangat diperlukan, kamu harus rajin-rajin searching web pernikahan termasuk ulasan seputar pernikahan.
+                            </h6>
+                            <br>
+                            <!-- <img src="img/catering.png" class="card-img" alt="gambar" height="100%"> -->
+                            <h6>
+                                <b> Tempat Pernikahan Atau Wedding Venue </b>
+                                Konsep yang sudah ada, tinggal kamu wujudkan melalui hal krusial yang satu ini. Yup! wedding venue atau tempat pernikahan menjadi nomor satu yang penting. Biasanya drama persiapan pernikahan dimulai deh, dari sulitnya mencari gedung yang sesuai budget dan fasilitas yang diinginkan, hingga wedding venue yang ternyata full booked ditanggal pernikahan kalian.
+                                <br><br>
+                                Eiittss.. jangan langsung jadi bridezilla kalau hal itu terjadi sama kalian, karena itu semua juga dialami hampir semua calon pengantin. Mengantisipasinya adalah dengan membuat daftar tempat pernikahan yang menjadi incaran kamu dan pasangan. Sehingga kalau plan A ngga berjalan, kamu bisa langsung ganti plan B. Jangan sampai kamu terpatok hanya satu tempat pernikahan saja, ini hanya akan menghambat rencana persiapan pernikahan kalian nantinya.
+                                <br><br>
+                                Jika sudah menemukan wedding venue yang tepat langsung DP, agar kamu lebih merasa lega dan lanjut ke perjuangan persiapan pernikahan lainnya!
+                            </h6>
+                            <br>
+                            <!-- <img src="img/pengantin.jpg" class="card-img" alt="gambar" height="100%"> -->
+                            <h6>
+                                <b> Wedding Check List Timeline </b>
+                                Agar pernikahan kalian berjalan sesuai waktu yang ditentukan dan semuanya ngga dibuat keriting jadi bridezilla, coba untuk membuat wedding checklist timeline. Dengan wedding checklist timeline akan sangat membantu persiapan pernikahan kalian. Sputnik punya catatan check list yang bisa kamu jadikan guideline dalam menyusun rencana persiapan pernikahan bareng pasangan.
+                            </h6>
+                            <br>
+                            <!-- <img src="img/foto-foto.jpg" class="card-img" alt="gambar" height="100%"> -->
+                            <h6>
+                                <b> Catering </b>
+                                catering atau F&B merupakan pos budget pernikahan yang terbesar dalam pengeluaran sebuah pesta pernikahan. Untuk itu, catering akan sangat berpengaruh dengan jumlah undangan kalian. Jadi sebelum kalian menentukan vendor catering pernikahan yang tepat, sebaiknya ketahui dulu jumlah tamu undangan kalian.
+                                <br><br>
+                                Tips yang kedua adalah, arrange waktu yang tepat bersama pasangan dan keluarga untuk bisa mencicipi menu makanannya. Test food sangatlah berpengaruh, ngga mau kan sudah bayar banyak untuk catering tapi hasilnya tidak sesuai. Jadi sebaiknya gunakan waktu kosong untuk bisa langsung mencicipi tiap menu yang menjadi andalan ataupun menu gubukannya.
+                                <br><br>
+                                Jangan ragu juga untuk berkonsultasi dengan pihak marketing catering, karena catering service yang berpengalaman akan memberikan solusi yang baik dalam menentukan jumlah porsi yang tepat.
+                            </h6>
+
                         </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <img src="../img/weddingfoto.jpg" class="card-img" alt="gambar" height="100%">
                     </div>
                 </div>
             </div>
@@ -186,6 +273,128 @@
 
 
         <div class="footer">
+            <style>
+                @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+                .list-space-footer-2-2 {
+                    margin-bottom: 1.25rem;
+                }
+
+                .list-space-footer-2-2-title {
+                    margin-bottom: 1.5rem;
+                }
+
+                .footer-text-title-footer-2-2 {
+                    font-size: 1.5rem;
+                    font-weight: 600;
+                    color: #000000;
+                }
+
+                .list-menu-footer-2-2 {
+                    color: #c7c7c7;
+                    text-decoration: none !important;
+                    cursor: pointer;
+                }
+
+                .list-menu-footer-2-2:hover {
+                    color: #555252;
+                }
+
+                hr.hr-footer-2-2 {
+                    margin: 0;
+                    border: 0;
+                    border-top: 1px solid rgba(0, 0, 0, 0.1);
+                }
+
+                .border-color-footer-2-2 {
+                    color: #c7c7c7;
+                }
+
+                .footer-link-footer-2-2 {
+                    margin-right: 1.25rem;
+                    color: #c7c7c7;
+                }
+
+                .footer-link-footer-2-2:hover {
+                    color: #555252;
+                    cursor: pointer;
+                }
+
+                .social-media-c-footer-2-2:hover circle,
+                .social-media-p-footer-2-2:hover path {
+                    fill: #555252;
+                    cursor: pointer;
+                }
+
+                .footer-info-space-footer-2-2 {
+                    padding-top: 3rem;
+                }
+
+                .social-media-left-footer-2-2 {
+                    margin-right: 1.25rem;
+                }
+
+                .social-media-center-1-footer-2-2 {
+                    margin-right: 1.25rem;
+                }
+
+                .social-media-center-2-footer-2-2 {
+                    margin-right: 1.25rem;
+                }
+
+                .list-footer-footer-2-2 {
+                    padding: 5rem 1rem 6rem 1rem;
+                }
+
+                .info-footer-footer-2-2 {
+                    padding-left: 1rem;
+                    padding-right: 1rem;
+                    padding-bottom: 3rem;
+                }
+
+                @media (max-width: 980px) {
+                    .footer-responsive-space-footer-2-2 {
+                        margin-bottom: 1.25rem;
+                        margin-top: 1.25rem;
+                    }
+                }
+
+                @media (min-width: 576px) {
+                    .list-footer-footer-2-2 {
+                        padding: 5rem 2rem 6rem 2rem;
+                    }
+
+                    .info-footer-footer-2-2 {
+                        padding-left: 2rem;
+                        padding-right: 2rem;
+                        padding-bottom: 3rem;
+                    }
+                }
+
+                @media (min-width: 768px) {
+                    .list-footer-footer-2-2 {
+                        padding: 5rem 4rem 6rem 4rem;
+                    }
+
+                    .info-footer-footer-2-2 {
+                        padding-left: 4rem;
+                        padding-right: 4rem;
+                        padding-bottom: 3rem;
+                    }
+                }
+
+                @media (min-width: 992px) {
+                    .list-footer-footer-2-2 {
+                        padding: 5rem 6rem 6rem 6rem;
+                    }
+
+                    .info-footer-footer-2-2 {
+                        padding-left: 6rem;
+                        padding-right: 6rem;
+                        padding-bottom: 3rem;
+                    }
+                }
+            </style>
             <br><br><br><br>
             <div style="font-family: 'Poppins', sans-serif;">
                 <div class="list-footer-footer-2-2 bg-light">
@@ -193,7 +402,7 @@
                         <div class="col-lg-4 col-md-6">
                             <div class="">
                                 <div class="list-space-footer-2-2-2">
-                                    <img src="../img/logo1.png" alt="">
+                                    <img src="../../img/logo1.png" alt="">
                                 </div>
                             </div>
                         </div>

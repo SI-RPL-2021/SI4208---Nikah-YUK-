@@ -83,7 +83,7 @@
             }
 
             $_SESSION['message'] = 'Berhasil Login';
-            header("Location: Welcome_page.php");
+            header("Location: user/Welcome_page.php");
         }
     }
 }

@@ -1,3 +1,16 @@
+<?php
+    session_start();
+    require '../../controller/function.php';
+
+    if (isset($_SESSION['email'])) {
+        
+    } else {
+        header("Location: ../Login.php");
+    }
+   
+    
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -9,7 +22,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
     <script src="sweetalert2.min.js"></script>
     <link rel="stylesheet" href="sweetalert2.min.css">
-    <link rel="stylesheet" type="text/css" href="../style/testimoni_page.css">
+    <link rel="stylesheet" type="text/css" href="../../style/testimoni_page.css">
     <title>testimoni</title>
 </head>
 
@@ -19,7 +32,7 @@
         <div class="header-4-2" style="font-family: 'Poppins', sans-serif;">
             <nav class="navbar navbar-expand-lg navbar-light">
                 <a href="#">
-                    <img style="margin-right:0.75rem" src="../img/logo1.png" alt="">
+                    <img style="margin-right:0.75rem" src="../../img/logo1.png" alt="">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="modal" data-bs-target="#targetModal-header-4-2">
                     <span class="navbar-toggler-icon"></span>
@@ -72,33 +85,32 @@
                 <div class="collapse navbar-collapse" id="navbarTogglerDemo-header-4-2">
                     <ul class="navbar-nav me-auto mt-2 mt-lg-0">
                         <li class="nav-item active">
-                            <a class="nav-link" href="Landing_Page.php">Home</a>
+                            <a class="nav-link" href="Welcome_page.php">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="Faq.php">FAQ</a>
+                            <a class="nav-link" href="Faq_user.php">FAQ</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Tutorial</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="Blog.php">Blog</a>
+                            <a class="nav-link" href="Blog_user.php">Blog</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Loker</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="Konsultasi.php">Consultation</a>
+                            <a class="nav-link" href="Konsultasi_user.php">Consultation</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="testimoni.php">Testimoni</a>
+                            <a class="nav-link" href="testimoni_user.php">Testimoni</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Services</a>
                         </li>
                     </ul>
-                    <a href="Login.php"><button class="btn btn-default btn-no-fill-header-4-2">Log
-                            In</button></a>
-                    <a href="SignUp.php"><button class="btn btn-fill-header-4-2">Sign Up</button></a>
+                    <button class="btn btn-default btn-no-fill-header-4-2">Hi!, <?=$_SESSION['email'];?></button>
+                    <a href="../../controller/logout.php"><button class="btn btn-fill-header-4-2">Logout</button></a>
                 </div>
             </nav>
             <div class="testimonials">
@@ -108,7 +120,7 @@
 
                     <div class="row">
                         <?php
-                        include('../controller/db_conn.php');
+                        include('../../controller/db_conn.php');
                         $query = "SELECT * FROM testimoni";
                         $select = $conn->prepare($query);
                         $select->execute();
@@ -127,7 +139,7 @@
 
                                     <div class="col">
                                         <div class="testimonial">
-                                            <img src="../img/testi.png" alt="">
+                                            <img src="../../img/testi.png" alt="">
                                             <div class="card-body">
                                                 <div class="name"><?php echo $row["name"] ?></b></div>
                                                 <div class="stars">
@@ -171,7 +183,7 @@
 
                                             <body>
                                                 <div class="container">
-                                                    <form method="post" action="../controller/send.php">
+                                                    <form method="post" action="../../controller/send.php">
                                                         <div class="form-group">
                                                             <label for="name">Nama Pasangan :</label>
                                                             <input type="text" name="name" id="name" class="form-control" required>
