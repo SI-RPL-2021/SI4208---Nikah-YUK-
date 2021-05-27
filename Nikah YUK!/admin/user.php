@@ -1,9 +1,25 @@
 <?php
 session_start();
-include '../../controller/function.php';
+include '../controller/function.php';
 
+if (isset($_POST['adduser'])) {
+    $username = $_POST['uname'];
+    $password = password_hash($_POST['upass'], PASSWORD_DEFAULT);
+
+    $tambahuser = mysqli_query($conn, "insert into login values('','$username','$password')");
+    if ($tambahuser) {
+        echo " <div class='alert alert-success'>
+			Berhasil menambahkan staff baru.
+		  </div>
+		<meta http-equiv='refresh' content='1; url= user.php'/>  ";
+    } else {
+        echo "<div class='alert alert-warning'>
+			Gagal menambahkan staff baru.
+		  </div>
+		 <meta http-equiv='refresh' content='1; url= user.php'/> ";
+    }
+};
 ?>
-
 
 <!doctype html>
 <html class="no-js" lang="en">
@@ -39,17 +55,9 @@ include '../../controller/function.php';
     <link rel="stylesheet" href="assets/css/responsive.css">
     <!-- modernizr css -->
     <script src="assets/js/vendor/modernizr-2.8.3.min.js"></script>
-
-    <!-- Profile template -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons">
-    <link rel="stylesheet" href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css" integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX" crossorigin="anonymous">
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons">
-    <link rel="stylesgeet" href="https://rawgit.com/creativetimofficial/material-kit/master/assets/css/material-kit.css">
-    <link rel="stylesheet" href="assets/css/profile.css">
 </head>
 
-<body class="profile-page">
+<body>
     <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
@@ -61,31 +69,32 @@ include '../../controller/function.php';
     <!-- page container area start -->
     <div class="page-container">
         <!-- sidebar menu area start -->
-        <div class="sidebar-menu ">
+        <div class="sidebar-menu">
             <div class="main-menu">
                 <div class="menu-inner">
                     <nav>
                         <ul class="metismenu" id="menu">
+                            <li><a href="index.php"><span>Home</span></a></li>
+                            <li><a href="../"><span>Kembali ke Toko</span></a></li>
+                            <li>
+                                <a href="manageorder.php"><i class="ti-dashboard"></i><span>Kelola Pesanan</span></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" aria-expanded="true"><i class="ti-layout"></i><span>Kelola Toko
+                                    </span></a>
+                                <ul class="collapse">
+                                    <li><a href="kategori.php">Kategori</a></li>
+                                    <li><a href="produk.php">Produk</a></li>
+                                    <li><a href="pembayaran.php">Metode Pembayaran</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="customer.php"><span>Kelola Pelanggan</span></a></li>
+                            <li class="active"><a href="user.php"><span>Kelola Staff</span></a></li>
+                            <li>
+                                <a href="../logout.php"><span>Logout</span></a>
 
-                            <li>
-                                <p>&nbsp;&nbsp;&nbsp;<img src="../../img/logo1.png" alt="" width="250px" height="100px"></p>
                             </li>
-                            <br>
-                            <li>
-                                <a href="Welcome_page.php"><i class="ti-home"></i><span>Home</span></a>
-                            </li>
-                            <li>
-                                <a href="profile_user.php"><i class="ti-user"></i><span>Profile</span></a>
-                            </li>
-                            <li>
-                                <a href="manageorder.php"><i class="ti-shopping-cart"></i><span>Cart</span></a>
-                            </li>
-                            <li>
-                                <a href="manageorder.php"><i class="ti-package"></i><span>Daftar Order</span></a>
-                            </li>
-                            <li>
-                                <a href="../../controller/logout.php"><i class="ti-power-off"></i><span>Logout</span></a>
-                            </li>
+
                         </ul>
                     </nav>
                 </div>
@@ -122,6 +131,7 @@ include '../../controller/function.php';
                                             var yy = date.getYear();
                                             var year = (yy < 1000) ? yy + 1900 : yy;
                                             document.write(thisDay + ', ' + day + ' ' + months[month] + ' ' + year);
+                                            //-->
                                         </script></b>
                                     </div>
                                 </h3>
@@ -140,66 +150,45 @@ include '../../controller/function.php';
                 <div class="row mt-5 mb-5">
                     <div class="col-12">
                         <div class="card">
-                            <div class="card-body bg-light">
-
-                                <!-- Profile Template Start-->
-                                <br><br><br><br><br>
-                                <div class="main main-raised">
-                                    <div class="profile-content">
-                                        <div class="container">
-                                            <div class="row">
-                                                <div class="col-md-3 ml-auto mr-auto">
-                                                    <div class="profile">
-                                                        <div class="avatar">
-                                                            <img src="https://www.biography.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cg_face%2Cq_auto:good%2Cw_300/MTU0NjQzOTk4OTQ4OTkyMzQy/ansel-elgort-poses-for-a-portrait-during-the-baby-driver-premiere-2017-sxsw-conference-and-festivals-on-march-11-2017-in-austin-texas-photo-by-matt-winkelmeyer_getty-imagesfor-sxsw-square.jpg" alt="Circle Image" class="img-raised rounded-circle img-fluid">
-                                                        </div>
-                                                        <div class="name">
-                                                            <h3 class="title">Christian Louboutin</h3>
-                                                            <h6>Designer</h6>
-                                                            <a href="#pablo" class="btn btn-just-icon btn-link btn-dribbble"><i class="fa fa-dribbble"></i></a>
-                                                            <a href="#pablo" class="btn btn-just-icon btn-link btn-twitter"><i class="fa fa-twitter"></i></a>
-                                                            <a href="#pablo" class="btn btn-just-icon btn-link btn-pinterest"><i class="fa fa-pinterest"></i></a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="container mt-5">
-                                                <form>
-                                                    <div class="form-group">
-                                                        <label for="exampleInputEmail1">Full Name</label>
-                                                        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-                                                        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-                                                    </div>
-                                                    <div class="form-group">
-                                                        <label for="exampleInputEmail1">Email address</label>
-                                                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-                                                        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-                                                    </div>
-                                                    <div class="form-group">
-                                                        <label for="exampleInputEmail1">Phone Number</label>
-                                                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-                                                        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-                                                    </div>
-                                                    <div class="form-group">
-                                                        <label for="exampleInputPassword1">Password</label>
-                                                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-                                                    </div>
-                                                    <button type="submit" class="btn btn-light bg-success ">Submit</button>
-                                                </form>
-                                            </div>
-                                            <br><br>
-
-                                        </div>
-                                    </div>
+                            <div class="card-body">
+                                <div class="d-sm-flex justify-content-between align-items-center">
+                                    <h2>Daftar Staff</h2>
                                 </div>
+                                <div class="data-tables datatable-dark">
+                                    <table id="dataTable3" class="display" style="width:100%">
+                                        <thead class="thead-dark">
+                                            <tr>
+                                                <th>No.</th>
+                                                <th>Nama</th>
+                                                <th>Email</th>
+                                                <th>Telepon</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <?php
+                                            $brgs = mysqli_query($conn, "SELECT * from login where role='Admin' order by userid ASC");
+                                            $no = 1;
+                                            while ($p = mysqli_fetch_array($brgs)) {
+
+                                            ?>
+
+                                                <tr>
+                                                    <td><?php echo $no++ ?></td>
+                                                    <td><?php echo $p['namalengkap'] ?></td>
+                                                    <td><?php echo $p['email'] ?></td>
+                                                    <td><?php echo $p['notelp'] ?></td>
+                                                   
+
+                                                </tr>
 
 
+                                            <?php
+                                            }
 
-                                <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-                                <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-                                <script src="https://unpkg.com/popper.js@1.12.6/dist/umd/popper.js" integrity="sha384-fA23ZRQ3G/J53mElWqVJEGJzU0sTs+SvzG8fXVWP+kJQ1lwFAOkcUOysnlKJC33U" crossorigin="anonymous"></script>
-                                <script src="https://unpkg.com/bootstrap-material-design@4.1.1/dist/js/bootstrap-material-design.js" integrity="sha384-CauSuKpEqAFajSpkdjv3z9t8E7RlpJ1UP0lKM/+NdtSarroVKu069AlsRPKkFBz9" crossorigin="anonymous"></script>
-                                <br><br>
+                                            ?>
+                                        </tbody>
+                                    </table>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -212,7 +201,11 @@ include '../../controller/function.php';
     </div>
     <!-- main content area end -->
     <!-- footer area start-->
-
+    <footer>
+        <div class="footer-area">
+            <p>By Richard's Lab</p>
+        </div>
+    </footer>
     <!-- footer area end-->
     </div>
     <!-- page container area end -->

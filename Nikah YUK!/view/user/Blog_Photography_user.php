@@ -1,16 +1,8 @@
 <?php
-    session_start();
-    require '../../controller/function.php';
+session_start();
+include '../../controller/function.php';
 
-    if (isset($_SESSION['email'])) {
-        
-    } else {
-        header("Location: ../Login.php");
-    }
-   
-    
 ?>
-
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -156,9 +148,24 @@
                             <a class="nav-link" href="#">Services</a>
                         </li>
                     </ul>
-                    <button class="btn btn-default btn-no-fill-header-4-2">Hi!, <?=$_SESSION['email'];?></button>
-                    <a href="../../controller/logout.php"><button class="btn btn-fill-header-4-2">Logout</button></a>
-                </div>
+                    <?php
+					if (!isset($_SESSION['log'])) {
+						
+					} else {
+
+						if ($_SESSION['role'] == 'Member') {
+							echo '
+                    <a href="profile_user.php"><button class="btn btn-default btn-no-fill-header-4-2">Hi!, ' . $_SESSION['name'] . ' </button></a>
+					<a href="../../controller/logout.php"><button class="btn btn-fill-header-4-2 bg-danger">Logout</button></a>
+					';
+						} else {
+							echo '
+                    <a href="../../admin/index.php"><button class="btn btn-default btn-no-fill-header-4-2">Hi!, ' . $_SESSION['name'] . ' </button></a>
+					<a href="../../controller/logout.php"><button class="btn btn-fill-header-4-2 bg-danger">Logout</button></a>
+					';
+						};
+					}
+					?>
             </nav>
         </div>
 
