@@ -1,7 +1,9 @@
 <?php
 session_start();
-include '../../controller/function.php';
 
+require '../../controller/function.php';
+
+$usr = query("SELECT * FROM login");
 
 ?>
 
@@ -108,7 +110,7 @@ include '../../controller/function.php';
 
 						if ($_SESSION['role'] == 'Member') {
 							echo '
-                    <a href="profile_user.php"><button class="btn btn-default btn-no-fill-header-4-2">Hi!, ' . $_SESSION['name'] . ' </button></a>
+                    <a href="profile_user.php?userid= '. $_SESSION['userid'] .' " <button class="btn btn-default btn-no-fill-header-4-2">Hi!, ' . $_SESSION['name'] . ' </button> </a>
 					<a href="../../controller/logout.php"><button class="btn btn-fill-header-4-2 bg-danger">Logout</button></a>
 					';
 						} else {
@@ -117,6 +119,7 @@ include '../../controller/function.php';
 					<a href="../../controller/logout.php"><button class="btn btn-fill-header-4-2 bg-danger">Logout</button></a>
 					';
 						};
+
 					}
 					?>
                     

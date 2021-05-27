@@ -7,7 +7,7 @@ if(!isset($_SESSION['log'])){
 	
 };
 
-include '../controller/function.php';
+$conn = mysqli_connect("localhost","root","","nikah-yuk");
 date_default_timezone_set("Asia/Bangkok");
 $timenow = date("j-F-Y-h:i:s A");
 
@@ -19,7 +19,7 @@ $timenow = date("j-F-Y-h:i:s A");
 	$cariuser = mysqli_fetch_assoc($queryuser);
 		
 		if( password_verify($pass, $cariuser['password']) ) {
-			$_SESSION['id'] = $cariuser['userid'];
+			$_SESSION['userid'] = $cariuser['userid'];
 			$_SESSION['role'] = $cariuser['role'];
 			$_SESSION['notelp'] = $cariuser['notelp'];
 			$_SESSION['name'] = $cariuser['namalengkap'];

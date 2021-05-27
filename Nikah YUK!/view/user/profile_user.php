@@ -1,7 +1,41 @@
 <?php
-session_start();
-include '../../controller/function.php';
+    session_start();
+    require '../../controller/function.php';
 
+    // if (isset($_SESSION['email'])) {
+        
+    // } else {
+    //     header("Location: ../Login.php");
+    // }
+   
+    //ambil data di url
+
+    $id = $_GET["userid"];
+    //query data user berdasarkan id
+    $usr = query("SELECT * FROM login WHERE userid = $id")[0];
+
+    if ( isset($_POST["submit"])){
+    
+        if(update($_POST) > 0 ){
+            
+                echo 
+                "<script> 
+                alert('Data berhasil di update!');
+                window.location.href = window.location.href;
+                
+                 </script>";
+           
+    
+        } else {
+            echo "<script> 
+            alert('Data gagal di update! Coba Lagi');
+            window.location.href = window.location.href;
+             </script>";
+        
+    
+        }
+    
+    }
 ?>
 
 
@@ -21,6 +55,9 @@ include '../../controller/function.php';
     <link rel="stylesheet" href="assets/css/metisMenu.css">
     <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
     <link rel="stylesheet" href="assets/css/slicknav.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    
+    
 
     <!-- amchart css -->
     <link rel="stylesheet" href="https://www.amcharts.com/lib/3/plugins/export/export.css" type="text/css" media="all" />
@@ -132,7 +169,6 @@ include '../../controller/function.php';
                 </div>
             </div>
 
-
             <!-- page title area end -->
             <div class="main-content-inner">
 
@@ -144,6 +180,7 @@ include '../../controller/function.php';
 
                                 <!-- Profile Template Start-->
                                 <br><br><br><br><br>
+                  
                                 <div class="main main-raised">
                                     <div class="profile-content">
                                         <div class="container">
@@ -151,42 +188,60 @@ include '../../controller/function.php';
                                                 <div class="col-md-3 ml-auto mr-auto">
                                                     <div class="profile">
                                                         <div class="avatar">
-                                                            <img src="https://www.biography.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cg_face%2Cq_auto:good%2Cw_300/MTU0NjQzOTk4OTQ4OTkyMzQy/ansel-elgort-poses-for-a-portrait-during-the-baby-driver-premiere-2017-sxsw-conference-and-festivals-on-march-11-2017-in-austin-texas-photo-by-matt-winkelmeyer_getty-imagesfor-sxsw-square.jpg" alt="Circle Image" class="img-raised rounded-circle img-fluid">
+                                                            <img src="../../img/male-icon.jpg
+                                                            " alt="Circle Image" class="img-raised rounded-circle img-fluid">
                                                         </div>
                                                         <div class="name">
-                                                            <h3 class="title">Christian Louboutin</h3>
-                                                            <h6>Designer</h6>
-                                                            <a href="#pablo" class="btn btn-just-icon btn-link btn-dribbble"><i class="fa fa-dribbble"></i></a>
-                                                            <a href="#pablo" class="btn btn-just-icon btn-link btn-twitter"><i class="fa fa-twitter"></i></a>
-                                                            <a href="#pablo" class="btn btn-just-icon btn-link btn-pinterest"><i class="fa fa-pinterest"></i></a>
+                                                        <br>
+                                                            <h3 class="title"><?= $usr["namalengkap"]; ?></h3>
+                                                            <hr>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="container mt-5">
-                                                <form>
+
+                                                <form action="" method="post">
                                                     <div class="form-group">
-                                                        <label for="exampleInputEmail1">Full Name</label>
-                                                        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-                                                        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                                                    <input type="hidden" name="userid" value="<?=$usr["userid"];?> ">
+                                                        <label for="namalengkap"> Name</label>
+                                                        <input type="text" class="form-control" id="namalengkap" aria-describedby="emailHelp" placeholder="Enter Your Name..."
+                                                        value="<?= $usr["namalengkap"]; ?>" name="namalengkap">
                                                     </div>
                                                     <div class="form-group">
                                                         <label for="exampleInputEmail1">Email address</label>
-                                                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                                                        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter your email..."
+                                                        value="<?= $usr["email"]; ?>" name="email">
                                                         <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
                                                     </div>
                                                     <div class="form-group">
-                                                        <label for="exampleInputEmail1">Phone Number</label>
-                                                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-                                                        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                                                        <label for="notelp">Phone Number</label>
+                                                        <input type="text" class="form-control" id="notelp" aria-describedby="emailHelp" placeholder="Enter your phone number..."
+                                                        value="<?= $usr["notelp"]; ?>" name="notelp">
+                                                        
                                                     </div>
-                                                    <div class="form-group">
-                                                        <label for="exampleInputPassword1">Password</label>
-                                                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-                                                    </div>
-                                                    <button type="submit" class="btn btn-light bg-success ">Submit</button>
+                                                    
+                                                    <button type="submit" name="submit" class="btn btn-light bg-success ">Update</button>
                                                 </form>
                                             </div>
+                                            <!-- Modal -->
+                                                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                    <div class="modal-dialog modal-lg">
+                                                        <div class="modal-content">
+                                                            <div class="modal-header">
+                                                                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                            </div>
+                                                            <div class="modal-body">
+                                                                ...
+                                                            </div>
+                                                            <div class="modal-footer">
+                                                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
                                             <br><br>
 
                                         </div>
@@ -256,6 +311,8 @@ include '../../controller/function.php';
         });
     </script>
 
+    
+
     <!-- jquery latest version -->
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
     <!-- bootstrap 4 js -->
@@ -293,5 +350,3 @@ include '../../controller/function.php';
     <script src="assets/js/scripts.js"></script>
 
 </body>
-
-</html>
