@@ -59,13 +59,13 @@ include '../../controller/function.php';
                             <a class="nav-link" href="Faq_user.php">FAQ</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Tutorial</a>
+                            <a class="nav-link" href="tutorial_user.php">Tutorial</a>
                         </li>
                         <li class="nav-item active">
                             <a class="nav-link" href="Blog_user.php">Blog</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Loker</a>
+                            <a class="nav-link" href="loker_user.php">Loker</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="Konsultasi_user.php">Consultation</a>
@@ -74,7 +74,7 @@ include '../../controller/function.php';
                             <a class="nav-link" href="testimoni_user.php">Testimoni</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Services</a>
+                            <a class="nav-link" href="service_user.php">Services</a>
                         </li>
                     </ul>
                     <?php

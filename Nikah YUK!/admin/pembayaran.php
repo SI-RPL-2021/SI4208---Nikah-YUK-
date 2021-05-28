@@ -89,7 +89,7 @@ if (isset($_POST['addmethod'])) {
                             <li><a href="customer.php"><span>Kelola Pelanggan</span></a></li>
                             <li><a href="user.php"><span>Kelola Staff</span></a></li>
                             <li>
-                                <a href="../logout.php"><span>Logout</span></a>
+                                <a href="../controller/logout.php"><span>Logout</span></a>
 
                             </li>
 

@@ -10,6 +10,7 @@
     <script src="sweetalert2.min.js"></script>
     <link rel="stylesheet" href="sweetalert2.min.css">
     <link rel="stylesheet" type="text/css" href="../style/testimoni_page.css">
+    
     <title>testimoni</title>
 </head>
 
@@ -78,13 +79,13 @@
                             <a class="nav-link" href="Faq.php">FAQ</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Tutorial</a>
+                            <a class="nav-link" href="tutorial.php">Tutorial</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="Blog.php">Blog</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Loker</a>
+                            <a class="nav-link" href="loker.php">Loker</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="Konsultasi.php">Consultation</a>

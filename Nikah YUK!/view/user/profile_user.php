@@ -115,10 +115,10 @@
                                 <a href="profile_user.php"><i class="ti-user"></i><span>Profile</span></a>
                             </li>
                             <li>
-                                <a href="manageorder.php"><i class="ti-shopping-cart"></i><span>Cart</span></a>
+                                <a href="cart_user.php"><i class="ti-shopping-cart"></i><span>Cart</span></a>
                             </li>
                             <li>
-                                <a href="manageorder.php"><i class="ti-package"></i><span>Daftar Order</span></a>
+                                <a href="daftar_order.php"><i class="ti-package"></i><span>Daftar Order</span></a>
                             </li>
                             <li>
                                 <a href="../../controller/logout.php"><i class="ti-power-off"></i><span>Logout</span></a>

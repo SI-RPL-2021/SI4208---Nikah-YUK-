@@ -113,4 +113,62 @@ function update ($data) {
 
 }
 
-?>
+if (!empty($_GET['namaBrg'])) {
+    $user_id = $_SESSION['userid'];
+    $price = $_GET['price'];
+    $namaBrg = $_GET['namaBrg'];
+
+    $insert = "INSERT INTO cart_package VALUES ('','$user_id','$namaBrg','$price')";
+    mysqli_query($conn, $insert);
+
+ 
+    
+                 echo "<script> 
+                 alert('Data berhasil di tambahkan!');
+                 document.location.href ='../view/user/Welcome_page.php';
+                  </script>";      
+
+
+    return mysqli_affected_rows($conn);
+}
+
+// if (!empty($_GET['userid'])) {
+//     $userid = $_GET['userid'];
+
+//     $delete = "DELETE FROM cart_package WHERE userid='$userid'";
+//     mysqli_query($conn, $delete);
+
+//     echo "<script> 
+//                  alert('Data berhasil di hapus!');
+//                  document.location.href ='../view/user/cart_user.php';
+//                   </script>"; 
+
+    
+
+//     return mysqli_affected_rows($conn);
+// }
+
+function show()
+{
+    global $conn;
+
+    $user_id = $_SESSION['userid'];
+
+    $select = "SELECT * FROM cart_package WHERE user_id='$user_id'";
+    $result = mysqli_query($conn, $select);
+    $carts = null;
+
+    while ($cart = mysqli_fetch_assoc($result)) {
+        $carts[] = $cart;
+    }
+
+    $totalHarga = 0;
+
+    if (!is_null($carts)) {
+        foreach ($carts as $harga) {
+            $totalHarga += $harga['price'];
+        }
+
+        return array($carts, $totalHarga);
+    }
+}

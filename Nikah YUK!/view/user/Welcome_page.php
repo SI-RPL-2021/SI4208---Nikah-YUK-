@@ -85,13 +85,13 @@ $usr = query("SELECT * FROM login");
                             <a class="nav-link" href="Faq_user.php">FAQ</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Tutorial</a>
+                            <a class="nav-link" href="tutorial_user.php">Tutorial</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="Blog_user.php">Blog</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Loker</a>
+                            <a class="nav-link" href="loker_user.php">Loker</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="Konsultasi_user.php">Consultation</a>
@@ -100,7 +100,7 @@ $usr = query("SELECT * FROM login");
                             <a class="nav-link" href="testimoni_user.php">Testimoni</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Services</a>
+                            <a class="nav-link" href="service_user.php">Services</a>
                         </li>
                     </ul>
                     <?php
@@ -376,8 +376,8 @@ $usr = query("SELECT * FROM login");
                                             </span>Honeymoon
                                         </p>
                                     </div>
-                                    <button class="btn btn-outline-content-3-7 d-flex justify-content-center align-items-center w-100">Choose
-                                        Plan</button>
+                                    <a href="../../controller/function.php?namaBrg=Silver&price=10000"><button class="btn btn-outline-content-3-7 d-flex justify-content-center align-items-center w-100">Choose
+                                        Plan</button></a>
                                 </div>
                             </div>
                             <div class="mx-auto card-content-3-7">
@@ -431,8 +431,8 @@ $usr = query("SELECT * FROM login");
                                         </p>
                                     </div>
                                     <br>
-                                    <button class="btn btn-outline-content-3-7 d-flex justify-content-center align-items-center w-100">Choose
-                                        Plan</button>
+                                    <a href="../../controller/function.php?namaBrg=Gold&price=18000"><button class="btn btn-outline-content-3-7 d-flex justify-content-center align-items-center w-100">Choose
+                                        Plan</button></a>
                                 </div>
                             </div>
                             <div class="mx-auto card-content-3-7">
@@ -488,8 +488,8 @@ $usr = query("SELECT * FROM login");
                                             </span>Honeymoon
                                         </p>
                                     </div>
-                                    <button class="btn btn-fill-content-3-7 d-flex justify-content-center align-items-center w-100">Choose
-                                        Plan</button>
+                                    <a href="../../controller/function.php?namaBrg=Platinum&price=35000"><button class="btn btn-fill-content-3-7 d-flex justify-content-center align-items-center w-100">Choose
+                                        Plan</button></a>
                                 </div>
                             </div>
                         </div>
