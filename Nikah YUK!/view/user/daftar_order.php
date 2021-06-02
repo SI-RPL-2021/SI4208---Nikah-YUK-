@@ -45,7 +45,7 @@ if (isset($_POST["update"])) {
     <meta charset="utf-8">
     <link rel="icon" type="image/png" href="../favicon.png">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Kelola Staff - Tokopekita</title>
+    <title>Nikah-YUK!</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" type="image/png" href="assets/images/icon/favicon.ico">
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
@@ -186,7 +186,7 @@ if (isset($_POST["update"])) {
             </div>
 
 
-            
+
             <!-- checkout -->
             <div class="checkout">
                 <div class="container">

@@ -8,7 +8,7 @@ $idk = $_GET['idkategori'];
 <html>
 
 <head>
-    <title>Tokopekita - Kategori</title>
+    <title>Nikah-YUK!</title>
     
     
     <link href="assets/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
@@ -152,7 +152,7 @@ $idk = $_GET['idkategori'];
                                         <div class="hover14 column">
                                             <div class="agile_top_brand_left_grid">
                                                 <div class="agile_top_brand_left_grid_pos">
-                                                    <img src="images/offer.png" alt=" " class="img-responsive" />
+                                                    <img src="../../img/offer.png" alt=" " class="img-responsive" />
                                                 </div>
                                                 <div class="agile_top_brand_left_grid1">
                                                     <figure>
