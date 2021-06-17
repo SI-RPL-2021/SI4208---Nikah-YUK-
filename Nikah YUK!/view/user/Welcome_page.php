@@ -1,14 +1,10 @@
 <?php
-    session_start();
-    require '../../controller/function.php';
+session_start();
 
-    if (isset($_SESSION['email'])) {
-        
-    } else {
-        header("Location: ../Login.php");
-    }
-   
-    
+require '../../controller/function.php';
+
+$usr = query("SELECT * FROM login");
+
 ?>
 
 <!DOCTYPE html>
@@ -89,13 +85,13 @@
                             <a class="nav-link" href="Faq_user.php">FAQ</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Tutorial</a>
+                            <a class="nav-link" href="tutorial_user.php">Tutorial</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="Blog_user.php">Blog</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Loker</a>
+                            <a class="nav-link" href="loker_user.php">Loker</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="Konsultasi_user.php">Consultation</a>
@@ -104,11 +100,29 @@
                             <a class="nav-link" href="testimoni_user.php">Testimoni</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Services</a>
+                            <a class="nav-link" href="service_user.php">Services</a>
                         </li>
                     </ul>
-                    <a href="profile_user.php"><button class="btn btn-default btn-no-fill-header-4-2">Hi!, <?=$_SESSION['email'];?></button></a>
-                    <a href="../../controller/logout.php"><button class="btn btn-fill-header-4-2">Logout</button></a>
+                    <?php
+					if (!isset($_SESSION['log'])) {
+						
+					} else {
+
+						if ($_SESSION['role'] == 'Member') {
+							echo '
+                    <a href="profile_user.php?userid= '. $_SESSION['userid'] .' " <button class="btn btn-default btn-no-fill-header-4-2">Hi!, ' . $_SESSION['name'] . ' </button> </a>
+					<a href="../../controller/logout.php"><button class="btn btn-fill-header-4-2 bg-danger">Logout</button></a>
+					';
+						} else {
+							echo '
+                    <a href="../../admin/index.php"><button class="btn btn-default btn-no-fill-header-4-2">Hi!, ' . $_SESSION['name'] . ' </button></a>
+					<a href="../../controller/logout.php"><button class="btn btn-fill-header-4-2 bg-danger">Logout</button></a>
+					';
+						};
+
+					}
+					?>
+                    
                 </div>
             </nav>
 
@@ -362,7 +376,7 @@
                                             </span>Honeymoon
                                         </p>
                                     </div>
-                                    <button class="btn btn-outline-content-3-7 d-flex justify-content-center align-items-center w-100">Choose
+                                    <button onclick="window.location.href='product.php?idproduk=16'" class="btn btn-outline-content-3-7 d-flex justify-content-center align-items-center w-100">Choose
                                         Plan</button>
                                 </div>
                             </div>
@@ -417,7 +431,7 @@
                                         </p>
                                     </div>
                                     <br>
-                                    <button class="btn btn-outline-content-3-7 d-flex justify-content-center align-items-center w-100">Choose
+                                    <button onclick="window.location.href='product.php?idproduk=17'" class="btn btn-outline-content-3-7 d-flex justify-content-center align-items-center w-100">Choose
                                         Plan</button>
                                 </div>
                             </div>
@@ -474,7 +488,7 @@
                                             </span>Honeymoon
                                         </p>
                                     </div>
-                                    <button class="btn btn-fill-content-3-7 d-flex justify-content-center align-items-center w-100">Choose
+                                    <button onclick="window.location.href='product.php?idproduk=18'" class="btn btn-outline-content-3-7 d-flex justify-content-center align-items-center w-100">Choose
                                         Plan</button>
                                 </div>
                             </div>
@@ -504,28 +518,28 @@
                                     </div>
                                     <nav style="list-style-type:none;">
                                         <li class="list-space-footer-2-2">
-                                            <a class="list-menu-footer-2-2">Home</a>
+                                            <a class="list-menu-footer-2-2" onclick="window.location.href='Welcome_page.php'">Home</a>
                                         </li>
                                         <li class="list-space-footer-2-2">
-                                            <a class="list-menu-footer-2-2">FAQ</a>
+                                            <a class="list-menu-footer-2-2" onclick="window.location.href='Faq_user.php'">FAQ</a>
                                         </li>
                                         <li class="list-space-footer-2-2">
-                                            <a class="list-menu-footer-2-2">Tutorial</a>
+                                            <a class="list-menu-footer-2-2" onclick="window.location.href='tutorial_user.php'">Tutorial</a>
                                         </li>
                                         <li class="list-space-footer-2-2">
-                                            <a class="list-menu-footer-2-2">Blog</a>
+                                            <a class="list-menu-footer-2-2" onclick="window.location.href='Blog_user.php'">Blog</a>
                                         </li>
                                         <li class="list-space-footer-2-2">
-                                            <a class="list-menu-footer-2-2">Vacancy</a>
+                                            <a class="list-menu-footer-2-2" onclick="window.location.href='loker_user.php'">Vacancy</a>
                                         </li>
                                         <li class="list-space-footer-2-2">
-                                            <a class="list-menu-footer-2-2">Consultation</a>
+                                            <a class="list-menu-footer-2-2" onclick="window.location.href='Konsultasi_user.php'">Consultation</a>
                                         </li>
                                         <li class="list-space-footer-2-2">
-                                            <a class="list-menu-footer-2-2">Testimoni</a>
+                                            <a class="list-menu-footer-2-2" onclick="window.location.href='testimoni_user.php'">Testimoni</a>
                                         </li>
                                         <li class="list-space-footer-2-2">
-                                            <a class="list-menu-footer-2-2">Services</a>
+                                            <a class="list-menu-footer-2-2" onclick="window.location.href='Service_user.php'">Services</a>
                                         </li>
                                     </nav>
                                 </div>
@@ -534,29 +548,18 @@
                                 <h2 class="footer-text-title-footer-2-2 list-space-footer-2-2-title">Product</h2>
                                 <nav style="list-style-type:none;">
                                     <li class="list-space-footer-2-2">
-                                        <a class="list-menu-footer-2-2">Venue</a>
+                                        <a class="list-menu-footer-2-2" onclick="window.location.href='service_user.php?idkategori=4'">Venue</a>
                                     </li>
                                     <li class="list-space-footer-2-2">
-                                        <a class="list-menu-footer-2-2">Cathering</a>
+                                        <a class="list-menu-footer-2-2" onclick="window.location.href='service_user.php?idkategori=5'">Wardrobe</a>
                                     </li>
                                     <li class="list-space-footer-2-2">
-                                        <a class="list-menu-footer-2-2">Wardrobe</a>
+                                        <a class="list-menu-footer-2-2" onclick="window.location.href='service_user.php?idkategori=6'">Catering</a>
                                     </li>
                                     <li class="list-space-footer-2-2">
-                                        <a class="list-menu-footer-2-2">Photographer Tool</a>
+                                        <a class="list-menu-footer-2-2" onclick="window.location.href='service_user.php?idkategori=7'">Wedding Car</a>
                                     </li>
-                                    <li class="list-space-footer-2-2">
-                                        <a class="list-menu-footer-2-2">Music</a>
-                                    </li>
-                                    <li class="list-space-footer-2-2">
-                                        <a class="list-menu-footer-2-2">Wedding Car</a>
-                                    </li>
-                                    <li class="list-space-footer-2-2">
-                                        <a class="list-menu-footer-2-2">PhotoBooth</a>
-                                    </li>
-                                    <li class="list-space-footer-2-2">
-                                        <a class="list-menu-footer-2-2">Honeymoon</a>
-                                    </li>
+                                   
                                 </nav>
                             </div>
                         </div>

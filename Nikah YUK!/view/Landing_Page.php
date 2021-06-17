@@ -4,9 +4,11 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Landing Page</title>
+    <title>Landing Page - Nikah-YUK!</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="../style/landing_page.css">
+
+
 </head>
 
 <body>
@@ -56,8 +58,10 @@
                                         <a class="nav-link" href="#">Testimoni</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="#">Services</a>
+                                        <a class="nav-link" href="#">Service</a>
                                     </li>
+
+
                                 </ul>
                             </div>
                             <div class="modal-footer" style="padding:	2rem; padding-top: 0.75rem">
@@ -77,13 +81,13 @@
                             <a class="nav-link" href="Faq.php">FAQ</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Tutorial</a>
+                            <a class="nav-link" href="tutorial.php">Tutorial</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="Blog.php">Blog</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Loker</a>
+                            <a class="nav-link" href="loker.php">Loker</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="Konsultasi.php">Consultation</a>
@@ -91,13 +95,12 @@
                         <li class="nav-item">
                             <a class="nav-link" href="testimoni.php">Testimoni</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Services</a>
-                        </li>
                     </ul>
-                    <a href="Login.php"><button class="btn btn-default btn-no-fill-header-4-2">Log
-                            In</button></a>
-                    <a href="SignUp.php"><button class="btn btn-fill-header-4-2">Sign Up</button></a>
+                    <div>
+                        <a href="Login.php"><button class="btn btn-default btn-no-fill-header-4-2">Log
+                                In</button></a>
+                        <a href="SignUp.php"><button class="btn btn-fill-header-4-2">Sign Up</button></a>
+                    </div>
                 </div>
             </nav>
 
@@ -253,7 +256,7 @@
 
             <!-- Keunggulan website -->
             <div class="keunggulan website">
-                
+
                 <div style="font-family: 'Poppins', sans-serif;">
 
                     <div class="text-center title-text-content-2-2">
@@ -352,7 +355,7 @@
                                             </span>Honeymoon
                                         </p>
                                     </div>
-                                    <button class="btn btn-outline-content-3-7 d-flex justify-content-center align-items-center w-100">Choose
+                                    <button onclick="window.location.href='Login.php'" class="btn btn-outline-content-3-7 d-flex justify-content-center align-items-center w-100">Choose
                                         Plan</button>
                                 </div>
                             </div>
@@ -407,7 +410,7 @@
                                         </p>
                                     </div>
                                     <br>
-                                    <button class="btn btn-outline-content-3-7 d-flex justify-content-center align-items-center w-100">Choose
+                                    <button onclick="window.location.href='Login.php'" class="btn btn-outline-content-3-7 d-flex justify-content-center align-items-center w-100">Choose
                                         Plan</button>
                                 </div>
                             </div>
@@ -464,7 +467,7 @@
                                             </span>Honeymoon
                                         </p>
                                     </div>
-                                    <button class="btn btn-fill-content-3-7 d-flex justify-content-center align-items-center w-100">Choose
+                                    <button onclick="window.location.href='Login.php'" class="btn btn-fill-content-3-7 d-flex justify-content-center align-items-center w-100">Choose
                                         Plan</button>
                                 </div>
                             </div>
@@ -494,28 +497,25 @@
                                     </div>
                                     <nav style="list-style-type:none;">
                                         <li class="list-space-footer-2-2">
-                                            <a class="list-menu-footer-2-2">Home</a>
+                                            <a class="list-menu-footer-2-2" onclick="window.location.href='landing_page.php'">Home</a>
                                         </li>
                                         <li class="list-space-footer-2-2">
-                                            <a class="list-menu-footer-2-2">FAQ</a>
+                                            <a class="list-menu-footer-2-2" onclick="window.location.href='Faq.php'">FAQ</a>
                                         </li>
                                         <li class="list-space-footer-2-2">
-                                            <a class="list-menu-footer-2-2">Tutorial</a>
+                                            <a class="list-menu-footer-2-2" onclick="window.location.href='tutorial.php'">Tutorial</a>
                                         </li>
                                         <li class="list-space-footer-2-2">
-                                            <a class="list-menu-footer-2-2">Blog</a>
+                                            <a class="list-menu-footer-2-2" onclick="window.location.href='Blog.php'">Blog</a>
                                         </li>
                                         <li class="list-space-footer-2-2">
-                                            <a class="list-menu-footer-2-2">Vacancy</a>
+                                            <a class="list-menu-footer-2-2" onclick="window.location.href='loker.php'">Vacancy</a>
                                         </li>
                                         <li class="list-space-footer-2-2">
-                                            <a class="list-menu-footer-2-2">Consultation</a>
+                                            <a class="list-menu-footer-2-2" onclick="window.location.href='Konsultasi.php'">Consultation</a>
                                         </li>
                                         <li class="list-space-footer-2-2">
-                                            <a class="list-menu-footer-2-2">Testimoni</a>
-                                        </li>
-                                        <li class="list-space-footer-2-2">
-                                            <a class="list-menu-footer-2-2">Services</a>
+                                            <a class="list-menu-footer-2-2" onclick="window.location.href='testimoni.php'">Testimoni</a>
                                         </li>
                                     </nav>
                                 </div>
@@ -523,29 +523,17 @@
                             <div class="col-lg-3 col-md-6">
                                 <h2 class="footer-text-title-footer-2-2 list-space-footer-2-2-title">Product</h2>
                                 <nav style="list-style-type:none;">
-                                    <li class="list-space-footer-2-2">
-                                        <a class="list-menu-footer-2-2">Venue</a>
+                                <li class="list-space-footer-2-2">
+                                        <a class="list-menu-footer-2-2" onclick="window.location.href='login.php'">Venue</a>
                                     </li>
                                     <li class="list-space-footer-2-2">
-                                        <a class="list-menu-footer-2-2">Cathering</a>
+                                        <a class="list-menu-footer-2-2" onclick="window.location.href='login.php'">Wardrobe</a>
                                     </li>
                                     <li class="list-space-footer-2-2">
-                                        <a class="list-menu-footer-2-2">Wardrobe</a>
+                                        <a class="list-menu-footer-2-2" onclick="window.location.href='login.php'">Catering</a>
                                     </li>
                                     <li class="list-space-footer-2-2">
-                                        <a class="list-menu-footer-2-2">Photographer Tool</a>
-                                    </li>
-                                    <li class="list-space-footer-2-2">
-                                        <a class="list-menu-footer-2-2">Music</a>
-                                    </li>
-                                    <li class="list-space-footer-2-2">
-                                        <a class="list-menu-footer-2-2">Wedding Car</a>
-                                    </li>
-                                    <li class="list-space-footer-2-2">
-                                        <a class="list-menu-footer-2-2">PhotoBooth</a>
-                                    </li>
-                                    <li class="list-space-footer-2-2">
-                                        <a class="list-menu-footer-2-2">Honeymoon</a>
+                                        <a class="list-menu-footer-2-2" onclick="window.location.href='login.php'">Wedding Car</a>
                                     </li>
                                 </nav>
                             </div>
@@ -621,10 +609,56 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
     <!-- Option 2: Separate Popper and Bootstrap JS -->
 
-    <!--
+
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
-    -->
+
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- top-header and slider -->
+    <!-- here stars scrolling icon -->
+    <script type="text/javascript">
+        $(document).ready(function() {
+
+            var defaults = {
+                containerID: 'toTop', // fading element id
+                containerHoverID: 'toTopHover', // fading element hover id
+                scrollSpeed: 4000,
+                easingType: 'linear'
+            };
+
+
+            $().UItoTop({
+                easingType: 'easeOutQuart'
+            });
+
+        });
+    </script>
+    <!-- //here ends scrolling icon -->
+
+    <!-- main slider-banner -->
+    <script src="js/skdslider.min.js"></script>
+    <link href="css/skdslider.css" rel="stylesheet">
+    <script type="text/javascript">
+        jQuery(document).ready(function() {
+            jQuery('#demo1').skdslider({
+                'delay': 5000,
+                'animationSpeed': 2000,
+                'showNextPrev': true,
+                'showPlayButton': true,
+                'autoSlide': true,
+                'animationType': 'fading'
+            });
+
+            jQuery('#responsive').change(function() {
+                $('#responsive_wrapper').width(jQuery(this).val());
+            });
+
+        });
+    </script>
+    <!-- //main slider-banner -->
 </body>
 
 </html>

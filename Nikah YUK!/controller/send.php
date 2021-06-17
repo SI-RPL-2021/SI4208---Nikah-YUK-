@@ -31,7 +31,7 @@ if (isset($_POST['name']) && isset($_POST['message']) && isset($_POST['email']) 
 			echo "nilai :" . $nilai. "<br>";
 
 			// kalo mau liat isi waktu send yg bawah ini apus aja
-			header("Location: ../view/testimoni.php");	
+			header("Location: ../view/user/testimoni_user.php");	
 			
 		}else {
 			echo "Your message could not be sent!";
