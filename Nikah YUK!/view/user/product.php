@@ -1,4 +1,8 @@
 <?php
+
+
+error_reporting(0);
+
 session_start();
 include '../../controller/function.php';
 
@@ -116,10 +120,10 @@ if (isset($_POST['addprod'])) {
 	<!-- start-smoth-scrolling -->
 	<script type="text/javascript" src="assets/js/move-top.js"></script>
 	<script type="text/javascript" src="assets/js/easing.js"></script>
-	
+
 	<!-- start-smoth-scrolling -->
 	<link rel="stylesheet" type="text/css" href="../../style/blog_page.css">
-    <link rel="stylesheet" type="text/css" href="../../style/landing_page.css">
+	<link rel="stylesheet" type="text/css" href="../../style/landing_page.css">
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
 </head>
 
@@ -193,12 +197,20 @@ if (isset($_POST['addprod'])) {
 
 						if ($_SESSION['role'] == 'Member') {
 							echo '
+
                     <a href="profile_user.php"><button class="btn btn-default btn-no-fill-header-4-2">Hi!, ' . $_SESSION['name'] . ' </button></a>
+
+                   
+
 					<a href="../../controller/logout.php"><button class="btn btn-fill-header-4-2 bg-danger">Logout</button></a>
 					';
 						} else {
 							echo '
+
                     <a href="../../admin/index.php"><button class="btn btn-default btn-no-fill-header-4-2">Hi!, ' . $_SESSION['name'] . ' </button></a>
+
+                   
+
 					<a href="../../controller/logout.php"><button class="btn btn-fill-header-4-2 bg-danger">Logout</button></a>
 					';
 						};

@@ -26,7 +26,11 @@ if (isset($_POST['addmethod'])) {
     <meta charset="utf-8">
     <link rel="icon" type="image/png" href="../favicon.png">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
+
     <title>Kelola Metode Pembayaran - Tokopekita</title>
+
+    <title>Kelola Metode Pembayaran - Nikah-YUK!</title>
+
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" type="image/png" href="assets/images/icon/favicon.ico">
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
@@ -72,6 +76,7 @@ if (isset($_POST['addmethod'])) {
                 <div class="menu-inner">
                     <nav>
                         <ul class="metismenu" id="menu">
+
                             <li><a href="index.php"><span>Home</span></a></li>
                             <li><a href="../"><span>Kembali ke Toko</span></a></li>
                             <li>
@@ -90,6 +95,30 @@ if (isset($_POST['addmethod'])) {
                             <li><a href="user.php"><span>Kelola Staff</span></a></li>
                             <li>
                                 <a href="../controller/logout.php"><span>Logout</span></a>
+
+                            <li>
+                                <p>&nbsp;&nbsp;&nbsp;<img src="../img/logo1.png" alt="" width="250px" height="100px"></p>
+                            </li>
+                            <br>
+                            <li class="active"><a href="index.php"><i class="ti-home"></i><span>Home</span></a></li>
+                            <li><a href="../view/user/Welcome_page.php"><i class="ti-arrow-left"></i><span>Kembali ke Toko</span></a></li>
+                            <li>
+                                <a href="manageorder.php"><i class="ti-dashboard"></i><span>Kelola Pesanan</span></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" aria-expanded="true"><i class="ti-layout"></i><span>Kelola Toko
+                                    </span></a>
+                                <ul class="collapse">
+                                    <li><a href="kategori.php"><i class="ti-view-list-alt"></i>&nbsp;&nbsp; Kategori</a></li>
+                                    <li><a href="produk.php"><i class="ti-package"></i>&nbsp;&nbsp; Produk</a></li>
+                                    <li><a href="pembayaran.php"><i class="ti-credit-card"></i>&nbsp;&nbsp; Metode Pembayaran</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="customer.php"><i class="ti-user"></i><span> Daftar Pelanggan</span></a></li>
+                            <li><a href="user.php"><i class="ti-user"></i><span>Kelola Staff</span></a></li>
+                            <li>
+                                <a href="../controller/logout.php"><i class="ti-power-off"></i><span>Logout</span></a>
+
 
                             </li>
 
@@ -119,7 +148,10 @@ if (isset($_POST['addmethod'])) {
                                 <h3>
                                     <div class="date">
                                         <script type='text/javascript'>
+
                                             
+
+
                                             var months = ['Januari', 'Februari', 'Maret', 'April', 'Mei', 'Juni', 'Juli', 'Agustus', 'September', 'Oktober', 'November', 'Desember'];
                                             var myDays = ['Minggu', 'Senin', 'Selasa', 'Rabu', 'Kamis', 'Jumat', 'Sabtu'];
                                             var date = new Date();
@@ -128,10 +160,16 @@ if (isset($_POST['addmethod'])) {
                                             var thisDay = date.getDay(),
                                                 thisDay = myDays[thisDay];
                                             var yy = date.getYear();
+
                                             var year = (yy < 1000) ? yy + 1900 : yy;
                                             document.write(thisDay + ', ' + day + ' ' + months[month] + ' ' + year);
                                             //
                                             
+
+                                            var year = (yy <b 1000) ? yy + 1900 : yy;
+                                            document.write(thisDay + ', ' + day + ' ' + months[month] + ' ' + year);
+                                            //
+
                                         </script></b>
                                     </div>
                                 </h3>
@@ -206,7 +244,11 @@ if (isset($_POST['addmethod'])) {
     <!-- footer area start-->
     <footer>
         <div class="footer-area">
+
             <p>By Richard's Lab</p>
+
+
+
         </div>
     </footer>
     <!-- footer area end-->

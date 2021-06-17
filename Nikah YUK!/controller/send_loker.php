@@ -28,7 +28,11 @@ if (isset($_POST['name1']) && isset($_POST['name2']) && isset($_POST['address'])
 		if ($result) {
 
 			// kalo mau liat isi waktu send yg bawah ini apus aja
+
 			header("Location: loker.php");	
+
+			header("Location: ../view/user/loker_user.php");	
+
 			
 		}else {
 			echo "Your message could not be sent!";

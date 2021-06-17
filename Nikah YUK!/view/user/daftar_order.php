@@ -1,4 +1,10 @@
 <?php
+
+
+
+
+error_reporting(0);
+
 session_start();
 include '../../controller/function.php';
 
@@ -190,7 +196,11 @@ if (isset($_POST["update"])) {
             <!-- checkout -->
             <div class="checkout">
                 <div class="container">
+
                     <h2>Kamu memiliki <span><?php echo $itungtrans3 ?> transaksi</span></h2>
+
+                    <h1 style="text-align: center;">ORDER HISTORY</span></h1><br><br>
+
                     <div class="checkout-right">
                         <table class="timetable_sub">
                             <thead>
@@ -237,7 +247,11 @@ if (isset($_POST["update"])) {
                                                 <?php
                                                 if ($b['status'] == 'Payment') {
                                                     echo '
+
 								<a href="konfirmasi.php?id=' . $b['orderid'] . '" class="form-control btn-primary">
+
+								<a href="konfirmasi_user.php?id=' . $b['orderid'] . '" class="form-control btn-primary">
+
 								Konfirmasi Pembayaran
 								</a>
 								';

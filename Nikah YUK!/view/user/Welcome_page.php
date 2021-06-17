@@ -376,8 +376,13 @@ $usr = query("SELECT * FROM login");
                                             </span>Honeymoon
                                         </p>
                                     </div>
+
                                     <a href="../../controller/function.php?namaBrg=Silver&price=10000"><button class="btn btn-outline-content-3-7 d-flex justify-content-center align-items-center w-100">Choose
                                         Plan</button></a>
+
+                                    <button onclick="window.location.href='product.php?idproduk=16'" class="btn btn-outline-content-3-7 d-flex justify-content-center align-items-center w-100">Choose
+                                        Plan</button>
+
                                 </div>
                             </div>
                             <div class="mx-auto card-content-3-7">
@@ -431,8 +436,13 @@ $usr = query("SELECT * FROM login");
                                         </p>
                                     </div>
                                     <br>
+
                                     <a href="../../controller/function.php?namaBrg=Gold&price=18000"><button class="btn btn-outline-content-3-7 d-flex justify-content-center align-items-center w-100">Choose
                                         Plan</button></a>
+
+                                    <button onclick="window.location.href='product.php?idproduk=17'" class="btn btn-outline-content-3-7 d-flex justify-content-center align-items-center w-100">Choose
+                                        Plan</button>
+
                                 </div>
                             </div>
                             <div class="mx-auto card-content-3-7">
@@ -488,8 +498,13 @@ $usr = query("SELECT * FROM login");
                                             </span>Honeymoon
                                         </p>
                                     </div>
+
                                     <a href="../../controller/function.php?namaBrg=Platinum&price=35000"><button class="btn btn-fill-content-3-7 d-flex justify-content-center align-items-center w-100">Choose
                                         Plan</button></a>
+
+                                    <button onclick="window.location.href='product.php?idproduk=18'" class="btn btn-outline-content-3-7 d-flex justify-content-center align-items-center w-100">Choose
+                                        Plan</button>
+
                                 </div>
                             </div>
                         </div>
@@ -518,28 +533,28 @@ $usr = query("SELECT * FROM login");
                                     </div>
                                     <nav style="list-style-type:none;">
                                         <li class="list-space-footer-2-2">
-                                            <a class="list-menu-footer-2-2">Home</a>
+                                            <a class="list-menu-footer-2-2" onclick="window.location.href='Welcome_page.php'">Home</a>
                                         </li>
                                         <li class="list-space-footer-2-2">
-                                            <a class="list-menu-footer-2-2">FAQ</a>
+                                            <a class="list-menu-footer-2-2" onclick="window.location.href='Faq_user.php'">FAQ</a>
                                         </li>
                                         <li class="list-space-footer-2-2">
-                                            <a class="list-menu-footer-2-2">Tutorial</a>
+                                            <a class="list-menu-footer-2-2" onclick="window.location.href='tutorial_user.php'">Tutorial</a>
                                         </li>
                                         <li class="list-space-footer-2-2">
-                                            <a class="list-menu-footer-2-2">Blog</a>
+                                            <a class="list-menu-footer-2-2" onclick="window.location.href='Blog_user.php'">Blog</a>
                                         </li>
                                         <li class="list-space-footer-2-2">
-                                            <a class="list-menu-footer-2-2">Vacancy</a>
+                                            <a class="list-menu-footer-2-2" onclick="window.location.href='loker_user.php'">Vacancy</a>
                                         </li>
                                         <li class="list-space-footer-2-2">
-                                            <a class="list-menu-footer-2-2">Consultation</a>
+                                            <a class="list-menu-footer-2-2" onclick="window.location.href='Konsultasi_user.php'">Consultation</a>
                                         </li>
                                         <li class="list-space-footer-2-2">
-                                            <a class="list-menu-footer-2-2">Testimoni</a>
+                                            <a class="list-menu-footer-2-2" onclick="window.location.href='testimoni_user.php'">Testimoni</a>
                                         </li>
                                         <li class="list-space-footer-2-2">
-                                            <a class="list-menu-footer-2-2">Services</a>
+                                            <a class="list-menu-footer-2-2" onclick="window.location.href='Service_user.php'">Services</a>
                                         </li>
                                     </nav>
                                 </div>
@@ -548,29 +563,18 @@ $usr = query("SELECT * FROM login");
                                 <h2 class="footer-text-title-footer-2-2 list-space-footer-2-2-title">Product</h2>
                                 <nav style="list-style-type:none;">
                                     <li class="list-space-footer-2-2">
-                                        <a class="list-menu-footer-2-2">Venue</a>
+                                        <a class="list-menu-footer-2-2" onclick="window.location.href='service_user.php?idkategori=4'">Venue</a>
                                     </li>
                                     <li class="list-space-footer-2-2">
-                                        <a class="list-menu-footer-2-2">Cathering</a>
+                                        <a class="list-menu-footer-2-2" onclick="window.location.href='service_user.php?idkategori=5'">Wardrobe</a>
                                     </li>
                                     <li class="list-space-footer-2-2">
-                                        <a class="list-menu-footer-2-2">Wardrobe</a>
+                                        <a class="list-menu-footer-2-2" onclick="window.location.href='service_user.php?idkategori=6'">Catering</a>
                                     </li>
                                     <li class="list-space-footer-2-2">
-                                        <a class="list-menu-footer-2-2">Photographer Tool</a>
+                                        <a class="list-menu-footer-2-2" onclick="window.location.href='service_user.php?idkategori=7'">Wedding Car</a>
                                     </li>
-                                    <li class="list-space-footer-2-2">
-                                        <a class="list-menu-footer-2-2">Music</a>
-                                    </li>
-                                    <li class="list-space-footer-2-2">
-                                        <a class="list-menu-footer-2-2">Wedding Car</a>
-                                    </li>
-                                    <li class="list-space-footer-2-2">
-                                        <a class="list-menu-footer-2-2">PhotoBooth</a>
-                                    </li>
-                                    <li class="list-space-footer-2-2">
-                                        <a class="list-menu-footer-2-2">Honeymoon</a>
-                                    </li>
+                                   
                                 </nav>
                             </div>
                         </div>

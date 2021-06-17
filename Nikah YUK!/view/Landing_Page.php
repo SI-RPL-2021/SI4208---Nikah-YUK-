@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Landing Page</title>
+    <title>Landing Page - Nikah-YUK!</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="../style/landing_page.css">
 
@@ -497,28 +497,25 @@
                                     </div>
                                     <nav style="list-style-type:none;">
                                         <li class="list-space-footer-2-2">
-                                            <a class="list-menu-footer-2-2">Home</a>
+                                            <a class="list-menu-footer-2-2" onclick="window.location.href='landing_page.php'">Home</a>
                                         </li>
                                         <li class="list-space-footer-2-2">
-                                            <a class="list-menu-footer-2-2">FAQ</a>
+                                            <a class="list-menu-footer-2-2" onclick="window.location.href='Faq.php'">FAQ</a>
                                         </li>
                                         <li class="list-space-footer-2-2">
-                                            <a class="list-menu-footer-2-2">Tutorial</a>
+                                            <a class="list-menu-footer-2-2" onclick="window.location.href='tutorial.php'">Tutorial</a>
                                         </li>
                                         <li class="list-space-footer-2-2">
-                                            <a class="list-menu-footer-2-2">Blog</a>
+                                            <a class="list-menu-footer-2-2" onclick="window.location.href='Blog.php'">Blog</a>
                                         </li>
                                         <li class="list-space-footer-2-2">
-                                            <a class="list-menu-footer-2-2">Vacancy</a>
+                                            <a class="list-menu-footer-2-2" onclick="window.location.href='loker.php'">Vacancy</a>
                                         </li>
                                         <li class="list-space-footer-2-2">
-                                            <a class="list-menu-footer-2-2">Consultation</a>
+                                            <a class="list-menu-footer-2-2" onclick="window.location.href='Konsultasi.php'">Consultation</a>
                                         </li>
                                         <li class="list-space-footer-2-2">
-                                            <a class="list-menu-footer-2-2">Testimoni</a>
-                                        </li>
-                                        <li class="list-space-footer-2-2">
-                                            <a class="list-menu-footer-2-2">Services</a>
+                                            <a class="list-menu-footer-2-2" onclick="window.location.href='testimoni.php'">Testimoni</a>
                                         </li>
                                     </nav>
                                 </div>
@@ -526,29 +523,17 @@
                             <div class="col-lg-3 col-md-6">
                                 <h2 class="footer-text-title-footer-2-2 list-space-footer-2-2-title">Product</h2>
                                 <nav style="list-style-type:none;">
-                                    <li class="list-space-footer-2-2">
-                                        <a class="list-menu-footer-2-2">Venue</a>
+                                <li class="list-space-footer-2-2">
+                                        <a class="list-menu-footer-2-2" onclick="window.location.href='login.php'">Venue</a>
                                     </li>
                                     <li class="list-space-footer-2-2">
-                                        <a class="list-menu-footer-2-2">Cathering</a>
+                                        <a class="list-menu-footer-2-2" onclick="window.location.href='login.php'">Wardrobe</a>
                                     </li>
                                     <li class="list-space-footer-2-2">
-                                        <a class="list-menu-footer-2-2">Wardrobe</a>
+                                        <a class="list-menu-footer-2-2" onclick="window.location.href='login.php'">Catering</a>
                                     </li>
                                     <li class="list-space-footer-2-2">
-                                        <a class="list-menu-footer-2-2">Photographer Tool</a>
-                                    </li>
-                                    <li class="list-space-footer-2-2">
-                                        <a class="list-menu-footer-2-2">Music</a>
-                                    </li>
-                                    <li class="list-space-footer-2-2">
-                                        <a class="list-menu-footer-2-2">Wedding Car</a>
-                                    </li>
-                                    <li class="list-space-footer-2-2">
-                                        <a class="list-menu-footer-2-2">PhotoBooth</a>
-                                    </li>
-                                    <li class="list-space-footer-2-2">
-                                        <a class="list-menu-footer-2-2">Honeymoon</a>
+                                        <a class="list-menu-footer-2-2" onclick="window.location.href='login.php'">Wedding Car</a>
                                     </li>
                                 </nav>
                             </div>

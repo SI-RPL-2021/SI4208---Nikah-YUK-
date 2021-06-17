@@ -1,9 +1,18 @@
 <?php
+
+
+error_reporting(0);
+
+
 session_start();
 include '../../controller/function.php';
 
 if (!isset($_SESSION['log'])) {
+
     
+
+
+
     header('location:login.php');
 } else {
 };
@@ -22,10 +31,17 @@ if (isset($_POST["update"])) {
     $q1 = mysqli_query($conn, "update detailorder set qty='$jumlah' where idproduk='$kode' and orderid='$orderidd'");
     if ($q1) {
         echo "Berhasil Update Cart
+
 		<meta http-equiv='refresh' content='1; url= cart.php'/>";
     } else {
         echo "Gagal update cart
 		<meta http-equiv='refresh' content='1; url= cart.php'/>";
+
+		<meta http-equiv='refresh' content='1; url= cart_user.php'/>";
+    } else {
+        echo "Gagal update cart
+		<meta http-equiv='refresh' content='1; url= cart_user.php'/>";
+
     }
 } else if (isset($_POST["hapus"])) {
     $kode = $_POST['idproduknya'];
@@ -35,6 +51,17 @@ if (isset($_POST["update"])) {
     } else {
         echo "Gagal Hapus";
     }
+
+
+} else if (isset($_POST["hapuspackage"])) {
+    $kode = $_POST['id'];
+    $q2 = mysqli_query($conn, "delete from cart_package where id='$kode'");
+    if ($q2) {
+        echo "Berhasil Hapus";
+    } else {
+        echo "Gagal Hapus";
+    }
+
 }
 
 $package = query("SELECT * FROM cart_package");
@@ -272,6 +299,7 @@ $package = query("SELECT * FROM cart_package");
                 <!--quantity-->
                 </table>
                 </div>
+
                 
                 <br><br><br>
                 <!-- Start cart wedding package -->
@@ -320,6 +348,11 @@ $package = query("SELECT * FROM cart_package");
                         </tbody>
                     </table>
                 </div>
+
+
+                <br><br><br>
+               
+
                 <div class="checkout-left">
                     <div class="checkout-left-basket">
                         <h4>Total Harga</h4>
@@ -338,12 +371,20 @@ $package = query("SELECT * FROM cart_package");
                             <?php
                             }
                             ?>
+
                             <li>Total (inc. 10k Ongkir)<i> - </i> <span>Rp<?php echo number_format($subtotal) ?></span></li>
+
+                            <li>Total (inc. 10k Tax)<i> - </i> <span>Rp<?php echo number_format($subtotal) ?></span></li>
+
                         </ul>
                     </div>
                     <div class="checkout-right-basket">
                         <!-- <a href="index.php"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span>Continue Shopping</a> -->
+
                         <a href="checkout.php"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>Checkout</a>
+
+                        <a href="checkout_user.php"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>Checkout</a>
+
                     </div>
                     <div class="clearfix"> </div>
                 </div>

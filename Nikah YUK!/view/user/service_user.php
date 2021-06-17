@@ -8,9 +8,13 @@ $idk = $_GET['idkategori'];
 <html>
 
 <head>
+
     <title>Nikah-YUK!</title>
-    
-    
+
+    <title>Service - Nikah-YUK!</title>
+
+
+
     <link href="assets/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
     <link href="assets/css/style.css" rel="stylesheet" type="text/css" media="all" />
     <!-- font-awesome icons -->
@@ -24,7 +28,7 @@ $idk = $_GET['idkategori'];
     <link rel="stylesheet" type="text/css" href="../../style/blog_page.css">
     <link rel="stylesheet" type="text/css" href="../../style/landing_page.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-    
+
 </head>
 
 <body>
@@ -93,12 +97,20 @@ $idk = $_GET['idkategori'];
 
                         if ($_SESSION['role'] == 'Member') {
                             echo '
+
                     <a href="profile_user.php"><button class="btn btn-default btn-no-fill-header-4-2">Hi!, ' . $_SESSION['name'] . ' </button></a>
+
+                   
+
 					<a href="../../controller/logout.php"><button class="btn btn-fill-header-4-2 bg-danger">Logout</button></a>
 					';
                         } else {
                             echo '
+
                     <a href="../../admin/index.php"><button class="btn btn-default btn-no-fill-header-4-2">Hi!, ' . $_SESSION['name'] . ' </button></a>
+
+                   
+
 					<a href="../../controller/logout.php"><button class="btn btn-fill-header-4-2 bg-danger">Logout</button></a>
 					';
                         };
@@ -110,7 +122,7 @@ $idk = $_GET['idkategori'];
 
 
 
-        
+
         <div class="container">
             <!-- //breadcrumbs -->
             <!--- beverages --->
@@ -176,7 +188,10 @@ $idk = $_GET['idkategori'];
                             <?php
                                 }
                             } else {
+
                                 echo "Data tidak ditemukan";
+
+                                echo "Silahkan pilih layana kami berdasarkan kategori";
                             }
                             ?>
 
@@ -194,13 +209,13 @@ $idk = $_GET['idkategori'];
         <!------------------------------------------------------------------------------------------- Footer  ----------------------------------------------------------------------------------------------------------------------->
 
 
-        
+
         </div>
 
     </section>
 
 
-    
+
 </body>
 
 </html>

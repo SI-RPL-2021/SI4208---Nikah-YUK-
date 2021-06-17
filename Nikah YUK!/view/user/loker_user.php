@@ -18,7 +18,11 @@ include '../../controller/function.php';
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
     <link rel="stylesheet" type="text/css" href="../../style/testimoni_page.css">
     <link rel="stylesheet" type="text/css" href="../../style/landing_page.css">
+
     <title>Lowongan Kerja</title>
+
+    <title>Vacancy - Nikah-YUK!</title>
+
 </head>
 
 <body>
@@ -359,7 +363,11 @@ include '../../controller/function.php';
                 </div>
                 <div class="collapse navbar-collapse" id="navbarTogglerDemo-header-4-2">
                     <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+
                         <li class="nav-item active">
+
+                        <li class="nav-item">
+
                             <a class="nav-link" href="Welcome_page.php">Home</a>
                         </li>
                         <li class="nav-item">
@@ -372,7 +380,11 @@ include '../../controller/function.php';
                             <a class="nav-link" href="Blog_user.php">Blog</a>
                         </li>
                         <li class="nav-item">
+
                             <a class="nav-link" href="loker_user.php">Loker</a>
+
+                            <a class="nav-link active" href="loker_user.php">Loker</a>
+
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="Konsultasi_user.php">Consultation</a>
@@ -532,6 +544,7 @@ include '../../controller/function.php';
                                 </div>
                                 <nav style="list-style-type:none;">
                                     <li class="list-space-footer-2-2">
+
                                         <a class="list-menu-footer-2-2">Home</a>
                                     </li>
                                     <li class="list-space-footer-2-2">
@@ -554,6 +567,30 @@ include '../../controller/function.php';
                                     </li>
                                     <li class="list-space-footer-2-2">
                                         <a class="list-menu-footer-2-2">Services</a>
+
+                                        <a class="list-menu-footer-2-2" onclick="window.location.href='Welcome_page.php'">Home</a>
+                                    </li>
+                                    <li class="list-space-footer-2-2">
+                                        <a class="list-menu-footer-2-2" onclick="window.location.href='Faq_user.php'">FAQ</a>
+                                    </li>
+                                    <li class="list-space-footer-2-2">
+                                        <a class="list-menu-footer-2-2" onclick="window.location.href='tutorial_user.php'">Tutorial</a>
+                                    </li>
+                                    <li class="list-space-footer-2-2">
+                                        <a class="list-menu-footer-2-2" onclick="window.location.href='Blog_user.php'">Blog</a>
+                                    </li>
+                                    <li class="list-space-footer-2-2">
+                                        <a class="list-menu-footer-2-2" onclick="window.location.href='loker_user.php'">Vacancy</a>
+                                    </li>
+                                    <li class="list-space-footer-2-2">
+                                        <a class="list-menu-footer-2-2" onclick="window.location.href='Konsultasi_user.php'">Consultation</a>
+                                    </li>
+                                    <li class="list-space-footer-2-2">
+                                        <a class="list-menu-footer-2-2" onclick="window.location.href='testimoni_user.php'">Testimoni</a>
+                                    </li>
+                                    <li class="list-space-footer-2-2">
+                                        <a class="list-menu-footer-2-2" onclick="window.location.href='Service_user.php'">Services</a>
+
                                     </li>
                                 </nav>
                             </div>
@@ -562,6 +599,7 @@ include '../../controller/function.php';
                             <h2 class="footer-text-title-footer-2-2 list-space-footer-2-2-title">Product</h2>
                             <nav style="list-style-type:none;">
                                 <li class="list-space-footer-2-2">
+
                                     <a class="list-menu-footer-2-2">Venue</a>
                                 </li>
                                 <li class="list-space-footer-2-2">
@@ -584,6 +622,18 @@ include '../../controller/function.php';
                                 </li>
                                 <li class="list-space-footer-2-2">
                                     <a class="list-menu-footer-2-2">Honeymoon</a>
+
+                                    <a class="list-menu-footer-2-2" onclick="window.location.href='service_user.php?idkategori=4'">Venue</a>
+                                </li>
+                                <li class="list-space-footer-2-2">
+                                    <a class="list-menu-footer-2-2" onclick="window.location.href='service_user.php?idkategori=5'">Wardrobe</a>
+                                </li>
+                                <li class="list-space-footer-2-2">
+                                    <a class="list-menu-footer-2-2" onclick="window.location.href='service_user.php?idkategori=6'">Catering</a>
+                                </li>
+                                <li class="list-space-footer-2-2">
+                                    <a class="list-menu-footer-2-2" onclick="window.location.href='service_user.php?idkategori=7'">Wedding Car</a>
+
                                 </li>
                             </nav>
                         </div>

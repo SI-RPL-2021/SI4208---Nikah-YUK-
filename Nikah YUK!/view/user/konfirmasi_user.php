@@ -1,25 +1,52 @@
 <?php
 session_start();
-include '../controller/function.php';
+$idorder = $_GET['id'];
+include '../../controller/function.php';
 
-if (isset($_POST['adduser'])) {
-    $username = $_POST['uname'];
-    $password = password_hash($_POST['upass'], PASSWORD_DEFAULT);
+if (!isset($_SESSION['log'])) {
+    header('location:login.php');
+} else {
+};
 
-    $tambahuser = mysqli_query($conn, "insert into login values('','$username','$password')");
-    if ($tambahuser) {
-        echo " <div class='alert alert-success'>
-			Berhasil menambahkan staff baru.
+
+if (isset($_POST['confirm'])) {
+
+    $userid = $_SESSION['userid'];
+    $veriforderid = mysqli_query($conn, "select * from cart where orderid='$idorder'");
+    $fetch = mysqli_fetch_array($veriforderid);
+    $liat = mysqli_num_rows($veriforderid);
+
+    if ($fetch > 0) {
+        $nama = $_POST['nama'];
+        $metode = $_POST['metode'];
+        $tanggal = $_POST['tanggal'];
+
+        $kon = mysqli_query($conn, "insert into konfirmasi (orderid, userid, payment, namarekening, tglbayar) 
+		values('$idorder','$userid','$metode','$nama','$tanggal')");
+        if ($kon) {
+
+            $up = mysqli_query($conn, "update cart set status='Confirmed' where orderid='$idorder'");
+
+            echo " <div class='alert alert-success'>
+			Terima kasih telah melakukan konfirmasi, team kami akan melakukan verifikasi.
+			Terima kasih sudah mempercayakan acara pernikahan anda kepada kami - Nikah-YUK!
 		  </div>
-		<meta http-equiv='refresh' content='1; url= user.php'/>  ";
+		<meta http-equiv='refresh' content='7; url= Welcome_page.php'/>  ";
+        } else {
+            echo "<div class='alert alert-warning'>
+			Gagal Submit, silakan ulangi lagi.
+		  </div>
+		 <meta http-equiv='refresh' content='3; url= konfirmasi_user.php'/> ";
+        }
     } else {
-        echo "<div class='alert alert-warning'>
-			Gagal menambahkan staff baru.
+        echo "<div class='alert alert-danger'>
+			Kode Order tidak ditemukan, harap masukkan kembali dengan benar
 		  </div>
-		 <meta http-equiv='refresh' content='1; url= user.php'/> ";
+		 <meta http-equiv='refresh' content='4; url= konfirmasi_user.php'/> ";
     }
 };
 ?>
+
 
 <!doctype html>
 <html class="no-js" lang="en">
@@ -28,11 +55,7 @@ if (isset($_POST['adduser'])) {
     <meta charset="utf-8">
     <link rel="icon" type="image/png" href="../favicon.png">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-
-    <title>Kelola Staff - Tokopekita</title>
-
-    <title>Daftar Staff - Nikah-YUK!</title>
-
+    <title>Nikah-YUK!</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" type="image/png" href="assets/images/icon/favicon.ico">
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
@@ -41,6 +64,9 @@ if (isset($_POST['adduser'])) {
     <link rel="stylesheet" href="assets/css/metisMenu.css">
     <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
     <link rel="stylesheet" href="assets/css/slicknav.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+
 
     <!-- amchart css -->
     <link rel="stylesheet" href="https://www.amcharts.com/lib/3/plugins/export/export.css" type="text/css" media="all" />
@@ -59,9 +85,34 @@ if (isset($_POST['adduser'])) {
     <link rel="stylesheet" href="assets/css/responsive.css">
     <!-- modernizr css -->
     <script src="assets/js/vendor/modernizr-2.8.3.min.js"></script>
+
+    <!-- Profile template -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons">
+    <link rel="stylesheet" href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css" integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX" crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons">
+    <link rel="stylesgeet" href="https://rawgit.com/creativetimofficial/material-kit/master/assets/css/material-kit.css">
+    <link rel="stylesheet" href="assets/css/profile.css">
+
+    <!-- //for-mobile-apps -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="assets/css/style.css" rel="stylesheet" type="text/css" media="all" />
+    <!-- font-awesome icons -->
+    <link href="assets/css/font-awesome.css" rel="stylesheet">
+    <!-- //font-awesome icons -->
+    <!-- js -->
+    <script src="assets/js/jquery-1.11.1.min.js"></script>
+    <!-- //js -->
+    <link href='//fonts.googleapis.com/css?family=Raleway:400,100,100italic,200,200italic,300,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+    <!-- start-smoth-scrolling -->
+    <script type="text/javascript" src="assets/js/move-top.js"></script>
+    <script type="text/javascript" src="assets/js/easing.js"></script>
+
+
 </head>
 
-<body>
+<body class="profile-page">
     <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
@@ -73,53 +124,31 @@ if (isset($_POST['adduser'])) {
     <!-- page container area start -->
     <div class="page-container">
         <!-- sidebar menu area start -->
-        <div class="sidebar-menu">
+        <div class="sidebar-menu ">
             <div class="main-menu">
                 <div class="menu-inner">
                     <nav>
                         <ul class="metismenu" id="menu">
 
-                            <li><a href="index.php"><span>Home</span></a></li>
-                            <li><a href="../"><span>Kembali ke Toko</span></a></li>
-
                             <li>
-                                <p>&nbsp;&nbsp;&nbsp;<img src="../img/logo1.png" alt="" width="250px" height="100px"></p>
+                                <p>&nbsp;&nbsp;&nbsp;<img src="../../img/logo1.png" alt="" width="250px" height="100px"></p>
                             </li>
                             <br>
-                            <li class="active"><a href="index.php"><i class="ti-home"></i><span>Home</span></a></li>
-                            <li><a href="../view/user/Welcome_page.php"><i class="ti-arrow-left"></i><span>Kembali ke Toko</span></a></li>
-
                             <li>
-                                <a href="manageorder.php"><i class="ti-dashboard"></i><span>Kelola Pesanan</span></a>
+                                <a href="Welcome_page.php"><i class="ti-home"></i><span>Home</span></a>
                             </li>
                             <li>
-                                <a href="javascript:void(0)" aria-expanded="true"><i class="ti-layout"></i><span>Kelola Toko
-                                    </span></a>
-                                <ul class="collapse">
-
-                                    <li><a href="kategori.php">Kategori</a></li>
-                                    <li><a href="produk.php">Produk</a></li>
-                                    <li><a href="pembayaran.php">Metode Pembayaran</a></li>
-                                </ul>
+                                <a href="profile_user.php"><i class="ti-user"></i><span>Profile</span></a>
                             </li>
-                            <li><a href="customer.php"><span>Kelola Pelanggan</span></a></li>
-                            <li class="active"><a href="user.php"><span>Kelola Staff</span></a></li>
                             <li>
-                                <a href="../controller/logout.php"><span>Logout</span></a>
-
-                                    <li><a href="kategori.php"><i class="ti-view-list-alt"></i>&nbsp;&nbsp; Kategori</a></li>
-                                    <li><a href="produk.php"><i class="ti-package"></i>&nbsp;&nbsp; Produk</a></li>
-                                    <li><a href="pembayaran.php"><i class="ti-credit-card"></i>&nbsp;&nbsp; Metode Pembayaran</a></li>
-                                </ul>
+                                <a href="cart_user.php"><i class="ti-shopping-cart"></i><span>Cart</span></a>
                             </li>
-                            <li><a href="customer.php"><i class="ti-user"></i><span> Daftar Pelanggan</span></a></li>
-                            <li><a href="user.php"><i class="ti-user"></i><span>Kelola Staff</span></a></li>
                             <li>
-                                <a href="../controller/logout.php"><i class="ti-power-off"></i><span>Logout</span></a>
-
-
+                                <a href="daftar_order.php"><i class="ti-package"></i><span>Daftar Order</span></a>
                             </li>
-
+                            <li>
+                                <a href="../../controller/logout.php"><i class="ti-power-off"></i><span>Logout</span></a>
+                            </li>
                         </ul>
                     </nav>
                 </div>
@@ -156,7 +185,6 @@ if (isset($_POST['adduser'])) {
                                             var yy = date.getYear();
                                             var year = (yy < 1000) ? yy + 1900 : yy;
                                             document.write(thisDay + ', ' + day + ' ' + months[month] + ' ' + year);
-                                            //-->
                                         </script></b>
                                     </div>
                                 </h3>
@@ -168,78 +196,56 @@ if (isset($_POST['adduser'])) {
             </div>
 
 
-            <!-- page title area end -->
-            <div class="main-content-inner">
+            <!-- register -->
+            <div class="register">
+                <div class="container">
+                    <h2>Konfirmasi</h2>
+                    <div class="login-form-grids">
+                        <h3>Kode Order</h3>
+                        <form method="post">
+                            <strong>
+                                <input type="text" name="orderid" value="<?php echo $idorder ?>" disabled>
+                            </strong>
+                            <h6>Informasi Pembayaran</h6>
 
-                <!-- market value area start -->
-                <div class="row mt-5 mb-5">
-                    <div class="col-12">
-                        <div class="card">
-                            <div class="card-body">
-                                <div class="d-sm-flex justify-content-between align-items-center">
-                                    <h2>Daftar Staff</h2>
-                                </div>
-                                <div class="data-tables datatable-dark">
-                                    <table id="dataTable3" class="display" style="width:100%">
-                                        <thead class="thead-dark">
-                                            <tr>
-                                                <th>No.</th>
-                                                <th>Nama</th>
-                                                <th>Email</th>
-                                                <th>Telepon</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <?php
-                                            $brgs = mysqli_query($conn, "SELECT * from login where role='Admin' order by userid ASC");
-                                            $no = 1;
-                                            while ($p = mysqli_fetch_array($brgs)) {
+                            <input type="text" name="nama" placeholder="Nama Pemilik Rekening / Sumber Dana" required>
+                            <br>
+                            <h6>Rekening Tujuan</h6>
+                            <select name="metode" class="form-control">
 
-                                            ?>
+                                <?php
+                                $metode = mysqli_query($conn, "select * from pembayaran");
 
-                                                <tr>
-                                                    <td><?php echo $no++ ?></td>
-                                                    <td><?php echo $p['namalengkap'] ?></td>
-                                                    <td><?php echo $p['email'] ?></td>
-                                                    <td><?php echo $p['notelp'] ?></td>
+                                while ($a = mysqli_fetch_array($metode)) {
+                                ?>
+                                    <option value="<?php echo $a['metode'] ?>"><?php echo $a['metode'] ?> | <?php echo $a['norek'] ?></option>
+                                <?php
+                                };
+                                ?>
 
-                                                   
-
-
-
-
-                                                </tr>
-
-
-                                            <?php
-                                            }
-
-                                            ?>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
-                        </div>
+                            </select>
+                            <br>
+                            <h6>Tanggal Bayar</h6>
+                            <input type="date" class="form-control" name="tanggal">
+                            <input type="submit" name="confirm" value="Kirim">
+                        </form>
+                    </div>
+                    <div class="register-home">
+                        <a href="Welcome_page.php">Batal</a>
                     </div>
                 </div>
             </div>
+            <!-- //register -->
 
 
-            <!-- row area start-->
-        </div>
-    </div>
-    <!-- main content area end -->
-    <!-- footer area start-->
-    <footer>
-        <div class="footer-area">
-
-            <p>By Richard's Lab</p>
 
 
 
         </div>
-    </footer>
-    <!-- footer area end-->
+        <!-- main content area end -->
+        <!-- footer area start-->
+
+        <!-- footer area end-->
     </div>
     <!-- page container area end -->
 
@@ -282,6 +288,8 @@ if (isset($_POST['adduser'])) {
         });
     </script>
 
+
+
     <!-- jquery latest version -->
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
     <!-- bootstrap 4 js -->
@@ -319,5 +327,3 @@ if (isset($_POST['adduser'])) {
     <script src="assets/js/scripts.js"></script>
 
 </body>
-
-</html>
