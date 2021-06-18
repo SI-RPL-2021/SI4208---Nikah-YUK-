@@ -341,8 +341,13 @@ date_default_timezone_set("Asia/Bangkok");
                                         </tbody>
                                     </table>
                                 </div>
+
                                 <a href="datapesanan.php" target="_blank" class="btn btn-info">Export Data</a>
                              </div>
+
+                                <a href="datapesanan.php" target="_blank" hidden class="btn btn-info">Export Data</a>
+                            </div>
+
                         </div>
                     </div>
                 </div>
@@ -356,7 +361,7 @@ date_default_timezone_set("Asia/Bangkok");
         <!-- footer area start-->
         <footer>
             <div class="footer-area">
-                <p>By Richard's Lab</p>
+                <p></p>
             </div>
         </footer>
         <!-- footer area end-->

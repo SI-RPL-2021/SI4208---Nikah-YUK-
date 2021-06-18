@@ -192,6 +192,9 @@ $idk = $_GET['idkategori'];
                                 echo "Data tidak ditemukan";
 
                                 echo "Silahkan pilih layana kami berdasarkan kategori";
+
+                                echo "Silahkan pilih layanan kami berdasarkan kategori";
+
                             }
                             ?>
 
