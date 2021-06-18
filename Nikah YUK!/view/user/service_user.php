@@ -177,7 +177,7 @@ $idk = $_GET['idkategori'];
                             <?php
                                 }
                             } else {
-                                echo "Silahkan pilih layana kami berdasarkan kategori";
+                                echo "Silahkan pilih layanan kami berdasarkan kategori";
                             }
                             ?>
 

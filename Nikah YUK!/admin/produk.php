@@ -16,7 +16,7 @@ if (isset($_POST["addproduct"])) {
 	$ukuran_file = $_FILES['uploadgambar']['size'];
 	$tipe_file = $_FILES['uploadgambar']['type'];
 	$tmp_file = $_FILES['uploadgambar']['tmp_name'];
-	$path = "../produk/" . $random . '.' . $ext;
+	$path = "../../produk/" . $random . '.' . $ext;
 	$pathdb = "produk/" . $random . '.' . $ext;
 
 
@@ -189,7 +189,7 @@ if (isset($_POST["addproduct"])) {
 							<div class="card-body">
 								<div class="d-sm-flex justify-content-between align-items-center">
 									<h2>Daftar Produk</h2>
-									<button style="margin-bottom:20px" data-toggle="modal" data-target="#myModal" class="btn btn-info col-md-2">Tambah Produk</button>
+									<button style="margin-bottom:20px" data-toggle="modal" data-target="#myModal" hidden class="btn btn-info col-md-2">Tambah Produk</button>
 								</div>
 								<div class="data-tables datatable-dark">
 									<table id="dataTable3" class="display" style="width:100%">
